@@ -1,10 +1,15 @@
 # Writing Scripts for M3
 *Don Teng, 3 April 2017*
 
-## What is a Script?
+1. What is a Script?
+2. Preparing a Script for SLURM
+3. Running a Script in M3
+4. Tips
+
+## 1. What is a Script?
 A generic *programming script* is a text file containing a list of instructions for a computer to carry out. The computer must be given instructions in a very specific format that it can understand, so it's a bit of work to set up a script.
 
-## Preparing a Script for SLURM
+## 2. Preparing a Script for SLURM
 [SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within a computing cluster as efficiently as possible, so everyone gets their computational needs met.
 
 You can submit the following information (* = essential):
@@ -24,7 +29,7 @@ A full example of how to enter the other bits of information can be found in exa
 
 In order to actually tell SLURM what you want computed, you'll have to write either a separate script, or enter a command as you would on the terminal of your own machine. A few examples of these are available below.
 
-## Running a Script in M3
+## 3. Running a Script in M3
 You can submit a script by connecting to M3, and entering, in the command line:
 
 `$ sbatch my_slurm_script.sh`
@@ -35,9 +40,9 @@ You'll be given a job ID. You should recieve a message like:
 
 Where 1234 is your job ID. It usually takes a second to submit your script to the queueing manager. To view all jobs currently being run:
 
-`$ squeue`
+`squeue`
 
-All the output will be given in the form of an output file that's automatically created in your M3 folder, named something like `slurm-<job ID>.out`.  To view this file, use the `nano` command:
+An output file named something like `slurm-<job ID>.out` containing all the relevant output will be automatically created in your M3 folder.  To view this file, use the `nano` command:
 
 `nano slurm-1234.out`
 
@@ -47,6 +52,7 @@ Note that if you don't see your script in the queue, two things could have happe
 
 ### Python "Hello World" Example
 *Note: at the time of this writing, Python doesn't quite work yet; still working with the folks at M3 to fix this.*
+
 For instance, let's say that I want to just print "Hello world", using `python`. I'll create a simple `python` script, say, `helloworld.py`, which contains just the single line:
 
 `print("Hello world!")`
@@ -117,7 +123,7 @@ srun beast beagle_CPU benchmark1.xml
 ### RAxML Example
 WIP
 
-### Pro-Tips
+### 4. Tips
 - I keep my job names short (less than 10 characters long) and serializable. It also helps to keep a spreadsheet of what jobs you ran, their job IDs, when you ran them, and so on.  As the number of scripts you send increases, tracking which `.out` file came from which task can become tricky.
 - To copy files from your local machine to your account on the HPC, you can use [Cyberduck](https://cyberduck.io/?l=en) or [FileZilla](https://filezilla-project.org/) GUIs (Cyberduck is recommended by the M3 admins). Otherwise, you can also use the `scp` (secure copy) command in your terminal like so:
 
