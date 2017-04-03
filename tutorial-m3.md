@@ -51,9 +51,7 @@ For instance, in our earlier Hello World example, the "Hello world" would have b
 Note that if you don't see your script in the queue, two things could have happened: 1. your script still hasn't been submitted yet, or 2. your script terminated almost instantaneously with an error, and therefore appeared in and then disappeared from the queue within microseconds. To check the second scenario, check if there's a slurm output file in your directory. 
 
 ### Python "Hello World" Example
-*Note: at the time of this writing, Python doesn't quite work yet; still working with the folks at M3 to fix this.*
-
-For instance, let's say that I want to just print "Hello world", using `python`. I'll create a simple `python` script, say, `helloworld.py`, which contains just the single line:
+For instance, let's say that I want to print "Hello world", using `python`. I'll create a simple `python` script, say, `helloworld.py`, which contains just the single line:
 
 `print("Hello world!")`
 
@@ -74,7 +72,7 @@ And another separate SLURM script, `helloworld.sh`, which looks like:
 # SBATCH --mail-type=FAIL
 
 module load python/3.5.2-gcc5
-python helloworld.py
+python3 helloworld.py
 ```
 
 And in the M3 terminal, I enter the following command to submit the job:
