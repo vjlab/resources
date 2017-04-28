@@ -1,31 +1,27 @@
-# Writing Scripts for M3
-*Don Teng, 3 April 2017*
+# HPC Quickstart
+*Don Teng, 28 April 2017*
 
-1. What is a Script?
-2. Preparing a Script for SLURM
-3. Running a Script in M3
+1. Introduction
+2. Preparing a HPC Script
+3. Running a HPC Script
+4. Uploading/Downloading files
 4. Tips
 
-## 1. What is a Script?
-A generic *programming script* is a text file containing a list of instructions for a computer to carry out. The computer must be given instructions in a very specific format that it can understand, so it's a bit of work to set up a script.
+## 1. Introduction
+A generic *programming script* is a text file containing a list of instructions for a computer to carry out. The computer must be given instructions in a very specific format that it can understand.
+
+M3 is the high-performance computing (HPC) resource provided by Monash. 
 
 ## 2. Preparing a Script for SLURM
-[SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within a computing cluster as efficiently as possible, so everyone gets their computational needs met.
+[SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within a computing cluster as efficiently as possible.
 
-You can submit the following information (* = essential):
-- **Job name***, which will be shown in the queue. 
-- **Number of tasks.*** The number of tasks that can be done in parrallel. 
-- **Number of tasks per node**.*
-- **CPUs per task**.* This can be kept at 1.
-- **Running time**.* The maximum amount of time that you want your script to run for. 
-- **Memory per CPU**. Unless you set this to a very small number (like 10), this doesn't appear to make much difference.
-- **Your email**, so that you can be notified when a job finishes.
+A basic template for a SLURM script is in this repo, named `slurm-quickstart`. 
 
-To find the required information, SLURM looks for an `# SBATCH` in front of these options. For intance, to tell SLURM your job name:
+When reading a script, SLURM looks for an `# SBATCH` in front of these options. For intance, to tell SLURM your job name:
 
 `# SBATCH --job-name=MyJob`
 
-A full example of how to enter the other bits of information can be found in example scripts on your M3 account. Also, the Victorian Life Sciences Computation Initiative (VLSCI) has a handy web form for you to fill this all in, and generates a script for you. 
+A full example of how to enter the other bits of information can be found in example scripts on your M3 account. 
 
 In order to actually tell SLURM what you want computed, you'll have to write either a separate script, or enter a command as you would on the terminal of your own machine. A few examples of these are available below.
 
