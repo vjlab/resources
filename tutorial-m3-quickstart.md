@@ -32,7 +32,8 @@ You'll be prompted for your password, and then you're in.
 M3 needs two kinds of information:
 1. Specifics of your computational needs like number of nodes, number of cores per node, memory usage, runtime etc.
 2. The actual job that needs to be run, e.g. a command like `beast -beagle_off my_input_file.xml`
-Getting to know how to specify (1) can be tricky, so a basic SLURM script, `slurm-quickstart` containing frequently-used specifications and their default or recommended values has been uploaded to this repo. (2), however, needs to be modified depending on what program you're running. 
+
+Finding out how to specify (1) can be tricky, so a basic SLURM script, `slurm-quickstart` containing frequently-used specifications and their default or recommended values has been uploaded to this repo. (2), however, needs to be modified depending on what program you're running. 
 
 After logging onto M3, submit a script by entering, in the command line:
 
