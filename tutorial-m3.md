@@ -2,20 +2,20 @@
 *Don Teng, 28 April 2017*
 
 1. Introduction
-2. Preparing a HPC Script
-3. Running a HPC Script
+2. Preparing a SLURM Script
+3. Running a SLURM Script
 4. Uploading/Downloading files
 5. Tips
 
 ## 1. Introduction
 A generic *programming script* is a text file containing a list of instructions for a computer to carry out. The computer must be given instructions in a very specific format that it can understand.
 
-M3 is the high-performance computing (HPC) resource provided by Monash. 
+M3 is the high-performance computing (HPC) resource provided by Monash. It's like having a second very, very powerful computer (Actually *computers*), but you can't easily interact with it with point-and-click interfaces. You have to tell it what to do by preparing a list of instructions, called a *SLURM script*.
 
-## 2. Preparing a Script for SLURM
-[SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within a computing cluster as efficiently as possible.
+## 2. Preparing a SLURM Script
+[SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It's necessary because there are often multiple users requesting computational resources from the same HPC, with different computational demands, runtimes, and so on.  So SLURM doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within the HPC cluster as efficiently as possible.
 
-A basic template for a SLURM script is in this repo, named `slurm-quickstart`. 
+A basic template for a SLURM script is in this repo, named `slurm-quickstart`. It's ready to be run without any modification. 
 
 When reading a script, SLURM looks for an `# SBATCH` in front of these options. For intance, to tell SLURM your job name:
 
