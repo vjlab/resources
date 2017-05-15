@@ -50,8 +50,8 @@ Finding out how to specify (1) can be tricky; but you can use the default settin
 
 module load beast1/1.8.4
 module load beagle
-beast -beagle_off benchmark1.xml
-`
+beast -beagle_off benchmark1.xml`
+
 To break that down:
  - The very first line `#!/bin/bash` tells the HPC that this file is a list of instructions, not just a bunch of text. Always include it in the first line of your SLURM scripts.
  - All the lines starting with `#SBATCH` are *run parameters*, e.g. run time, number of CPUs you'd like to request, etc.
