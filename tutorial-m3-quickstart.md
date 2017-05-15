@@ -35,7 +35,7 @@ M3 needs two kinds of information:
 
 Finding out how to specify (1) can be tricky; but you can use the default settings specified below for most cases. (2) needs to be modified depending on what program you're running. The example SLURM script below will do a BEAST run using the `benchmark1.xml` file downloaded earlier. On your own computer, create a new SLURM script by copying and pasting the text below into a new text file, and save that textfile as `my_slurm_script.txt`. Only your email needs to be modified at the line `#SBATCH --mail-user=<your_email>`.
 
-`#!/bin/bash
+```#!/bin/bash
 
 #SBATCH --job-name=my_job
 
@@ -50,7 +50,8 @@ Finding out how to specify (1) can be tricky; but you can use the default settin
 
 module load beast1/1.8.4
 module load beagle
-beast -beagle_off benchmark1.xml`
+beast -beagle_off benchmark1.xml
+```
 
 To break that down:
  - The very first line `#!/bin/bash` tells the HPC that this file is a list of instructions, not just a bunch of text. Always include it in the first line of your SLURM scripts.
