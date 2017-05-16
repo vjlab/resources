@@ -1,12 +1,13 @@
 # M3 High-Performance Computing (HPC) Quickstart (WIP)
 *Don Teng*
+
 *Last update 16 May 2017*
 
 Level: Beginner
 
-In this tutorial, we're going to practice doing a BEAST run on the HPC. No knowledge of BEAST is required. In this tutorial, we're going to:
+In this tutorial, we're going to practice doing a BEAST run on the HPC. The BEAST software computes evolutionary trees from input sequence data; but for ths tutorial, no knowledge of the BEAST software is required. In this tutorial, we're going to:
  - Prepare a SLURM script, `my_slurm_script.txt` - a bunch of instructions that tells the HPC what to do
- - Get an `xml` file, `benchmark1.xml` - a bunch of instruction that tells the BEAST software (already installed on the HPC) what to do. Download it [here](https://github.com/beast-dev/beast-mcmc/blob/master/examples/release/Benchmarks/benchmark1.xml) - this file contains the raw data and some parameters in a format that BEAST understands. 
+ - Get an `xml` file, `benchmark1.xml` - a bunch of instructions that tells the BEAST software what to do. Download it [here](https://github.com/beast-dev/beast-mcmc/blob/master/examples/release/Benchmarks/benchmark1.xml) - this file contains the raw data and some parameters in a format that BEAST understands. 
  - Upload both files to the HPC (see the Cyberduck tutorial)
  - Submit the SLURM script (or "submit the job") to the HPC, and review a bunch of frequently used HPC commands
  - Retrieve your job output after the run is complete.
@@ -73,19 +74,48 @@ It usually takes a second to submit your script to the queue.
 
 Note that if you don't see your script in the queue, two things could have happened: 1. your script still hasn't been submitted yet, or 2. your script terminated almost instantaneously with an error, and therefore appeared in and then disappeared from the queue within microseconds. To check the second scenario, check if there's a slurm output file in your directory. You can also tell SLURM to send you an email whenever the job ends, whether it ended successfully, or with an error.
 
-## 5. Frequently Used HPC Commands
+## 5. Frequently Used HPC and Terminal Commands
 To view all jobs currently being run:
 
 `squeue`
 
-An output file named something like `slurm-<job ID>.out` containing all the relevant output will be automatically created in your folder on the HPC.  To view (or edit) this file, use the `nano` command:
+To view just the jobs that you're running:
 
-`nano slurm-1234.out`
+`squeue --user=<your_user_name>`
 
+To create a new folder in your home directory:
 
+`mkdir new_folder`
+
+To navigate into that folder:
+
+`cd new_folder`
+
+To return to your main folder:
+
+`cd`
+
+To see what files there are in the folder that you're currently in:
+
+`ls`
+
+To view or edit the contents of a particular file:
+
+`nano my_file`
+
+To delete a file:
+
+`rm file_to_delete`
+
+## Reviewing your Output
+All jobs that were run on the HPC will automatically generate an output file `slurm-<job_id>.out`.  This is like a text file, but, somewhat annoyingly, can't be viewed with a text editor.  You can read the contents of this file using the `nano` command:
+
+`nano slurm-12345.out`
+
+BEAST would have generated some other files as well, but we don't need to look at those for the purposes of this tutorial. The main BEAST output would have been recorded in the SLURM output file.
 
 ## 6. Tips
- - Read the manual [here](http://docs.massive.org.au/M3/slurm/slurm-overview.html)
+ - [Read the M3 documentation](http://docs.massive.org.au/M3/slurm/slurm-overview.html)
  - Troubleshooting your job in M3 can be especially tricky, because now you have the additional layer of complexity where you're telling the HPC what you want to run.  If something goes wrong, the error could be with the HPC, or maybe the SLURM script was wrongly specified, or in your program. It's good practice to do a short test run first before doing a full-length run.
  - To upload/download files to/from M3, you can also use the `scp` (secure copy) command in your terminal like so:
 
