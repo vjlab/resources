@@ -1,13 +1,8 @@
 # M3 High-Performance Computing (HPC) Quickstart (WIP)
-*Don Teng, 28 April 2017*
+*Don Teng*
+*Last update 16 May 2017*
 
 Level: Beginner
-
-1. Introduction
-2. Logging into M3
-3. Running a SLURM Script in M3
-4. Uploading/Downloading files
-5. Tips
 
 ## 1. Introduction
 A generic *programming script* is a text file containing a list of instructions for a computer to carry out. The computer must be given instructions in a very specific format that it can understand.
@@ -16,19 +11,14 @@ M3 is the high-performance computing (HPC) resource provided by Monash. It's lik
 
 [SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It's necessary because there are often multiple users requesting computational resources from the same HPC, with different computational demands, runtimes, and so on.  So SLURM doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within the HPC cluster as efficiently as possible.
 
-As a practical for this tutorial, it's recommended that you do a dummy run of the BEAST software - no knowledge of BEAST is required. Download a data input file `benchmark1.xml` from [here](https://github.com/beast-dev/beast-mcmc/blob/master/examples/release/Benchmarks/benchmark1.xml) - this file contains the raw data and some parameters in a format that BEAST understands. In this practical, you'll:
-1. Prepare a SLURM script, using the template provided
-2. Submit the SLURM script to the HPC, telling the HPC to run a BEAST command
-3. Retrieve the output of your HPC job.
+As a practical for this tutorial, we'll do a dummy run of the BEAST software. No knowledge of BEAST is required. In this tutorial:
+ - Prepare a SLURM script, `my_slurm_script.txt` - a bunch of instructions that tells the HPC what to do
+ - Get an `xml` file, `benchmark1.xml` - a bunch of instruction that tells the BEAST software (already installed on the HPC) what to do. Download it [here](https://github.com/beast-dev/beast-mcmc/blob/master/examples/release/Benchmarks/benchmark1.xml) - this file contains the raw data and some parameters in a format that BEAST understands. 
+ - Upload both files to the HPC (see the Cyberduck tutorial)
+ - Submit the SLURM script (or "submit the job") to the HPC, and review a bunch of frequently used HPC commands
+ - Retrieve your job output after the run is complete.
 
-## 2. Logging into M3
-Open your Terminal (assuming you're using a Mac), and in the command line, login using:
-
-`$ ssh <your_username>@m3.massive.org.au`
-
-You'll be prompted for your password, and then you're in.
-
-## 3. Running a Command in M3
+## 3. Writing a SLURM Script
 M3 needs two kinds of information:
 1. Specifics of your HPC computational needs like number of nodes, number of cores per node, memory usage, runtime etc.
 2. The actual job that needs to be run, e.g. a command like `beast -beagle_off my_input_file.xml`
@@ -63,6 +53,13 @@ The run parameters that have been specified in this example are chosen because y
  - #SBATCH --time=0-02:00:00 - Run time requested: 2h. 
  - #SBATCH --ntasks=1... - Request only one node. Don't worry if you don't know what this means.
  - #SBATCH --mail-user=<your_email>... - Request SLURM to send you an email when the job is completed, or terminated with an error.
+ 
+## 2. Job Submission to M3
+Open your Terminal (assuming you're using a Mac), and in the command line, login using:
+
+`$ ssh <your_username>@m3.massive.org.au`
+
+You'll be prompted for your password, and then you're in.
 
 After logging onto M3, submit a script to the queue by entering, in the command line:
 
