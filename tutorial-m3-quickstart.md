@@ -26,7 +26,8 @@ M3 needs two kinds of information:
 
 The example SLURM script below will do a BEAST run using the `benchmark1.xml` file downloaded earlier. On your own computer, create a new SLURM script by copying and pasting the text below into a new text file, and save that text file as `my_slurm_script`. Make sure to enter your email at the line `#SBATCH --mail-user=<your_email>`.
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 #SBATCH --job-name=my_job
 
