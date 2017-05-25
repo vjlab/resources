@@ -84,10 +84,18 @@ beast -beagle_cuda -beagle_order 1,0 benchmark1.xml
 *Coming soon: -beagle_SSE*
 
 ### 3. RAxML Example
-RAxML is the trickiest to use because, in a way, there is no quickstart command that can apply to most cases.  The example given below is not likely to be very fast for most application - in particular, run time increases exponentially as the number and length of sequences increases. RaxML isn't written to utilize GPUs, so don't bother sending your job to GPU partitions.
+RAxML is the trickiest to use because, in a way, there is no quickstart command that can apply to most cases - tweaking RAxML to be applicable to the study requirements is a [giant can of worms](https://sco.h-its.org/exelixis/resource/download/NewManual.pdf).  The example given below is not likely to be very fast for most application - in particular, run time increases exponentially as the number and length of sequences increases. RaxML isn't written to utilize GPUs, so don't bother sending your job to GPU partitions.
 
 A "default" run command is:
 
 ```
+...
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=4
+...
+
 raxmlHPC-PTHREADS -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -N 200 -s input_file.fasta -n output_file.txt
 ```
+
+That is: this job is split into 4 processes, which get distributed to 4 CPU cores in 1 node.
