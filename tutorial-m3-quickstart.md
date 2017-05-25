@@ -4,8 +4,9 @@
 *Last update 16 May 2017*
 
 Level: Beginner
+See also: the Cyberduck tutorial.
 
-In this tutorial, we're going to practice doing a BEAST run on the HPC. The BEAST software computes evolutionary trees from input sequence data; but for ths tutorial, no knowledge of the BEAST software is required. In this tutorial, we're going to:
+In this tutorial, we're going to practice doing a BEAST run on the HPC. The BEAST software computes evolutionary trees from input sequence data, but no knowledge of the BEAST software is required in this tutorial.  We're going to:
  - Prepare a SLURM script, `my_slurm_script.txt` - a bunch of instructions that tells the HPC what to do
  - Get an `xml` file, `benchmark1.xml` - a bunch of instructions that tells the BEAST software what to do. Download it [here](https://github.com/beast-dev/beast-mcmc/blob/master/examples/release/Benchmarks/benchmark1.xml) - this file contains the raw data and some parameters in a format that BEAST understands. 
  - Upload both files to the HPC (see the Cyberduck tutorial)
@@ -15,9 +16,9 @@ In this tutorial, we're going to practice doing a BEAST run on the HPC. The BEAS
 ## 1. Introduction
 A generic *programming script* is a text file containing a list of instructions for a computer to carry out. The computer must be given instructions in a very specific format that it can understand.
 
-M3 is the high-performance computing (HPC) resource provided by Monash. It's like having a second very, very powerful computer (actually *computers*), but you can't easily interact with it with point-and-click interface. You have to tell it what to do by preparing a list of instructions, called a *SLURM script*. Note that "HPC" and "M3" will be used interchangeably where context is clear, where "M3" is actually the *name* of Monash Uni HPC resource.
+M3 is the high-performance computing (HPC) resource provided by Monash. It's like having a second very, very powerful computer (actually *computers*), but you can't easily interact with it with a point-and-click interface. You have to tell it what to do by preparing a list of instructions, called a *SLURM script*. Note that "HPC" and "M3" will be used interchangeably where context is clear, where "M3" is actually the *name* of Monash Uni HPC resource.
 
-[SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It's necessary because there are often multiple users requesting computational resources from the same HPC, with different computational demands, runtimes, and so on.  So SLURM doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within the HPC cluster as efficiently as possible.
+[SLURM](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a queueing manager used by many HPCs around the world; widely used because it's open-source (i.e. free). It's necessary because there are often multiple users requesting computational resources from the same HPC, with different computational requirements, runtimes, and so on.  So SLURM doesn't actually do any computation, it assigns user-submitted computing tasks to the nodes within the HPC cluster as efficiently as possible.
 
 ## 3. Writing a SLURM Script
 M3 needs two kinds of information:
@@ -75,8 +76,8 @@ It usually takes a second to submit your script to the queue.
 
 Note that if you don't see your script in the queue, two things could have happened: 1. your script still hasn't been submitted yet, or 2. your script terminated almost instantaneously with an error, and therefore appeared in and then disappeared from the queue within microseconds. To check the second scenario, check if there's a slurm output file in your directory. You can also tell SLURM to send you an email whenever the job ends, whether it ended successfully, or with an error.
 
-## 5. Frequently Used HPC and Terminal Commands
-To view all jobs currently being run:
+## 5. Frequently Used HPC Commands
+To view all jobs currently being run on the HPC:
 
 `squeue`
 
