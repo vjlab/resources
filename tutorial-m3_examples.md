@@ -9,17 +9,17 @@ And another separate SLURM script, `helloworld.sh`, which looks like:
 ```
 #!/bin/bash
 
-# SBATCH --job-name=helloworld
+#SBATCH --job-name=helloworld
 
-# SBATCH --ntasks=1
-# SBATCH --ntasks-per-node=1
-# SBATCH --cpus-per-task=1
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
 
-# SBATCH --time=0-01:00:00
+#SBATCH --time=0-01:00:00
 
-# SBATCH --mail-user=don.teng@monash.edu
-# SBATCH --mail-type=END
-# SBATCH --mail-type=FAIL
+#SBATCH --mail-user=don.teng@monash.edu
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
 
 module load python/3.5.2-gcc5
 python3 helloworld.py
@@ -32,41 +32,56 @@ And in the M3 terminal, I enter the following command to submit the job:
 (Note that I'm submitting the `.sh` file, which is the *SLURM script*.  The `.py` file is a `python` script.
 
 ### 2. BEAST Example
-We usually run BEAST either using the graphical user-interface (GUI), or on the command line.  For instance, to run BEAST on our local machine, we'd use:
+BEAST is a bit of software which computes phylogenetic trees within a Bayesian statistical framework (that's what the "B" in 'BEAST' stands for).  It accepts as input an `xml` file in a specific format (you can use `BEAUTI` to create this format), and returns a phylogenetic tree (a `.tree` file) and a couple of other secondary output files like a log file. We usually run BEAST either using the graphical user-interface (GUI), or on the command line.  For instance, to run BEAST on our local machine, we'd use something like:
 
-`beast beagle_CPU my_input_file.xml`
+`beast -beagle_CPU my_input_file.xml`
 
-To interpret that: `beast` tells the terminal to do something doing BEAST, `beagle_CPU` tells the terminal to use the BEAGLE library if it's available (which it should be on the HPC), and `my_input_file.xml` is, obviously, the input file to run BEAST, in `.xml` format.
+To interpret that: `beast` tells the terminal to do something doing BEAST, `-beagle_CPU` tells the terminal to use the BEAGLE library if it's available (which it should be on the HPC), and `my_input_file.xml` is, obviously, the input file to run BEAST, in `.xml` format.
 
 (To try this out, you can download dummy data from BEAST, called `benchmark1.xml` and `benchmark2.xml`, from their [benchmark webpage](http://beast.bio.ed.ac.uk/benchmarks).  We know the output of these datasets, so these are used to gauge the speed of different hardware setups, so that people can publish their running results with different configurations, e.g. number of CPUs, number of GPUs, etc.)
 
-This isn't a script (like python), this is just a command on the terminal. To tell SLURM to run such commands, we use `srun`.  So, to run BEAST in SLURM, we insert the `srun` command at the bottom of our SLURM script, which I named `beast_bm1_cpu.sh`, like so:
+The SLURM script is as follows::
 
 ```#!/bin/bash
 Usage: sbatch beast_bm1_cpu.sh
 
-# SBATCH --job-name=beast_bm1
+#SBATCH --job-name=beast_bm1
 
-# SBATCH --ntasks=1
-# SBATCH --ntasks-per-node=1
-# SBATCH --cpus-per-task=2
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=2
 
-# SBATCH --time=0-01:00:00
+#SBATCH --time=0-01:00:00
 
-# SBATCH --mail-user=don.teng@monash.edu
-# SBATCH --mail-type=END
-# SBATCH --mail-type=FAIL
-
-# Set the file for output
-# SBATCH --output=beast_bm1-%j.out
-
-# Set the file for error log
-# SBATCH --error=beast_bm1-%j.err
+#SBATCH --mail-user=don.teng@monash.edu
+#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL
 
 module load beast1/1.8.4
 module load beagle
-srun beast beagle_CPU benchmark1.xml
+beast -beagle_CPU benchmark1.xml
 ```
+
+### 2b. BEAST BEAGLE with the GPU
+The BEAGLE library is a helper program to BEAST to speed up computations. It can do this in a few ways - this section tells you how to utilize the GPU. 
+
+(A *CPU* is the "normal" kind of processing unit present in all computers. A Graphical-Processing-Unit (GPU) is an additional bit of hardware, popular amongst gamers because computer games require extremely powerful processing units capable of rendering 3D environments.)
+
+The computers (or "nodes") on the HPC that have GPUs are in the partition m3c and m3f. Aside from the usual `#SBATCH` parameters specified above, you'll have to include a couple more `#SBATCH` lines. The run command is also quite different:
+
+```
+#SBATCH --gres=gpu:1
+#SBATCH --partition=m3c
+
+module load beast1/1.8.4
+module load beagle/2.1.2
+module switch cuda/7.0
+
+beast -beagle_info
+beast -beagle_cuda -beagle_order 1,0 benchmark1.xml
+```
+
+*Coming soon: -beagle_SSE*
 
 ### 3. RAxML Example
 WIP
