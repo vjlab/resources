@@ -58,6 +58,7 @@ Next tutorial - we'll look into using `MAFFT` for multiple sequence alignment.
 * If your dataset consists of very similar sequences, then a sequence with a gap is likely the same as every other sequence, and will correctly cluster in the appropriate clade.
 * If your dataset consists of very dissimilar sequences, then the tree-drawing software may have multiple matches to cluster that gappy sequence with, and it may be computationally impossible to break these ties.  In software which does multiple tree computations to give statistical support of some kind (e.g. BEAST), this will result in fairly different trees in each run, when removing that gappy sequence altogether would give a much better concensus tree. In ML software, including that gappy sequence would make likelihood computations extremely path-dependant, making it difficult to arrive at the same ML tree over different runs.
 
+**Example Test Case**
 Given the following fasta file:
 ```
 >r1
@@ -71,7 +72,7 @@ ACGTACGT----
 >r5
 ACGTTGCA----
 ```
-`Fasttree` produced a tree like:
+Both `FastTree` and `IQ-Tree` produced the same tree (note the position of r5 relative to r2 and r1):
 
 r3<br>
 |<br>
@@ -85,15 +86,3 @@ r4<br>
 ----------|<br>
 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| r5<br>
                  
-And `IQ-tree` produced a tree like:
-
-r1<br>
-|<br>
-|&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| r2<br>
------------|<br>
-|&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| r5<br>
-|<br>
-|<br>
-| r3<br>
-|<br>
-| r4
