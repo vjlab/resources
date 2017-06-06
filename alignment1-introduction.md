@@ -54,7 +54,7 @@ Other biological considerations:
 Next tutorial - we'll look into using `MAFFT` for multiple sequence alignment.
 
 ## Note: Some Tree Considerations
-`FastTree` and `IQ-Tree` do not seem to consider gaps `"-"` as differences. That is, the number of similar letters between `acgtacgt` and `acgt----` is 4, but the number of different letters is 0. Therefore, your tolerance for large gaps in sequences should increase as the variability that you expect to see in your dataset increases. 
+`FastTree` and `IQ-Tree` do not seem to consider gaps `"-"` as differences. That is, the number of similar letters between `acgtacgt` and `acgt----` is 4, but the number of different letters is 0. Therefore, as the variability that you expect to see in your dataset increases, you should likewise be increasingly punitive on removing sequences with large gaps. 
 * If your dataset consists of very similar sequences, then a sequence with a gap is likely the same as every other sequence, and will correctly cluster in the appropriate clade.
 * If your dataset consists of very dissimilar sequences, then the tree-drawing software may have multiple matches to cluster that gappy sequence with, and it may be computationally impossible to break these ties.  In software which does multiple tree computations to give statistical support of some kind (e.g. BEAST), this will result in fairly different trees in each run, when removing that gappy sequence altogether would give a much better concensus tree. In ML software, including that gappy sequence would make likelihood computations extremely path-dependant, making it difficult to arrive at the same ML tree over different runs.
 
