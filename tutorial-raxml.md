@@ -1,16 +1,23 @@
 # RAxML (WIP)
-*Don Teng, April 2017*
+*Don Teng, 6 June 2017*
 
-This tutorial is meant to be a condensed version of the [RAxML v8.2 manual](http://sco.h-its.org/exelixis/resource/download/NewManual.pdf), as a sort of quickstart user guide. 
+## Introduction
+`RAxML` takes a `.fasta` or `.txt` file of aligned sequences as input, and computes maximum likelihood trees. 
 
-The executable currently in M3 is `raxmlHPC-AVX`, so at the bottom of your SLURM script, we use the commands:
+## Installation
+Go straight [here](http://www.sfu.ca/biology2/staff/dc/raxml/), and follow their steps accordingly. You should just get a single executable, simply named `raxml`, which you can run for small studies and small datasets. Unfortunately, this website is *not* the top hit in Google, nor is it very easy to find from the main RAxML webpage! 
+
+## RAxML on M3
+The command below runs a 4-thread process on a single node:
 
 ```
 module load raxml/8.2.9
-raxmlHPC-AVX2 ...
+raxmlHPC-AVX2 
 ```
 
 ### Commonly Specified Options
-`-m <model>` - Specifies the substitution model to be used. The most commonly used model appears to be `GTR GAMMA`
+`-m <model>` - Specifies the nucleotide substitution model to be used. The most common model is `GTRGAMMA`
 `-p <random seed>` - Sets the random seed for reproducibility.
 `-s <input_alignment_file>` - Specify the input alignment file. RAxML accepts relaxed `phy`, `phy`, or `fasta`.
+`-N <num_of_alternative_runs>` - No. of alternative runs on different starting trees.
+`-T <num_of_threads>` - No. of threads. Make sure to set this at most the number of CPUs you have on your machine, or this will suffer a massive performance drop!
