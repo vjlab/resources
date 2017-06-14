@@ -1,16 +1,20 @@
 # Introduction
-If you're here, you've probably been directed to this catalogue of tutorials because you're keen to develop some technical skills, maybe for computing in general, or computational skills for virology. This first introductory page contains a whole bunch of essential readings to get the basics first. 
+This first introductory page contains a bunch of essential readings to get the basics first. But before we begin, read this article first, by Matt Gemmell, *[What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)*
 
-### Programming
-- *[What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)*, by Matt Gemmell. 
-- A python programming youtube channel for beginners, [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_).  Note that that's Python 3.4; we're currently at Python 3.6 at the time of this writing, but the basics should have largely remained the same. 
+Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Stackoverflow (for programming), Youtube. A great portion of humanity's non-specialist knowledge can be accessed by using this magical tool:
 
-### Computation for Virology
- - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. Note the section
- - **[How to interpret a phylogenetic tree]**(http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or Khan academy: https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees
+![Image of Google searchbar](https://upload.wikimedia.org/wikipedia/commons/9/96/Google_web_search.png)
 
+## Things to Read up on
 ### Mathematical Concepts
- - Linear regression, and its application in discarding crappy sequences
- - Markov chain
+ - Linear regression
+ - Markov chains
  - **Maximum likelihood** (RAXML, IQ-Tree, FastTree - pros and cons. Provide references.)
  - Bayesian statistics (BEAST)
+
+### Computation for Virology
+ - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
+ - **[How to interpret a phylogenetic tree]**(http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or Khan academy: https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees
+
+### Programming
+Having a good grasp on how to read, if not write, code is helpful. The Youtube channel [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_) is a good place to start.
