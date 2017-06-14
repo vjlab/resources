@@ -7,7 +7,7 @@ The point here is not so much the mere acquisition of facts, but the ability to 
 
 ## Things to Read up on
 ### Mathematical Concepts
-Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk)
+Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential.
  - Linear regression
  - Markov chains
  - Maximum likelihood (RAXML, IQ-Tree, FastTree - pros and cons. Provide references.)
@@ -19,6 +19,22 @@ Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mat
 
 ### Programming
 Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). The Youtube channel [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_) is a good place to start.
+
+### Writing
+This is starting to become a sticking point in science, not just in terms of a scientist speaking to a non-specialist audience, but [specialists speaking to other specialists from other fields](http://blogs.agu.org/sciencecommunication/2010/10/26/dude-you-are-speaking-romulan/). 
+- An [excellent article](http://phenomena.nationalgeographic.com/2010/11/24/on-jargon-and-why-it-matters-in-science-writing/) on excessive use of jargon in biology.
+ - [Convoluted jargon](http://www.cbronline.com/news/cloud/aas/mystifying-it-jargon-creates-costly-uk-business-ignorance-4655127/) is expensive - there is a very real material cost of confusion and miscommunication.
+ - [Excessive jargon](https://www.fastcompany.com/3052242/the-secret-to-sounding-smart-using-simple-language) (are you sensing a theme here?) makes the author sound stupid anyway.
+
+My personal take:
+ - Avoid jargon, or even big words, because this is not grade school and you don't have a teacher to give you a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms.
+ - Don't write like a scientist: avoid passive voice, and stop using that writing style in publications which I think of as "academic deadpan". 
+ - Don't try to sound smart, just be smart. Likewise, don't try to sound objective, just be objective.
+
+List of words to stop using forever:
+ - *utilize* - *"use"* is fine. 
+ - *novel* - of course it's novel, otherwise you wouldn't be writing about it. 
+ - *morphology* - *"structure"*, *"form"*, *"shape"* are all fine. 
 
 ## Software We Use
  - **Multiple Sequence Alignment** - MAFFT.
