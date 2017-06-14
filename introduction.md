@@ -14,7 +14,7 @@ Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mat
  - Bayesian statistics (BEAST)
 
 ### Computation for Virology
- - *[How to interpret a phylogenetic tree]*(http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or Khan academy: https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees
+ - [How to interpret a phylogenetic tree](http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or [this](https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees) Khan academy video.
  - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
 
 ### Programming
