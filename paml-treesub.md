@@ -15,7 +15,7 @@ This is actually quite easy, but you're encouraged to get 2 versions:
 ...
 
 ## [Treesub](https://github.com/tamuri/treesub)
-This is an extension which uses some `PAML` functions, stitched together with RAXML and FigTree. 
+This is an extension which uses some `PAML` functions, stitched together with RAXML and FigTree. It's primarily useful for producing a tree which shows the amino acid substitutions along the branches. 
 
 ### Installation
 
