@@ -1,7 +1,7 @@
 # M3 High-Performance Computing (HPC) Quickstart (WIP)
 *Don Teng*
 
-*Last update 16 May 2017*
+*Last update: 15 June 2017*
 
 Level: Beginner
 
@@ -65,7 +65,7 @@ To break that down:
  - All the lines starting with `#SBATCH` are *run parameters*, e.g. run time, number of CPUs you'd like to request, etc.
  - The lines at the bottom: `module load...`, `beast...` are the actual BEAST command lines. That is, if you have BEAST on your own computer, you'd run this same computation using `beast -beagle_off benchmark1.xml` on your own command line. 
 
-## 2. Job Submission to M3
+## 4. Job Submission to M3
 Open your Terminal (assuming you're using a Mac), and in the command line, login using:
 
 ```
@@ -90,13 +90,13 @@ It usually takes a second to submit your script to the queue.
 
 Note that if you don't see your script in the queue, two things could have happened: 1. your script still hasn't been submitted yet, or 2. your script terminated almost instantaneously with an error, and therefore appeared in and then disappeared from the queue within microseconds. To check the second scenario, check if there's a slurm output file in your directory. You can also tell SLURM to send you an email whenever the job ends, whether it ended successfully, or with an error.
 
-## Reviewing your Output
+## 5. Reviewing your Output
 All jobs that were run on the HPC will automatically generate an output file `slurm-<job_id>.out`.  This is like a text file, but, somewhat annoyingly, can't be viewed with a text editor.  You can read the contents of this file using the `nano` command:
 
 `nano slurm-12345.out`
 
 BEAST would have generated some other files as well, but we don't need to look at those for the purposes of this tutorial. The main BEAST output would have been recorded in the SLURM output file.
 
-## 6. Tips
- - [Read the M3 documentation](http://docs.massive.org.au/M3/slurm/slurm-overview.html)
- - Troubleshooting your job in M3 can be especially tricky, because now you have the additional layer of complexity where you're telling the HPC what you want to run.  If something goes wrong, the error could be with the HPC, or maybe the SLURM script was wrongly specified, or in your program. It's good practice to do a short test run first before doing a full-length run.
+## References
+[Read the M3 documentation](http://docs.massive.org.au/M3/slurm/slurm-overview.html)
+
