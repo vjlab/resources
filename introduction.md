@@ -42,7 +42,13 @@ Stop using these words forever:
 See [this](https://github.com/jtleek/datasharing) guideline on how to share data with a statistician.
 
 ## Software We Use
+In general, most of these are available using `homebrew`. Do a `brew search` first to see if it's available, because `brew` manages all your packages and directories automatically.
  - **Multiple Sequence Alignment** - MAFFT.
- - **Tree computation** - RAxML, IQ-Tree, FastTree, BEAST package. Best installed using homebrew. 
+ - **Tree computation** - RAxML, IQ-Tree, FastTree, BEAST package. 
  - **Tree drawing** - FigTree, TempEst, R (ggtree library)
- - **Other** - CDhit
+ - **Other** - CDhit (picking unique sequences out of a `fasta` file), PAML (Misc. applications), AliViewer (a free version of Genious, but with much fewer functions), Atom (text file viewer)
+ 
+For Python users:
+ - Use Anaconda for automatic package management, and `conda install <package>` for library management.
+ - Useful packages: `pandas`, `numpy`, `Biopython`, `xlrd`
+ - [Jupyter](http://jupyter.org/) recommended for an IDE. 
