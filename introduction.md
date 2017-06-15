@@ -22,7 +22,7 @@ Having a good grasp on how to read, if not write, code is helpful, but not essen
  - Python, or R to start off. IMO, Python is superior to R in every way except for plotting. 
  - Github
 
-### Writing
+### Writing & Communication
 This is starting to become a sticking point in science, not just in terms of a scientist speaking to a non-specialist audience, but [specialists speaking to other specialists from other fields](http://blogs.agu.org/sciencecommunication/2010/10/26/dude-you-are-speaking-romulan/). 
 - An [excellent article](http://phenomena.nationalgeographic.com/2010/11/24/on-jargon-and-why-it-matters-in-science-writing/) on excessive use of jargon in biology.
  - [Convoluted jargon](http://www.cbronline.com/news/cloud/aas/mystifying-it-jargon-creates-costly-uk-business-ignorance-4655127/) is expensive - there is a very real material cost of confusion and miscommunication.
@@ -38,6 +38,8 @@ Stop using these words forever:
  - *novel* - of course it's novel, otherwise you wouldn't be writing about it. 
  - *morphology* - *"structure"*, *"form"*, *"shape"* are all fine. 
  - *enrich* - if you're a bioinformatician. Many bioinformatics papers use this as a catch-all verb when they can't think of a better word. 
+
+See [this](https://github.com/jtleek/datasharing) guideline on how to share data with a statistician.
 
 ## Software We Use
  - **Multiple Sequence Alignment** - MAFFT.
