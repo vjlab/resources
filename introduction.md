@@ -7,18 +7,20 @@ The point here is not so much the mere acquisition of facts, but the ability to 
 
 ## Things to Read up on
 ### Mathematical Concepts
-Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential.
+Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area.
  - Linear regression
  - Markov chains
  - Maximum likelihood (RAXML, IQ-Tree, FastTree - pros and cons. Provide references.)
  - Bayesian statistics (BEAST)
 
-### Computation for Virology
+### Phylogenetics Concepts
  - [How to interpret a phylogenetic tree](http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or [this](https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees) Khan academy video.
  - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
 
 ### Programming
 Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). The Youtube channel [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_) is a good place to start.
+ - Python, or R to start off. IMO, Python is superior to R in every way except for plotting. 
+ - Github
 
 ### Writing
 This is starting to become a sticking point in science, not just in terms of a scientist speaking to a non-specialist audience, but [specialists speaking to other specialists from other fields](http://blogs.agu.org/sciencecommunication/2010/10/26/dude-you-are-speaking-romulan/). 
@@ -27,14 +29,15 @@ This is starting to become a sticking point in science, not just in terms of a s
  - [Excessive jargon](https://www.fastcompany.com/3052242/the-secret-to-sounding-smart-using-simple-language) (are you sensing a theme here?) makes the author sound stupid anyway.
 
 My personal take:
- - Avoid jargon, or even big words, because this is not grade school and you don't have a teacher to give you a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms.
- - Don't write like a scientist: avoid passive voice, and stop using that writing style in publications which I think of as "academic deadpan". 
- - Don't try to sound smart, just be smart. Likewise, don't try to sound objective, just be objective.
+ - Avoid jargon, or even big words, because this is not grade school and you don't have a teacher to give you a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms. Don't try to sound smart, just be smart.
+ - Don't write like a scientist: stop using that writing style in publications which I think of as "academic deadpan". 
+ - [Avoid passive voice](https://www.reddit.com/r/AskScienceDiscussion/comments/1aq96g/why_is_scientific_writing_mainly_in_the_passive/), e.g. say *"I baked a cake"* instead of *"The cake was baked"* or *"The cake was baked by me"* - both of which sound super weird anyway! A common defence of using passive voice is that it "sounds objective". Don't try to sound objective, just be objective.
 
-List of words to stop using forever:
+Stop using these words forever:
  - *utilize* - *"use"* is fine. 
  - *novel* - of course it's novel, otherwise you wouldn't be writing about it. 
  - *morphology* - *"structure"*, *"form"*, *"shape"* are all fine. 
+ - *enrich* - if you're a bioinformatician. Many bioinformatics papers use this as a catch-all verb when they can't think of a better word. 
 
 ## Software We Use
  - **Multiple Sequence Alignment** - MAFFT.
