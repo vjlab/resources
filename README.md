@@ -23,7 +23,7 @@ Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mat
  - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
 
 ### Programming
-Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). 
+Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). Of all the items on this list, programming is the easiest to learn; preteens and teenagers learn it all the time in their regular school work.
  - Python, or R to start off. IMO, Python is superior to R in every way except for plotting. The Youtube channel [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_) is a good place to start.
  - Github
  - Bash terminal, and Linux/Mac OS organization. This is not as easy to pick up by yourself (but it's still not that hard).
