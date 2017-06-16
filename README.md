@@ -37,7 +37,7 @@ This is starting to become a sticking point in science, not just in terms of a s
 My personal take:
  - Avoid jargon, or even big words, because this is not grade school and you don't have a teacher to give you a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms. Don't try to sound smart, just be smart.
  - Don't write like a scientist: stop using that writing style in publications which I think of as "academic deadpan". 
- - [Avoid passive voice](https://www.reddit.com/r/AskScienceDiscussion/comments/1aq96g/why_is_scientific_writing_mainly_in_the_passive/), e.g. say *"I baked a cake"* instead of *"The cake was baked"* or *"The cake was baked by me"* - both of which sound super weird anyway! A common defence of using passive voice is that it "sounds objective". Don't try to sound objective, just be objective.
+ - [Avoid passive voice](https://www.reddit.com/r/AskScienceDiscussion/comments/1aq96g/why_is_scientific_writing_mainly_in_the_passive/). Say *"I baked a cake"* instead of *"The cake was baked"* or *"The cake was baked by me"* - both of which sound super weird anyway! A common defence of using passive voice is that it "sounds objective". Don't try to sound objective, just be objective.
 
 Stop using these words forever:
  - *utilize* - *"use"* is fine. 
