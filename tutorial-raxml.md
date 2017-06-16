@@ -16,8 +16,12 @@ raxmlHPC-AVX2
 ```
 
 ### Commonly Specified Options
-`-m <model>` - Specifies the nucleotide substitution model to be used. The most common model is `GTRGAMMA`
-`-p <random seed>` - Sets the random seed for reproducibility.
-`-s <input_alignment_file>` - Specify the input alignment file. RAxML accepts relaxed `phy`, `phy`, or `fasta`.
-`-N <num_of_alternative_runs>` - No. of alternative runs on different starting trees.
-`-T <num_of_threads>` - No. of threads. Make sure to set this at most the number of CPUs you have on your machine, or this will suffer a massive performance drop!
+- `-m <model>` - Specifies the nucleotide substitution model to be used. The most common model is `GTRGAMMA`
+- `-p <random seed>` - Sets the random seed for reproducibility.
+- `-s <input_alignment_file>` - Specify the input alignment file. RAxML accepts relaxed `phy`, `phy`, or `fasta`.
+- `-N <num_of_alternative_runs>` - No. of alternative runs on different starting trees.
+- `-T <num_of_threads>` - No. of threads. Make sure to set this at most the number of CPUs you have on your machine, or this will suffer a massive performance drop!
+
+### Bits and Bobs
+- As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from your file. 
+- RAxML will automatically change many (or all?) special characters like "/", "-", and so on to underscores. 
