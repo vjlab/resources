@@ -45,7 +45,9 @@ Stop using these words forever:
  - *morphology* - *"structure"*, *"form"*, *"shape"* are all fine. 
  - *enrich* - if you're a bioinformatician. Many bioinformatics papers use this as a catch-all verb when they can't think of a better word. 
 
-See [this](https://github.com/jtleek/datasharing) guideline on how to share data with a statistician.
+Other links:
+ - See [this](https://github.com/jtleek/datasharing) guideline on how to share data with a statistician.
+ - See [this](https://stackoverflow.com/help/mcve) stackoverflow post on how to ask a good question. It has a programming bent, but its principles are applicable to any other field - finding the right question to ask is not a trivial problem. 
 
 ## Software We Use
 In general, most of these are available using `homebrew`. Do a `brew search` first to see if it's available, because `brew` manages all your packages and directories automatically.
