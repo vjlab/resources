@@ -1,4 +1,4 @@
-# M3 High-Performance Computing (HPC) Quickstart (WIP)
+# M3 High-Performance Computing (HPC) Quickstart
 *Don Teng*
 
 *Last update: 15 June 2017*
