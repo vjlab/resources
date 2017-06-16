@@ -9,7 +9,7 @@ Last update: 15 June 2017<br>*
 ### Installation
 This is actually quite easy, but you're encouraged to get 2 versions:
 1. The point-and-click interface. Either download and install it as a normal bit of software, or use `brew install`. 
-2. The executable file, which `treesub` requires. This isn't the download link at the top of the `PAML` site (that's the GUI), it's hidden somewhere in the middle.  Ctrl-F "For the MAC, we have compiled a version for MAC OSX". 
+2. The executable file, which `treesub` requires. This isn't the download link at the top of the `PAML` site (that's the GUI), it's hidden somewhere in the middle.  Ctrl-F "For the MAC, we have compiled a version for MAC OSX". Fortunately, the Mac OS version has already been compiled, so it's ready to go after downloading (Linux or Windows users will have to continue with all that `Makefile` gibberish).
 
 ## Run
 (I've never run this before, so WIP).
@@ -29,8 +29,9 @@ You'll need to get:
 5. The [Eclipse](https://www.eclipse.org/downloads/?) IDE, which is not actually used by `treesub`; you need it to get a `treesub.jar` application.
 
 **Procedure**
-1. Open Eclipse, and open `build.xml` from inside the `treesub` folder.
-2. Run the file, either from the taskbar at the top of the window (look for the button that has a "play" icon on it), or select Run > Run from the toolbar at the top. You should see some output being printed out like:
+1. Download all the `treesub` files: download directly from Github, or `git clone https://github.com/tamuri/treesub`.
+2. Open Eclipse, and open `build.xml` from inside the `treesub` folder.
+3. Run the file, either from the taskbar at the top of the window (look for the button that has a "play" icon on it), or select Run > Run from the toolbar at the top. You should see some output being printed out like:
 
 ```
 Buildfile: /Users/dten0001/Documents/clones/treesub/build.xml
