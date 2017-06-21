@@ -12,8 +12,11 @@ The command below runs a 4-thread process on a single node:
 
 ```
 module load raxml/8.2.9
-raxmlHPC-AVX2 
+raxmlHPC-PTHREADS -T 4 -f a -m GTRGAMMA -p 12345 -x 12345 -N 10 -s input_file.fasta -n output_file.txt
 ```
+
+Don't forget to set the `SBATCH` parameters: 
+
 
 ### Commonly Specified Options
 - `-m <model>` - Specifies the nucleotide substitution model to be used. The most common model is `GTRGAMMA`
