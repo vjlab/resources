@@ -12,7 +12,7 @@ The point here is not so much the mere acquisition of facts, but the ability to 
 
 ## Things to Read up on
 ### Mathematical Concepts
-Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area.
+Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient. 
  - Linear regression
  - Markov chains
  - Maximum likelihood (RAXML, IQ-Tree, FastTree - pros and cons. Provide references.)
@@ -58,5 +58,5 @@ In general, most of these are available using `homebrew`. Do a `brew search` fir
  
 ## For Python users:
  - Use Anaconda for automatic package management. [Conda environments](https://conda.io/docs/using/envs.html) are also great for controlling your packages, and version control between Py36 and Py27. 
- - Useful packages: `pandas`, `numpy`, `Biopython`, `xlrd`, `scipy`
+ - Useful packages: `pandas`, `numpy`, `Biopython`, `xlrd`, `scipy`, `scikit-bio`
  - [Jupyter](http://jupyter.org/) recommended as an IDE. 
