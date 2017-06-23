@@ -25,6 +25,18 @@ Don't forget to set the `SBATCH` parameters:
 - `-N <num_of_alternative_runs>` - No. of alternative runs on different starting trees.
 - `-T <num_of_threads>` - No. of threads. Make sure to set this at most the number of CPUs you have on your machine, or this will suffer a massive performance drop!
 
+## Performance Tests
+Conducted some speed tests on M3 using 50 randomly selected Flu B Yam HA sequences, all with beagle-GPU activated. Results:
+
+| Run               | basic   |   SSE   |   AVX   |
+| ----------------- | ------- | ------- | ------- |
+| 1 process, 1 CPU  | ...     | 3:44:30 | ...     |
+| 1 process, 4 CPU  | 1:41:55 | 1:05:47 | 1:04:56 |
+| 1 process, 8 CPU  | 0:53:32 | 0:40:38 | 0:59:47 |
+| 1 process, 16 CPU | 0:48:43 | 0:48:48 | 0:59:52 |
+
+Looks like the best bet is to go with 1-process, 8-CPU with PTHREADS-SSE. As noted in the RAxML documentation, performance does not necessarily decrease as the number of CPUs increases, as communication overhead between CPUs would increase as well. This will differ from dataset to dataset, but hopefully not by much.
+
 ### Bits and Bobs
 - As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from your file. 
 - RAxML will automatically change many (or all?) special characters like "/", "-", and so on to underscores. 
