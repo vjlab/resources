@@ -1,5 +1,5 @@
 # Tips and Tricks for Computational Work
-...or, stuff I wish someone had told me over the years.
+...or, stuff I wish someone had told me over the years from the very beginning.
 
 ### Adding to PATH (Mac OS)
 Adding an executable to your PATH allows you to run that executable from any directory, instead of having to cd into the directory where the executable lives all the time. In this example, we'll create a simple bash script which just prints "hello world". We'll also create a folder on the desktop which we'll store all our executables in called `bin`, and add this `bin` folder to the path.
