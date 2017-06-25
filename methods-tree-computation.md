@@ -1,4 +1,14 @@
-# Tree Computation: IQ-Tree, FastTree, RAxML and BEAST
+# Tree Computation
+## Maximum Likelihood & Bayesian Paradigms for Tree Computation
+Note that these are not two opposing frameworks, nor are they the *only* frameworks for the interpretation of probability.  The (opposing) counterpart to Bayesian statistics is frequentist statistics, which is out of the scope of this tutorial, but quite nicely summed up as follows:
+
+![xkcd1132](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
+
+The bottom line is:
+- **Maximum likelihood** methods compute the most likely tree that evolved the observed sequence data. Answers the question: "*Out of all these models, which is the most likely one to have arisen out of the given data?*" Note that ML can only compare between models to pick the most appropriate one - it is unable to assess the correctness of a model.  
+- **Bayesian** methods have an extra step of modeling the uncertainty we have about any previous relevant information as a probability distribution by itself. This is called the *prior*. 
+
+*Note: all this is actually much easier in maths, because many things get lost in translation when attempting to convert these concepts into English. Ultimately, it's all just calculus.*
 
 ## An Overview of Tree Computing Software
 ### FastTree
@@ -21,12 +31,4 @@
  - With a nice point-and-click interface, so probably the most user-friendly. Also has helper programs `BEAUTi` and `Tracer`.
  - Also very slow, but anecdotally faster than RAxML
  - Has GPU support, which on benchmark tests, gives a 4x speedup on M3's K80 GPUs.
- 
-## Maximum Likelihood & Bayesian Paradigms for Tree Computation
-Note that these are not two opposing frameworks, nor are they the *only* frameworks for the interpretation of probability.  The (opposing) counterpart to Bayesian statistics is frequentist statistics, which is out of the scope of this tutorial, but quite nicely summed up as follows:
 
-![xkcd1132](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
-
-The bottom line is:
-- **Maximum likelihood** methods compute the most likely tree that evolved the observed sequence data. Note that the likelihood of a tree is not the probability of its being correct. 
-- **Bayesian** methods
