@@ -38,7 +38,7 @@ The following is a list of frequently-used-software, with their use in parenthes
    brew install my_software
 ```
 
-   To see if the `homebrew` version of your software can be installed this way, use:
+   To see if the `homebrew` has youtr software available:
 
 ```
    brew search my_software
