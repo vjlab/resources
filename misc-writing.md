@@ -15,10 +15,11 @@ Stop using these words forever:
  - *novel* - of course it's novel, otherwise you wouldn't be writing about it. 
  - *morphology* - *"structure"*, *"form"*, *"shape"* are all fine. 
  - *enrich* - if you're a bioinformatician. Many bioinformatics papers use this as a catch-all verb when they can't think of a better word. 
+ - *homologous*/*conserved* - *similar* is fine. These terms may have some additional connotations in their usual biological contexts, but from a computational point of view, these connotations are usually beyond the scope of the study (i.e. may be true, but we don't care for the moment; can be left for "further research"). "Sequences X and Y showed homologous DNA sections" means exactly the same as "Sequences X and Y showed similar DNA sections", but one is more understandable. 
  
 I hate the following words for their non-specificity. A rule of thumb is: if you can replace any of these words with the word "*stuff*", then it's a useless word. A common sentence is, for example: *"we did phylogenetic analysis on..."*, which doesn't tell you much more than *"we did stuff."*
  - *Analysis/study/investigate* - if it's not an operative word that tells the reader what actions I took, it's useless. I'd only use these if my intention is exactly to hide unnecessary, or not-yet-necessary, detail - but this is rarely the case in a publication, or in software documentation (where the point is exactly to tell the reader *all* the necessary steps). 
- - *Model* - Again, too vague. Almost all of applied maths is modelling. 
+ - *Model* - Again, too vague. Almost all of applied maths is modelling.
 
 Other links:
  - See [this](https://github.com/jtleek/datasharing) guideline on how to share data with a statistician.
