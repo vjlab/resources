@@ -8,19 +8,21 @@ This first introductory page contains a bunch of essential readings to get the b
 
 Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (for programming), Youtube. 
 
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help you, but consider that a privilege, not an entitlement. No matter your personal goals or career aspirations, sthrive to be able to solve problems that other people can't, because, ultimately, the whole point is to become to best at what you do - it's hard to become the best if you're dependent on others to deliver information to you! (Also, once you do become the best, by definition, you can only keep learning by yourself because there'll be no one else good enough to teach you). Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
+The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help you, but consider that a privilege, not an entitlement. No matter your personal goals or career aspirations, sthrive to be able to solve problems that other people can't, because, ultimately, the whole point is to become to best at what you do - it's hard to become the best if you're dependent on others to deliver information to you! Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
 
 ## Things to Read up on
 ### Mathematical Concepts
 Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient. 
  - Linear regression
  - Markov chains
- - Maximum likelihood (RAXML, IQ-Tree, FastTree - pros and cons. Provide references.)
- - Bayesian statistics (BEAST)
+ - Maximum likelihood
+ - Bayesian statistics
 
 ### Phylogenetics Concepts
+ - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a pretty good starting point.
  - [How to interpret a phylogenetic tree](http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or [this](https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees) Khan academy video.
  - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
+ - [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering). Otherwise known as "[neighbour joining (NJ)](https://en.wikipedia.org/wiki/Neighbor_joining)" in phylogenetics literature. We don't use NJ trees very often, but it's a good conceptual starting point, and is easy enough to do by hand. 
 
 ### Programming
 Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). Of all the items on this list, programming is the easiest to learn; preteens and teenagers learn it all the time in their regular school work.
