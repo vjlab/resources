@@ -35,19 +35,19 @@ The following is a list of frequently-used-software, with their use in parenthes
  - **`homebrew` (Mac OSX package manager)** - [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, use:
 
 ```
-brew install my_software
+   brew install my_software
 ```
 
-To see if the `homebrew` version of your software can be installed this way, use:
+   To see if the `homebrew` version of your software can be installed this way, use:
 
 ```
-brew search my_software
+   brew search my_software
 ```
 
-Many of the computational programs are executables, so using `homebrew` will also save you having to mess with your `$PATH` and all that (if you don't know what that is, all the more reason to use `homebrew` - so you don't have to mess around with all that!)
+   Many of the computational programs are executables, so using `homebrew` will also save you having to mess with your `$PATH` and all that (if you don't know what that is, all the more reason to use `homebrew` - so you don't have to mess around with all that!)
 
- - **MAFFT (Multiple sequence alignment)** - executable. Get it via `homebrew`. 
- - **RAxML (tree computation using maximum likelihood)** - This is available on M3, so installing this is optional. Allegedly available via `homebrew`, but I never managed to get the `homebrew`-downloaded version working. In any case, it's so terribly slow that you may prefer to send all RAxML jobs to M3 anyway. In any case, [here's](https://github.com/vjlab/resources/blob/master/software-raxml.md) my RAxML installation and quickstart tutorial, because it's probably the clunkiest software on this list - difficult to install and difficult to use. 
+ - **MAFFT** - For multiple sequence alignment. An executable. Get it via `homebrew`. 
+ - **RAxML** - For computing trees using maximum likelihood. This is available on M3, so installing this is optional. Allegedly available via `homebrew`, but I never managed to get the `homebrew`-downloaded version working. In any case, it's so terribly slow that you may prefer to send all RAxML jobs to M3 anyway. In any case, [here's](https://github.com/vjlab/resources/blob/master/software-raxml.md) my RAxML installation and quickstart tutorial, because it's probably the clunkiest software on this list - difficult to install and difficult to use. 
  - **IQ-Tree** - For tree computation using maximum likelihood. An executable. Get it via `homebrew`. 
  - **FastTree** - Fast tree computation. An executable. Get it via `homebrew`. 
  - **BEAST package** - For tree computation using Bayesian statistics. Also has other secondary uses related to the understanding its own output, because the algorithms used to compute a Bayesian tree are not easy to understand. Version 1.8.4 is available [here](http://beast.bio.ed.ac.uk/); that BEAST package also consists of accessory programs `Tracer` v1.6 and `BEAGLE` v2.1. Note that there's a [version 2](https://www.beast2.org/) available, though we're mostly still using version 1 so far. 
