@@ -8,7 +8,7 @@ This first introductory page contains a bunch of essential readings to get the b
 
 Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (for programming), Youtube. 
 
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help you, but consider that a privilege, not an entitlement. No matter your personal goals, career aspirations, or stage in life, the whole point is to be able to solve problems that other people can't. Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
+The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help you, but consider that a privilege, not an entitlement. No matter your personal goals or career aspirations, sthrive to be able to solve problems that other people can't, because, ultimately, the whole point is to become to best at what you do - it's hard to become the best if you're dependent on others to deliver information to you! (Also, once you do become the best, by definition, you can only keep learning by yourself because there'll be no one else good enough to teach you). Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
 
 ## Things to Read up on
 ### Mathematical Concepts
@@ -28,31 +28,29 @@ Having a good grasp on how to read, if not write, code is helpful, but not essen
  - Github
  - Bash terminal, and Linux/Mac OS organization. This is not as easy to pick up by yourself (but it's still not that hard).
 
-### Writing & Communication
-This is starting to become a sticking point in science, not just in terms of a scientist speaking to a non-specialist audience, but [specialists speaking to other specialists from other fields](http://blogs.agu.org/sciencecommunication/2010/10/26/dude-you-are-speaking-romulan/). 
-- An [excellent article](http://phenomena.nationalgeographic.com/2010/11/24/on-jargon-and-why-it-matters-in-science-writing/) on excessive use of jargon in biology.
- - [Convoluted jargon](http://www.cbronline.com/news/cloud/aas/mystifying-it-jargon-creates-costly-uk-business-ignorance-4655127/) is expensive - there is a material cost of confusion and miscommunication.
- - [Excessive jargon](https://www.fastcompany.com/3052242/the-secret-to-sounding-smart-using-simple-language) (are you sensing a theme here?) makes the author sound stupid anyway.
-
-My personal take:
- - Avoid jargon, or even big words, because this is not grade school and you don't have a teacher to give you a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms. Don't try to sound smart, just be smart.
- - Don't write like a scientist: stop using that writing style in publications which I think of as "academic deadpan". 
- - [Avoid passive voice](https://www.reddit.com/r/AskScienceDiscussion/comments/1aq96g/why_is_scientific_writing_mainly_in_the_passive/). Say *"I baked a cake"* instead of *"The cake was baked"* or *"The cake was baked by me"* - both of which sound super weird anyway! A common defence of using passive voice is that it "sounds objective". Don't try to sound objective, just be objective.
-
-Stop using these words forever:
- - *utilize* - *"use"* is fine. 
- - *novel* - of course it's novel, otherwise you wouldn't be writing about it. 
- - *morphology* - *"structure"*, *"form"*, *"shape"* are all fine. 
- - *enrich* - if you're a bioinformatician. Many bioinformatics papers use this as a catch-all verb when they can't think of a better word. 
-
-Other links:
- - See [this](https://github.com/jtleek/datasharing) guideline on how to share data with a statistician.
- - See [this](https://stackoverflow.com/help/mcve) stackoverflow post on how to ask a good question. It has a programming bent, but its principles are applicable to any other field - finding the right question to ask is not a trivial problem. 
-
 ## Software We Use
-In general, most of these are available using `homebrew`. Do a `brew search` first to see if it's available, because `brew` manages all your packages and directories automatically.
- - **Multiple Sequence Alignment** - MAFFT.
- - **Tree computation** - RAxML, IQ-Tree, FastTree, BEAST package. 
+In general, try not to install computational software via ESS. 
+
+ - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. 
+ - **`homebrew` (Mac OSX package manager)** - [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, use:
+
+```
+brew install my_software
+```
+
+To see if the `homebrew` version of your software can be installed this way, use:
+
+```
+brew search my_software
+```
+
+Many of the computational programs are executables, so using `homebrew` will also save you having to mess with your `$PATH` and all that (if you don't know what that is, all the more reason to use `homebrew` - so you don't have to mess around with all that!)
+
+ - **MAFFT (Multiple sequence alignment)** - executable. Get it via `homebrew`. 
+ - **RAxML (tree computation using maximum likelihood)** - This is available on M3, so installing this is optional. Allegedly available via `homebrew`, but I never managed to get the `homebrew`-downloaded version working. In any case, it's so terribly slow that you may prefer to send all RAxML jobs to M3 anyway. In any case, [here's](https://github.com/vjlab/resources/blob/master/software-raxml.md) my RAxML installation and quickstart tutorial, because it's probably the clunkiest software on this list - difficult to install and difficult to use. 
+ - **IQ-Tree (tree computation using maximum likelihood)** - executable. Get it via `homebrew`. 
+ - **FastTree (tree computation)** - executable. Get it via `homebrew`. 
+ - **Tree computation** - FastTree, BEAST package. 
  - **Tree drawing** - FigTree, TempEst, R (ggtree library)
  - **Other** - CDhit (picking unique sequences out of a `fasta` file), PAML (Misc. applications), AliViewer (a free version of Genious, but with much fewer functions), Atom (text file viewer)
  
