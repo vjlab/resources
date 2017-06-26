@@ -33,16 +33,16 @@ Having a good grasp on how to read, if not write, code is helpful, but not essen
 Of all the items on this list, programming is the easiest to learn; preteens and teenagers learn it all the time in their regular school work. But programming is not a static set of skills which you learn once and then rely on for the rest of your life: today's cutting-edge technology will become pedestrian in about five years or less. 
 
 ## Software We Use
-The following is a list of frequently-used-software, with their use in parentheses. In general, try not to install computational software via ESS. 
+The following is a list of frequently-used-software. In general, try not to install computational software via ESS. Unfortunately, the installation instructions shown here are only for Macs. 
 
  - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. Get these first and foremost, because many of the computational programs require these to install properly. 
- - **`homebrew` (Mac OSX package manager)** - [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, use:
+ - **`homebrew`** - A Mac OS package manager. Get it [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, use:
 
 ```
    brew install my_software
 ```
 
-   To see if the `homebrew` has youtr software available:
+   To see if the `homebrew` has your software available:
 
 ```
    brew search my_software
