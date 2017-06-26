@@ -28,7 +28,13 @@ The important SLURM `#SBATCH` parameters to set are:
 #SBATCH --mem-per-cpu=10000
 ```
 
-This specifies the job to run as one process (`ntask=1`), issued to a single node, and requests 8 CPUs from that node. 
+This specifies the job to run as one process (`ntask=1`), issued to a single node, and requests 8 CPUs from that node.
+
+If you're just running the `RAxML` command above on your own computer:
+
+```
+raxml -T 8 -f a -m GTRGAMMA -p 12345 -x 12345 -N 10 -s input_file.fasta -n output_file.txt
+```
 
 ### Commonly Specified RAXML Options
 To see a full list of options and their explanations, use `ramxml -help`. 
