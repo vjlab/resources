@@ -63,4 +63,16 @@ Looks like the best bet is to go with 1-process, 8-CPU with PTHREADS-SSE. As not
 
 ### Bits and Bobs
 - As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from your file. 
-- RAxML will automatically change many (or all?) special characters like "/", "-", and so on to underscores. 
+- RAxML will automatically change many (or all?) special characters like "/", "-", and so on to underscores. This can play merry hell with your pipeline since the last portion of record names are usually collection dates, which means that a name which was initially nicely formatted and delimited by "|", like:
+
+```
+B/Arizona/06/2016|ID12345|NorthAmerica|2016-11-01
+```
+
+gets converted by `RAxML` into:
+
+```
+B_Arizona_06_2016_ID12345_NorthAmerica_2016_11_01
+```
+
+Which will become difficult to deal with if the next program that you're going to use is `TempEst`, because `TempEst` needs to guess dates by reading the format of the name. There appears to be no easy way around this at the moment. 
