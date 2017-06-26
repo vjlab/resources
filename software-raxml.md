@@ -40,7 +40,7 @@ raxml -T 8 -f a -m GTRGAMMA -p 12345 -x 12345 -N 10 -s input_file.fasta -n outpu
 To see a full list of options and their explanations, use `ramxml -help`. 
 - `-m <model>` - Specifies the nucleotide substitution model to be used. The most common model is `GTRGAMMA`.
 - `-f <algorithm>` - Specifies the tree-computing algorithm to use; this is a bit of a black box. For most cases, we use `-f a`, to do "rapid Bootstrap analysis and search for best-scoring ML tree in one program run" (from `raxml -help`), simply because it purports to be the fastest ("rapid"). 
-- `-p <random seed>` - Sets the random seed for reproducibility.
+- `-p <random seed>` - Sets the random seed for reproducibility. It's good practice, but not essential, to use a prime number, because of [technicl reasons](https://en.wikipedia.org/wiki/Lehmer_random_number_generator).
 - `-s <input_alignment_file>` - Specify the input alignment file. RAxML accepts relaxed `phy`, `phy`, or `fasta`.
 - `-N <num_of_alternative_runs>` - No. of alternative runs on different starting trees.
 - `-T <num_of_threads>` - No. of threads. Make sure to set this at most the number of CPUs you have on your machine, or this will suffer a massive performance drop!
@@ -54,7 +54,7 @@ Conducted some speed tests on M3 using 50 randomly selected Flu B Yam HA sequenc
 
 | Run               | basic   |   SSE   |   AVX   |
 | ----------------- | ------- | ------- | ------- |
-| 1 process, 1 CPU  | ...     | 3:44:30 | ...     |
+| 1 process, 1 CPU  | 4:39:19 | 3:44:30 | ...     |
 | 1 process, 4 CPU  | 1:41:55 | 1:05:47 | 1:04:56 |
 | 1 process, 8 CPU  | 0:53:32 | 0:40:38 | 0:59:47 |
 | 1 process, 16 CPU | 0:48:43 | 0:48:48 | 0:59:52 |
