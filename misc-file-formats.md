@@ -21,6 +21,11 @@ The hassle of cleaning names is probably the most tedious, but necessary, chore.
  - nucleotide characters other than 'a', 'c', 'g', 't' (CDHit)
  - Duplicate sequences (MAFFT)
  
+### Program Quirks To Pre-empt
+ - `CD-Hit` will refuse to cooperate if you give it duplicate sequences, or sequences with dashes '-' in them.
+ - `FigTree` will cut off record names if there's white spaces in the name. For instance, `B/Arizona/02/2016|ID123|North America|2016-12-31` will become `B/Arizona/02/2016|ID123|North`, because of the space in `North America`. 
+ - `RAxML` will convert all (or almost all) special characters to underscores. This can be a problem if you want to open the output of `RAxML` in, say, `TempEst`, because `TempEst` needs to guess the dates from the record names by being told the name formats. E.g. We usually have to tell it that the date in the record name `B/Arizona/02/2016|ID123|North America|2016-12-31` is the last section, where the record name is split into sections (or "delimited") by "|". If all special characters get converted to underscores, this messes things up considerably.
+
 ## Frequently-used File Formats
 ### Sequence Data
 **`.fasta`** - probably the most important file format. Example:
