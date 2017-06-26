@@ -8,7 +8,7 @@ This first introductory page contains a bunch of essential readings to get the b
 
 Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (for programming), Youtube. 
 
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help you, but consider that a privilege, not an entitlement. No matter your personal goals or career aspirations, sthrive to be able to solve problems that other people can't, because, ultimately, the whole point is to become to best at what you do - it's hard to become the best if you're dependent on others to deliver information to you! Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
+The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but consider that a privilege, not an entitlement. Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
 
 ## Things to Read up on
 ### Mathematical Concepts
