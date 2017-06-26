@@ -29,9 +29,9 @@ Having a good grasp on how to read, if not write, code is helpful, but not essen
  - Bash terminal, and Linux/Mac OS organization. This is not as easy to pick up by yourself (but it's still not that hard).
 
 ## Software We Use
-In general, try not to install computational software via ESS. 
+The following is a list of frequently-used-software, with their use in parentheses. In general, try not to install computational software via ESS. 
 
- - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. 
+ - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. Get these first and foremost, because many of the computational programs require these to install properly. 
  - **`homebrew` (Mac OSX package manager)** - [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, use:
 
 ```
@@ -48,11 +48,14 @@ Many of the computational programs are executables, so using `homebrew` will als
 
  - **MAFFT (Multiple sequence alignment)** - executable. Get it via `homebrew`. 
  - **RAxML (tree computation using maximum likelihood)** - This is available on M3, so installing this is optional. Allegedly available via `homebrew`, but I never managed to get the `homebrew`-downloaded version working. In any case, it's so terribly slow that you may prefer to send all RAxML jobs to M3 anyway. In any case, [here's](https://github.com/vjlab/resources/blob/master/software-raxml.md) my RAxML installation and quickstart tutorial, because it's probably the clunkiest software on this list - difficult to install and difficult to use. 
- - **IQ-Tree (tree computation using maximum likelihood)** - executable. Get it via `homebrew`. 
- - **FastTree (tree computation)** - executable. Get it via `homebrew`. 
- - **Tree computation** - FastTree, BEAST package. 
- - **Tree drawing** - FigTree, TempEst, R (ggtree library)
- - **Other** - CDhit (picking unique sequences out of a `fasta` file), PAML (Misc. applications), AliViewer (a free version of Genious, but with much fewer functions), Atom (text file viewer)
+ - **IQ-Tree** - For tree computation using maximum likelihood. An executable. Get it via `homebrew`. 
+ - **FastTree** - Fast tree computation. An executable. Get it via `homebrew`. 
+ - **BEAST package** - For tree computation using Bayesian statistics. Also has other secondary uses related to the understanding its own output, because the algorithms used to compute a Bayesian tree are not easy to understand. Version 1.8.4 is available [here](http://beast.bio.ed.ac.uk/); that BEAST package also consists of accessory programs `Tracer` v1.6 and `BEAGLE` v2.1. Note that there's a [version 2](https://www.beast2.org/) available, though we're mostly still using version 1 so far. 
+ - **FigTree** - a nice, lightweight program for tree drawing. Simple installation. 
+ - **TempEst** - another nice program for tree drawing. We use it over FigTree because of one particular "find best root" function that's not available in `FigTree`. 
+ - **CDhit** - For clustering DNA sequences by similarity. An executable; get it via `homebrew`. 
+ - **PAML** - Multi-purpose analysis package with miscellaneous uses. 
+ - **AliViewer** - Allows you to look at a `.fasta` file of sequence data. 
  
 ## For Python users:
  - Use Anaconda for automatic package management. [Conda environments](https://conda.io/docs/using/envs.html) are also great for controlling your packages, and version control between Py36 and Py27. 
