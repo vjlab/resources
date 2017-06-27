@@ -1,4 +1,5 @@
-# Get Your Machine Python Ready
+# Python Resources
+### Get Your Machine Python Ready
 [Source](http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/)
 1. Install Xcode
 
@@ -28,3 +29,6 @@ brew install git
 ```
 
 7. Set a PYTHONPATH.
+
+### Comprehensive Matplotlib Tutorial
+At this excellent repo, [anatomy of matplotlib](https://github.com/WeatherGod/AnatomyOfMatplotlib)  
