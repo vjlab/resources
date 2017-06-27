@@ -2,16 +2,17 @@
 
 ### Jargon Is Your Enemy
 This is starting to become a sticking point in science, not just in terms of a scientist speaking to a non-specialist audience, but [specialists speaking to other specialists from other fields](http://blogs.agu.org/sciencecommunication/2010/10/26/dude-you-are-speaking-romulan/). 
-- An [excellent article](http://phenomena.nationalgeographic.com/2010/11/24/on-jargon-and-why-it-matters-in-science-writing/) on excessive use of jargon in biology.
+- An [excellent article](http://phenomena.nationalgeographic.com/2010/11/24/on-jargon-and-why-it-matters-in-science-writing/) on excessive use of jargon in biology - excessive because most of biological jargon are just simple words made to sound sophisticated for its own sake (or simple words that got latinized). 
  - [Convoluted jargon](http://www.cbronline.com/news/cloud/aas/mystifying-it-jargon-creates-costly-uk-business-ignorance-4655127/) is expensive - there is a material cost of confusion and miscommunication.
- - [Excessive jargon](https://www.fastcompany.com/3052242/the-secret-to-sounding-smart-using-simple-language) (are you sensing a theme here?) makes the author sound stupid anyway.
+ - [Excessive jargon](https://www.fastcompany.com/3052242/the-secret-to-sounding-smart-using-simple-language) makes the author sound stupid anyway, because readers can tell if an author is trying to mask his own lack of understanding, or is unable to break down his concepts into simpler terms. 
  
 In summary, the point of using jargon in the first place is just as shorthand, when specialists who know what they're talking about want to refer to the same thing repeatedly. When the costs of jargon (alienating your readership, sounding stupid, potential for miscommunication) start to outweigh the (marginal) benefits, stop using jargon.
 
 ### My Personal Take
- - Avoid jargon, or even big words, because this is not grade school and you don't have a teacher to give you a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms. 
- - Don't write like a scientist: stop using that writing style in publications which I think of as "academic deadpan". 
- - [Avoid passive voice](https://www.reddit.com/r/AskScienceDiscussion/comments/1aq96g/why_is_scientific_writing_mainly_in_the_passive/). Say *"I baked a cake"* instead of *"The cake was baked"* or *"The cake was baked by me"* - both of which sound super weird anyway! A common defence of using passive voice is that it "sounds objective". Don't try to sound objective, just be objective.
+ - I avoid jargon, or even big words, because this is not grade school and I don't have a teacher to give me a gold star for showing off your vocabulary. On the contrary, you're more likely, as a reader, to be impressed by a writer who can explain complex ideas in simple terms. 
+ - Don't write like a scientist. I particularly dislike that writing style in publications which I think of as "academic deadpan". 
+ - [Avoid passive voice](https://www.reddit.com/r/AskScienceDiscussion/comments/1aq96g/why_is_scientific_writing_mainly_in_the_passive/).  *"I baked a cake"*, instead of *"The cake was baked"* or *"The cake was baked by me"*, sounds better. A common defence of using passive voice is that it "sounds objective". Don't try to sound objective, just be objective.
+ - This applies in a surprising number of fields (personal finance, corporate finance, programming): *if you can't explain your plan, it's a bad plan.* Sometimes, an even more restrictive heuristic is used: *if you can't explain your plan in 30 seconds, it's a bad plan.*
 
 ### Stop Using These Words Forever
  - *utilize* - *"use"* is fine. 
