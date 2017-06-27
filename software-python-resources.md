@@ -30,5 +30,6 @@ brew install git
 
 7. Set a PYTHONPATH.
 
-### Comprehensive Matplotlib Tutorial
-At this excellent repo, [anatomy of matplotlib](https://github.com/WeatherGod/AnatomyOfMatplotlib)  
+### Really Useful Links
+ - [Anatomy of matplotlib](https://github.com/WeatherGod/AnatomyOfMatplotlib) - a comprehensive Matplotlib tutorial.
+ - [Python PEP8 Style Guide](https://www.python.org/dev/peps/pep-0008/) - Write all your python code according to this format, forever. The strength of Python is actually in readibility and accessibility, *not* raw computing power (C or FORTRAN has Python beat in these respects). The idea is that *development time* spent writing and debugging is much more than *computational run time*, so writing modular, systematic, and well-commentated code will overall save more man-hours than just going for raw power.  If code is written and commentated poorly, then this advantage is lost.
