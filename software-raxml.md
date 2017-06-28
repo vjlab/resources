@@ -50,7 +50,7 @@ From previous tests (see next section), the command given above has been optimiz
 - For number of threads `-T`, anywhere between 4 and 16 is a good number. Note that it's not always the more the merrier - with SSE enabled in particular, the computational cost of managing more and more CPUs will start to exceed any time savings gained from using more CPUs. 
 
 ## Performance Tests
-Conducted some speed tests on M3 using 50 randomly selected Flu B Yam HA sequences, all with beagle-GPU activated. Results:
+Conducted some speed tests on M3 using 50 randomly selected Flu B Yam HA sequences. Results:
 
 | Run               | basic   |   SSE   |   AVX   |
 | ----------------- | ------- | ------- | ------- |
