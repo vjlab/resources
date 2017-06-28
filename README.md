@@ -4,15 +4,16 @@
 
 This first introductory page contains a bunch of essential readings to get the basics first. But before we begin, read this article first: *[What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)*, by Matt Gemmell.
 
-Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (for programming), Youtube. 
+Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but consider that a privilege, not an entitlement. Experiencing the frustration of multiple dead-ends, having to make decisions with incomplete (or no) information, or being dropped in the deep end with no backup, is all part of the process. 
+The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. These Youtube videos are made by people who make a living out of producing such tutorials and content, so they'll definitely be much better at *teaching* stuff. 
+
+Unfortunately, almost all the software we use is not very well-documented, or the documentation is written in a way that's only accessible to intermediate users. In this case, there's usually a "default setting" that work for most cases - go with that. Otherwise, enter random numbers just to see what errors you get - or if the program returns garbage, this is good information too, because you can then figure out *why* it's garbage.
 
 ## About This Repo
 This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of progression, you should be able to start wherever you want. Some tutorials have recommended prerequisites, these will be listed near the top of that tutorial. 
 
 The resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
-
 
 ## Things to Read up on
 Realistically, the time frames for finishing all the items to read up on in this section are something like:
@@ -21,14 +22,14 @@ Realistically, the time frames for finishing all the items to read up on in this
  - Subject matter expert - the rest of your life
 
 ### Mathematical Concepts
-Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk).  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient. Read up on the Wikipedia articles on the following, and any tutorial videos you can find. 
+Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient. Read up on the Wikipedia articles on the following, and any tutorial videos you can find. 
  - Linear regression
  - Markov chains
  - Maximum likelihood
  - Bayesian statistics
  - MCMC - the most difficult of the lot. Don't bother if you don't need to know this. 
  
-The domain-specific application of these to phylgenetics will be covered in tutorials available in this repo (coming soon). 
+The domain-specific application of these to phylogenetics will be covered in tutorials available in this repo (coming soon). 
 
 ### Phylogenetics Concepts
  - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a pretty good starting point. Admittedly, passive reading is a pretty dry and ineffective way to learn; there are "learn by doing"-style tutorials in the works. 
