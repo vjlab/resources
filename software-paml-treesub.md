@@ -7,8 +7,8 @@ Last update: 15 June 2017<br>*
 ...stands for *Phylogenetic Analysis by ML*. It has several uses, such as inferring ancestral sequences based on modern sequences. 
 
 ### Installation
-This is actually quite easy, but you're encouraged to get 2 versions:
-1. The point-and-click interface. Either download and install it as a normal bit of software, or use `brew install`. 
+This is actually quite easy. Get 2 versions:
+1. The point-and-click interface, called `PamlX`. Download and install it as a normal bit of software. However, this really is only the interface - if you try to run it, it will ask where you've placed the executables. That's in step 2:
 2. The executable file, which `treesub` requires. This isn't the download link at the top of the `PAML` site (that's the GUI), it's hidden somewhere in the middle.  Ctrl-F "For the MAC, we have compiled a version for MAC OSX". Fortunately, the Mac OS version has already been compiled, so it's ready to go after downloading (Linux or Windows users will have to continue with all that `Makefile` gibberish).
 
 ## Run
