@@ -6,9 +6,7 @@ This first introductory page contains a bunch of essential readings to get the b
 
 Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. These Youtube videos are made by people who make a living out of producing such tutorials and content, so they'll definitely be much better at *teaching* stuff. 
-
-Unfortunately, almost all the software we use is not very well-documented, or the documentation is written in a way that's only accessible to intermediate users. In this case, there's usually a "default setting" that work for most cases - go with that. Otherwise, enter random numbers just to see what errors you get - or if the program returns garbage, this is good information too, because you can then figure out *why* it's garbage.
+The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. These Youtube videos are made by people who make a living out of producing such tutorial videos, so they'll definitely be much better at *teaching* stuff. 
 
 ## About This Repo
 This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of progression, you should be able to start wherever you want. Some tutorials have recommended prerequisites, these will be listed near the top of that tutorial. 
@@ -22,7 +20,7 @@ Realistically, the time frames for finishing all the items to read up on in this
  - Subject matter expert - the rest of your life
 
 ### Mathematical Concepts
-Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient. Read up on the Wikipedia articles on the following, and any tutorial videos you can find. 
+Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient; even Wikipedia is a little overkill.
  - Linear regression
  - Markov chains
  - Maximum likelihood
@@ -32,7 +30,7 @@ Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanaca
 The domain-specific application of these to phylogenetics will be covered in tutorials available in this repo (coming soon). 
 
 ### Phylogenetics Concepts
- - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a pretty good starting point. Admittedly, passive reading is a pretty dry and ineffective way to learn; there are "learn by doing"-style tutorials in the works. 
+ - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a good starting point - it's sufficiently comprehensive that, at least, you'll be able to pinpoint what you don't know and look for that elsewhere. Also, admittedly, passive reading is a pretty dry and ineffective way to learn; there are "learn by doing"-style tutorials in the works. 
  - [How to interpret a phylogenetic tree](http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or [this](https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees) Khan academy video.
  - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
  - [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering). Otherwise known as "[neighbour joining (NJ)](https://en.wikipedia.org/wiki/Neighbor_joining)" in phylogenetics literature. We don't use NJ trees very often, but it's a good conceptual starting point, and is easy enough to do by hand. 
@@ -44,7 +42,7 @@ Having a good grasp on how to read, if not write, code is helpful, but not essen
  - Bash terminal, and Linux/Mac OS organization.
 
 ## Software We Use
-The following is a list of frequently-used-software. In general, try not to install computational software via ESS. Unfortunately, the installation instructions shown here are only for Macs. 
+The following is a list of frequently-used-software. In general, try not to install computational software via ESS. The installation instructions shown here are only for Macs. 
 
  - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. Get these first and foremost, because many of the computational programs require these to install properly. 
  - **`homebrew`** - A Mac OS package manager. Get it [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, to install software, use:
@@ -71,6 +69,15 @@ Many of the computational programs are executables, so using `homebrew` will als
  - **CDhit** - For clustering DNA sequences by similarity. An executable; get it via `homebrew`. 
  - **PAML** - Multi-purpose analysis package with miscellaneous uses. 
  - **AliViewer** - Allows you to look at a `.fasta` file of sequence data. 
+ 
+Unfortunately, almost all the software we use is not very well-documented, or the documentation is written in a way that's only accessible to intermediate users. This creates an odd catch-22 situation where beginners are kind of stranded without even being able to [RTFM](https://en.wikipedia.org/wiki/RTFM). In which case, it may take a bit of clever experimentation to figure out the software behaviour; there will also be tutorials available in this repo to walk you through it. An exchange between my [old supervisor](https://github.com/jni) at VLSCI and I:
+
+```
+me : Doesn't anyone teach you how to use Bash?
+jni: Nobody teaches you how to use Bash; you're just expected to know it.
+me : Wait, then how did the first person learn to use Bash?
+jni: That first person was the guy who created bash, so he didn't have to learn it!
+```
  
 ## For Python users:
  - Use Anaconda for automatic package management. [Conda environments](https://conda.io/docs/using/envs.html) are also great for controlling your packages, and version control between Py36 and Py27. 
