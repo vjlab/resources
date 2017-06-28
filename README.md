@@ -9,9 +9,9 @@ Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for u
 The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. These Youtube videos are made by people who make a living out of producing such tutorial videos, so they'll definitely be much better at *teaching* stuff. 
 
 ## About This Repo
-This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of progression, you should be able to start wherever you want. Some tutorials have recommended prerequisites, these will be listed near the top of that tutorial. 
+This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of a recommended progression, you should be able to start wherever you want. Some tutorials have recommended prerequisites, these will be listed near the top of that tutorial. However, this isn't to say that each tutorial is entirely self-contained - try as I might to make them so.  There'll inevitably be paradoxical situations where both topics X and Y are pre-requisites of each other, and it feels like you can't learn either one because you need to learn both. 
 
-The resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
+These resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
 
 ## Things to Read up on
 Realistically, the time frames for finishing all the items to read up on in this section are something like:
@@ -26,8 +26,6 @@ Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanaca
  - Maximum likelihood
  - Bayesian statistics
  - MCMC - the most difficult of the lot. Don't bother if you don't need to know this. 
- 
-The domain-specific application of these to phylogenetics will be covered in tutorials available in this repo (coming soon). 
 
 ### Phylogenetics Concepts
  - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a good starting point - it's sufficiently comprehensive that, at least, you'll be able to pinpoint what you don't know and look for that elsewhere. Also, admittedly, passive reading is a pretty dry and ineffective way to learn; there are "learn by doing"-style tutorials in the works. 
