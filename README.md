@@ -6,10 +6,12 @@ This first introductory page contains a bunch of essential readings to get the b
 
 Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. These Youtube videos are made by people who make a living out of producing such tutorial videos, so they'll definitely be much better at *teaching* stuff. 
+The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. 
 
 ## About This Repo
 This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of a recommended progression, you should be able to start wherever you want. Some tutorials have recommended prerequisites, these will be listed near the top of that tutorial. However, this isn't to say that each tutorial is entirely self-contained - try as I might to make them so.  There'll inevitably be paradoxical situations where both topics X and Y are pre-requisites of each other, and it feels like you can't learn either one because you need to learn both. 
+
+The tutorials in this repo will also tend to contain information which is difficult to find, or is only the result of strenous, unnecessary research from poor documentation. Otherwise, I will tend to just recommend Wikipedia articles or youtube videos for the basics - not (entirely) out of laziness, but because such content are made by people who make a living out of it, so they'll definitely be much better at *teaching* stuff, and their teaching material will be more highly polished. 
 
 These resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
 
