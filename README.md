@@ -31,7 +31,7 @@ Recommended youtube channel: [mathematicalmonk](https://www.youtube.com/user/mat
 The domain-specific application of these to phylgenetics will be covered in tutorials available in this repo (coming soon). 
 
 ### Phylogenetics Concepts
- - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a pretty good starting point.
+ - The Wikipedia article on [computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics) is a pretty good starting point, though, admittedly, passive reading is a pretty dry and ineffective way to learn it. There are "learn by doing"-style tutorials in the works. 
  - [How to interpret a phylogenetic tree](http://epidemic.bio.ed.ac.uk/how_to_read_a_phylogeny), by Andrew Rambaut. Or [this](https://www.khanacademy.org/science/biology/her/tree-of-life/a/phylogenetic-trees) Khan academy video.
  - [Models of DNA substitution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), from Wikipedia. 
  - [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering). Otherwise known as "[neighbour joining (NJ)](https://en.wikipedia.org/wiki/Neighbor_joining)" in phylogenetics literature. We don't use NJ trees very often, but it's a good conceptual starting point, and is easy enough to do by hand. 
