@@ -39,7 +39,7 @@ M3 needs two kinds of information:
 1. Specifics of your HPC computational needs like number of nodes, number of cores per node, memory usage, runtime etc. For the purposes of this tutorial, you can just use the settings provided in the example below.
 2. The actual job that needs to be run, e.g. a command like `beast -beagle_off my_input_file.xml`
 
-The example SLURM script below will do a BEAST run using the `benchmark1.xml` file downloaded earlier. On your own computer, create a new SLURM script by copying and pasting the text below into a new text file, and save that text file as `my_slurm_script`. Make sure to enter your email at the line `#SBATCH --mail-user=<your_email>`.
+The example SLURM script below will do a BEAST run using the `benchmark1.xml` file downloaded earlier. On your own computer, create a new SLURM script by copying and pasting the text below into a new text file, and save that text file as `my_slurm_script`. Make sure to enter your email at the line `#SBATCH --mail-user=<your_email>`. 
 
 ```
 #!/bin/bash
@@ -65,14 +65,16 @@ To break that down:
  - All the lines starting with `#SBATCH` are *run parameters*, e.g. run time, number of CPUs you'd like to request, etc.
  - The lines at the bottom: `module load...`, `beast...` are the actual BEAST command lines. That is, if you have BEAST on your own computer, you'd run this same computation using `beast -beagle_off benchmark1.xml` on your own command line. 
 
-## 4. Job Submission to M3
+Further details on what all that means will be covered in another tutorial. 
+
+## 4. Logging into to M3
 Open your Terminal (assuming you're using a Mac), and in the command line, login using:
 
 ```
 $ ssh <your_username>@m3.massive.org.au
 ```
 
-You'll be prompted for your password, and then you're in.
+You'll be prompted for your password, and then you're in. If you type `-ls` to see what you have, you should see your own folder, plus a bunch of files that're basic SLURM scripts, provided by the folks at M3. Your M3 directory is, for the moment, just one folder. 
 
 Upload both `my_slurm_script` and `benchmark1.xml` to your account on M3, using Cyberduck.  Now submit your script to the queue by entering, in the command line:
 
@@ -95,7 +97,9 @@ All jobs that were run on the HPC will automatically generate an output file `sl
 
 `nano slurm-12345.out`
 
-BEAST would have generated some other files as well, but we don't need to look at those for the purposes of this tutorial. The main BEAST output would have been recorded in the SLURM output file.
+BEAST would have generated some other files as well, but we don't need to look at those for the purposes of this tutorial. The main BEAST output would have been recorded in the SLURM output file. 
+
+Upon completion, you should recieve an email from M3, because you asked for one in the SLURM script above. 
 
 ## References
 [Read the M3 documentation](http://docs.massive.org.au/M3/slurm/slurm-overview.html)
