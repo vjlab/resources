@@ -31,7 +31,7 @@ Uploading your files is then just a simple matter of drag-and-drop.
 Alternatively, you can upload files on the terminal using `scp` (secure copy) like so:
 
 ```
-scp path\to\file\on\your\machine your_username:m3.massive.org.au:folder\on\massive
+scp path\to\file\on\your\machine your_username@m3.massive.org.au:folder\on\massive
 ```
 
 ## 3. Writing a SLURM Script
