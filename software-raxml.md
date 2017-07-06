@@ -1,7 +1,7 @@
-# RAxML (WIP)
+# RAxML
 *Don Teng, 6 June 2017*
 
-Requirements: `m3-quickstart` tutorial.
+Requirements: `m3-quickstart` tutorial, because you're likely to send RAxML jobs to M3. 
 
 ## Introduction
 `RAxML` takes a `.fasta` or `.txt` file of aligned sequences as input, and computes maximum likelihood trees. 
