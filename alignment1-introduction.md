@@ -22,7 +22,7 @@ In this series of tutorials about alignment, we'll go through the most involved 
 ## MSA for data cleaning
 The general procedure is (not a hard and fast procedure!):
 
-0. Preliminary duplicate removal - this applies to all manner of data preparation, not just for alignment. I form a new `name_id` column by concatenating the `isolate name` and `isolate ID`. Duplicate `name_id`s are then removed by selecting the longest HA sequence (randomly pick one if there's a tie). After this, we might still have isolate names with multiple isolate IDs, i.e. where multiple labs sequenced the same sample. Hopefully, these are few enough to evaluate individually on a case-by-case basis, picking whichever has the most complete metadata (e.g. full dates, locations, etc.). 
+0. Preliminary duplicate removal - this applies to all manner of data preparation, not just for alignment. I form a new `name_id` column by concatenating the `isolate name` and `isolate ID`. Duplicate `name_id`s are then removed by selecting the longest sequence (randomly pick one if there's a tie). After this, we might still have isolate names with multiple isolate IDs, i.e. where multiple labs sequenced the same sample. Hopefully, these are few enough to evaluate individually on a case-by-case basis, picking whichever has the most complete metadata (e.g. full dates, locations, etc.). 
 1. Do a quick-and-dirty alignment. Generally, this means that we only need, say, 90% of the letters to line up; there can be some single- or double-nucleotide confusion somewhere. In any case, there will still be "bad" sequences in there, throwing everything off (e.g. sequences with large chunks of `"n"`s, sequences which look so different from the others that they must've been some kind of sampling error because organisms just don't mutate that fast, etc.). In fact, this initial alignment is exactly to identify these bad sequences. 
 2. Trim the non-coding regions outside the reading frame.  We're not usually interested in these anyway.
 3. Discard any bad sequences that you can find. 
@@ -41,9 +41,7 @@ Forming publication-quality trees will require much more stringent quality check
 
 Fortunately, many of the tree-building methods (which the aligned sequences are fed into as input) are *fault tolerant*, i.e. they are quite resistant to the inteference of a few outliers while still managing to present the overall trend.  For instance, maximum likelihood statistics or bootstrap support will mitigate the effects of a few outlier sequences (both methods involve recomputing a tree over and over again, using the same dataset, and selecting the most commonly occuring tree as the best one). 
 
-For trees that are initially computed for the purposes of exploring the dataset, there's no maximum likelihood computation or bootstrap support, so how can we be confident that our single tree is sufficiently representative of the dataset?
-
-(*Too jargony. Simplify*)
+For trees that are initially computed for the purposes of exploring the dataset, especially if done using `FastTree`, there is usually no way to assess the correctness of the tree. 
 
 Other biological considerations:
 
