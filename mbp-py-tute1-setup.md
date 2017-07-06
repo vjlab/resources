@@ -1,4 +1,7 @@
 # Tutorial 0: Getting Set Up for Python
+
+*Prepared for the Monash Bioinformatics Platform*
+
 Much of the content from this page comes from [here](https://github.com/ehmatthes/intro_programming) and [here].
 
 ### 1. Get Python (Obviously)
@@ -72,4 +75,4 @@ We'll install Jupyter as an example of how to use the pip installer. There's rea
 pip3 install jupyter
 ```
 
-That's the end of this tutorial
+That's the end of this tutorial. 
