@@ -6,7 +6,7 @@
 This first introductory page contains a bunch of essential readings to get the basics first. Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
 ## About This Repo
-This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of a recommended progression, so you can start wherever you want. Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, this isn't to say that each tutorial is entirely self-contained.  There'll inevitably be paradoxical situations where both topics X and Y are pre-requisites of each other, and it feels like you can't learn either one because you need to learn both. 
+This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, this isn't to say that each tutorial is entirely self-contained.  
 
 The tutorials in this repo will also tend to contain information which is difficult to find, or is only the result of strenous, unnecessary research from poor documentation. Otherwise, I tend to just recommend Wikipedia articles or youtube videos for the basics - not (entirely) out of laziness, but because such content are made by people who make a living out of it, so they'll definitely be much better at *teaching* stuff, and their teaching material will be more highly polished. 
 
@@ -16,7 +16,7 @@ These resources are loosely classified into themes, reflected in the title. For 
 -----
 
 ### Mathematical Concepts
-Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient; even Wikipedia is a little overkill.
+Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area - you certainly don't need to know how to do the maths by hand. An undergraduate understanding of these is sufficient; even Wikipedia is a little overkill. 
  - Linear regression
  - Markov chains
  - Maximum likelihood
@@ -72,11 +72,19 @@ jni: Nobody teaches you how to use Bash; you're just expected to know it.
 me : Wait, then how did the first person learn to use Bash?
 jni: That first person was the guy who created bash, so he didn't have to learn it!
 ```
- 
+
 ## For Python users:
  - Use Anaconda for automatic package management. [Conda environments](https://conda.io/docs/using/envs.html) are also great for controlling your packages, and version control between Py36 and Py27. 
  - Useful packages: `pandas`, `numpy`, `Biopython`, `xlrd`, `scipy`, `scikit-bio`
  - [Jupyter](http://jupyter.org/) recommended as an IDE. 
+ 
+## Recommended Progression
+-----
+
+*Still thinking about this*
+
+1. Get used to the Terminal: learn about `homebrew`. Get `MAFFT` and `FastTree` first. These are good starting points because they're fast and (relatively) easy. Other programs like `RAxML` and `BEAST` are more involved. 
+2. Tree drawing with `FigTree`. 
  
 ## Other Recommended Reading
  - *[What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)*, by Matt Gemmell.
