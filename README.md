@@ -1,25 +1,19 @@
 # Introduction
+-----
 
 *Don Teng*
 
-This first introductory page contains a bunch of essential readings to get the basics first. But before we begin, read this article first: *[What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)*, by Matt Gemmell.
-
-Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
-
-The point here is not so much the mere acquisition of facts, but the ability to solve problems independently without needing anyone's help. Most people are nice enough to help, but, well, it's not nice to keep bugging someone when the exact same content is available on Youtube. 
+This first introductory page contains a bunch of essential readings to get the basics first. Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
 ## About This Repo
-This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of a recommended progression, so you should be able to start wherever you want. Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, this isn't to say that each tutorial is entirely self-contained.  There'll inevitably be paradoxical situations where both topics X and Y are pre-requisites of each other, and it feels like you can't learn either one because you need to learn both. 
+This repo contains several tutorial files, with varying levels of difficulty.  There's not much in the way of a recommended progression, so you can start wherever you want. Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, this isn't to say that each tutorial is entirely self-contained.  There'll inevitably be paradoxical situations where both topics X and Y are pre-requisites of each other, and it feels like you can't learn either one because you need to learn both. 
 
 The tutorials in this repo will also tend to contain information which is difficult to find, or is only the result of strenous, unnecessary research from poor documentation. Otherwise, I tend to just recommend Wikipedia articles or youtube videos for the basics - not (entirely) out of laziness, but because such content are made by people who make a living out of it, so they'll definitely be much better at *teaching* stuff, and their teaching material will be more highly polished. 
 
 These resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
 
 ## Things to Read up on
-Realistically, the time frames for finishing all the items to read up on in this section are something like:
- - Theoretical knowledge - two to three months
- - Working knowledge - about half a year
- - Subject matter expert - the rest of your life
+-----
 
 ### Mathematical Concepts
 Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area. An undergraduate understanding of these is sufficient; even Wikipedia is a little overkill.
@@ -83,3 +77,6 @@ jni: That first person was the guy who created bash, so he didn't have to learn 
  - Use Anaconda for automatic package management. [Conda environments](https://conda.io/docs/using/envs.html) are also great for controlling your packages, and version control between Py36 and Py27. 
  - Useful packages: `pandas`, `numpy`, `Biopython`, `xlrd`, `scipy`, `scikit-bio`
  - [Jupyter](http://jupyter.org/) recommended as an IDE. 
+ 
+## Other Recommended Reading
+ - *[What Have You Tried?](http://mattgemmell.com/what-have-you-tried/)*, by Matt Gemmell.
