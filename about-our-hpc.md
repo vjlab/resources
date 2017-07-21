@@ -29,6 +29,6 @@ Screen output will be written to a file, `nohup.out`.
 
 ## Performance
 
-*Python3* - about 5-10% faster than M3 or my own Macbook Pro, on a single-CPU, single-thread run. 
-*RAxML* - untested
-*BEAST & BEAGLE* - untested
+- **Python3** - about 5-10% faster than M3 or my own Macbook Pro, on a single-CPU, single-thread run. 
+- **RAxML** - untested
+- **BEAST & BEAGLE** - untested
