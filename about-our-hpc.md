@@ -25,9 +25,13 @@ I've only installed the heavy-duty software, i.e. only BEAST, RAxML and BEAGLE. 
 nohup <command> <command_flag> &
 ```
 
-Screen output will be written to a file, `nohup.out`. 
+Screen output will be written to a file, `nohup.out`. For instance, I have a python script called `epi_search.py`, which takes in two file names as input: `input1` and `input2`. I'd run:
 
-*Admin Note* - the executables live in `/opt/`. 
+```
+nohup python3 epi_search.py input1 input2 &
+```
+
+*Admin Note* - the executables live in `/opt/`. They ought to live in `/usr/local/`.
 
 ## Performance
 
