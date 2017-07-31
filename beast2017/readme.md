@@ -20,3 +20,16 @@ Install these add-ons in BEAUTi:
 - BACTER
 
 These are basically a bunch of add-ons that were introduced in the workshop, some not very relevant, but get them anyway. To install a package, go to `File` --> `Manage Packages`. Select the package that you wish to install, and click the `Install\Upgrade` button. Restart BEAUTi for the changes to take effect. 
+
+**Command Line Option**: use `addon manager` to do this. To see a list of what you can do with it:
+
+```
+cd path/to/BEAST 2.4.7
+./addonmanager
+```
+
+The syntax to add new packages is:
+```
+addonmanager -add new_package
+```
+
