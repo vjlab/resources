@@ -19,7 +19,10 @@ And you can continue from there. Currently, I've set up the HPC to be a purely p
 
 ## Software, and Using the Command Line
 
-I've only installed the heavy-duty software, i.e. only BEAST, RAxML and BEAGLE. The executables are `beast-mcmc` for beast, and `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3` for RAxML (in increasing order of speed; though the last two may vary). To send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`:
+I've only installed the heavy-duty software, i.e. only BEAST, RAxML and BEAGLE. The executables are `beast-mcmc` for beast, and `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3` for RAxML (in increasing order of speed; though the last two may vary). 
+
+### Sending a Job
+To send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`:
 
 ```
 nohup <command> <command_flag> &
@@ -32,6 +35,9 @@ nohup python3 epi_search.py input1 input2 &
 ```
 
 *Admin Note* - the executables live in `/opt/`. They ought to live in `/usr/local/`.
+
+### Killing a Job
+WIP. Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-kill-a-nohup-process
 
 ## Retrieving Your Data
 Send your files *from* your machine *to* to HPC using `scp`:
