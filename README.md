@@ -30,10 +30,13 @@ Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanaca
  - [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering). Otherwise known as "[neighbour joining (NJ)](https://en.wikipedia.org/wiki/Neighbor_joining)" in phylogenetics literature. We don't use NJ trees very often, but it's a good conceptual starting point, and is easy enough to do by hand. 
 
 ### Programming
-Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). Of all the items on this list, programming is the easiest to learn - it's a gentle but extremely long learning curve. 
+Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). Of all the items on this list, programming is the easiest to learn - it's a gentle but extremely long learning curve.
+
  - Python, or R to start off. IMO, Python is superior to R in every way except for plotting. The Youtube channel [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_) is a good place to start.
  - Github. There are three ways to learn this: using the website interface that you're looking at right now, using a [Github desktop application](https://desktop.github.com/) (quite useless), and command line. It's best to just learn the command line, because it allows you to do the most things. Here's a [recommended video](https://www.youtube.com/watch?v=HVsySz-h9r4). 
  - Bash terminal, and Linux/Mac OS organization.
+ 
+Note: learning to code is not something you learn from a classroom, then apply in a real-life situation. It's something that you can learn *only* by tackling real problems. 
 
 ## Software We Use
 The following is a list of frequently-used-software. In general, try not to install computational software via ESS. The installation instructions shown here are only for Macs. 
