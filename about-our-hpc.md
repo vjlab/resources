@@ -22,13 +22,15 @@ And you can continue from there. Currently, I've set up the HPC to be a purely p
 I've only installed the heavy-duty software, i.e. only BEAST, RAxML and BEAGLE. The executables are `beast-mcmc` for beast, and `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3` for RAxML (in increasing order of speed; though the last two may vary). 
 
 ### Sending a Job
-To send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`:
+To send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`. Syntax is:
 
 ```
-nohup <command> <command_flag> &
+nohup some_command &> my_filename.out&
 ```
 
-Screen output will be written to a file, `nohup.out`. For instance, I have a python script called `epi_search.py`, which takes in two file names as input: `input1` and `input2`. I'd run:
+If you don't specify the name of an output file (in the example above, `my_filename.out`, any screen output will be written to a file, `nohup.out`, by default. Note that in the event of simultaneous runs where you didn't specify a file name, output from different runs would be written to the *same* `nohup.out` file, which would just make an incredible mess of things. However, in my own tests, BEAST and RAXML runs write out their own log files anyway, so that's not that big an issue. Your own python jobs, however, will write any `print` or `sys.out` output to the `nohup` output file. 
+
+For instance, I have a python script called `epi_search.py`, which takes in two file names as input: `input1` and `input2`. I'd run:
 
 ```
 nohup python3 epi_search.py input1 input2 &
