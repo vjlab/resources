@@ -1,5 +1,10 @@
 # About Our HPC
 
+## Temporary Note from Admin
+*While I'm setting up everything, if you have a BEAST1 or RAxML run, do it twice: send it to the M3, and do it on our own HPC. This is because I've used M3 quite a bit for BEAST1 runs already, so I've already ironed out many the kinks with them about like getting beagle libraries to work, installing required peripheral software, etc. On the other hand, our server hasn't been field tested yet, so I expect many, many errors just to get an ordinary production run going.*
+
+*By doing runs on both M3 and our own server, I'll also get to compare which machine is faster. From my own tests (only 1 or 2 of them so far), our server's faster. :D*
+
 ## Logging In
 You can remotely log in to our lab HPC usind `ssh`. On your terminal:
 
@@ -62,6 +67,8 @@ scp path/to/your/file your_username@130.194.248.38:destination_folder
 Unfortunately, the only way to retrieve your data is to physically walk over, and upload the data to Google drive and send it to yourself somehow. Solutions like `scp`, or file-sharing applications like Cyberduck wcan't work unless you set up *your* own laptop to be a server, which would be a whole can of worms involving messing with firewalls and security permissions and such. 
 
 ## Performance
+
+Performance note: all these tests were done when I was the only one using the server, so there's no additional load from someone else's job! It's possible that if two people submit their jobs simultaneously, both their jobs will be slowed down. 
 
 - **Python3** - about 5-10% faster than M3 or my own Macbook Pro, on a single-CPU, single-thread run. 
 - **RAxML** - untested
