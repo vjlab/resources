@@ -58,4 +58,36 @@ module load mafft/7.310
 bash
 ```
 
-Upload the fasta files, the run text file and the SLURM script onto M3, and submit the SLURM job as usual
+Upload the fasta files, the run text file and the SLURM script onto M3, and submit the SLURM job as usual. This will execute each mafft command one after another.
+
+### Running multiple commands simultaneously
+Answer from help@massive:
+
+ArraySubmit.slurm 
+
+```
+#!/bin/bash 
+
+#SBATCH -J myprog-%3 
+# job name for the array 
+#SBATCH -n 1 
+# Number of task 
+#SBATCH -p com 
+# Partition com 
+#SBATCH -t 0-3:00:00 
+# 3 hours (D-HH:MM) 
+#SBATCH -o myprog-%A-%a.out 
+# Standard outout %A" is replaced by the job ID and "%a" with the array index 
+#SBATCH -e myprog-%A-%a.err 
+# Standard error 
+
+./myprogram-$SLURM_ARRAY_TASK_ID 
+```
+
+You will need to rename your program to myprogram-1, myprogram-1, myprogram-3 
+
+To submit this: 
+
+```
+sbatch –array=1-3 ArraySubmit.slurm 
+```
