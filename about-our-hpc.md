@@ -19,10 +19,19 @@ And you can continue from there. Currently, I've set up the HPC to be a purely p
 
 ## Software, and Using the Command Line
 
-I've only installed the heavy-duty software, i.e. only BEAST, RAxML and BEAGLE. The executables are `beast-mcmc` for beast, and `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3` for RAxML (in increasing order of speed; though the last two may vary). 
+Software available are:
+- BEAST (executable `beast-mcmc`)
+- RAXML (executable `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3`, in increasing order of speed; though the last two may vary)
+- PHYML
+
+Coming up:
+- BEAST2
+- BEAGLE library
 
 ### Sending a Job
-To send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`. Syntax is:
+*If none of this works, you can still walk over to the server and just use the terminal. I don't expect full functionality yet anyway; I'm still in the process of setting up OS-level stuff like where the executables should live, user-interactivity with /home or /usr/local, paths etc so that you can do whatever you want in your partition without any risk of breaking anything.* 
+
+To remotely send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`. Syntax is:
 
 ```
 nohup some_command &> my_filename.out&
@@ -38,6 +47,8 @@ nohup python3 epi_search.py input1 input2 &
 
 *Admin Note* - the executables live in `/opt/`. They ought to live in `/usr/local/`.
 
+To connect to our server outside of the campus wifi, use a VPN (I haven't actually tried this yet). Try the **Cisco AnyConnect Secure Mobility Client** that should be available on your work laptop. 
+
 ### Killing a Job
 WIP. Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-kill-a-nohup-process
 
@@ -48,7 +59,7 @@ Send your files *from* your machine *to* to HPC using `scp`:
 scp path/to/your/file your_username@130.194.248.38:destination_folder
 ```
 
-Currently, the only way to retrieve your data is to physically walk over, and upload the data to Google drive. Solutions like `scp`, or file-sharing applications like Filezilla and Cyberduck wcan't work very unless you set up *your* own laptop to be a server, which would be a whole can of worms involving messing with firewalls and security permissions and such. 
+Unfortunately, the only way to retrieve your data is to physically walk over, and upload the data to Google drive and send it to yourself somehow. Solutions like `scp`, or file-sharing applications like Cyberduck wcan't work unless you set up *your* own laptop to be a server, which would be a whole can of worms involving messing with firewalls and security permissions and such. 
 
 ## Performance
 
