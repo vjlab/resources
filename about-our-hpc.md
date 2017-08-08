@@ -73,3 +73,7 @@ Performance note: all these tests were done when I was the only one using the se
 - **Python3** - about 5-10% faster than M3 or my own Macbook Pro, on a single-CPU, single-thread run. 
 - **RAxML** - untested
 - **BEAST & BEAGLE** - untested
+
+## Admin Notes
+
+ - NVIDIA has a python library for GPU-enhanced computation: https://developer.nvidia.com/how-to-cuda-python
