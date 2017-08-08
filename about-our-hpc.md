@@ -50,6 +50,8 @@ For instance, I have a python script called `epi_search.py`, which takes in two 
 nohup python3 epi_search.py input1 input2 &
 ```
 
+And press `Enter` after that.
+
 *Admin Note* - the executables live in `/opt/`. They ought to live in `/usr/local/`.
 
 To connect to our server outside of the campus wifi, use a VPN (I haven't actually tried this yet). Try the **Cisco AnyConnect Secure Mobility Client** that should be available on your work laptop. 
