@@ -61,7 +61,7 @@ Conducted some speed tests on M3 using 50 randomly selected Flu B Yam HA sequenc
 
 Looks like the best bet is to go with 1-process, 8-CPU with PTHREADS-SSE. As noted in the RAxML documentation, performance does not necessarily decrease as the number of CPUs increases, as communication overhead between CPUs would increase as well. This will differ from dataset to dataset, but hopefully not by much.
 
-### Bits and Bobs
+## Bits and Bobs
 - As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from your file. 
 - RAxML will automatically change many (or all?) special characters like "/", "-", and so on to underscores. This can play merry hell with your pipeline since the last portion of record names are usually collection dates, which means that a name which was initially nicely formatted and delimited by "|", like:
 
