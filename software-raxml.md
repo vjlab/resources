@@ -76,3 +76,18 @@ B_Arizona_06_2016_ID12345_NorthAmerica_2016_11_01
 ```
 
 Which will become difficult to deal with if the next program that you're going to use is `TempEst`, because `TempEst` needs to guess dates by reading the format of the name. There appears to be no easy way around this at the moment. 
+
+### Bootstrapping
+- When performing bootstrap computations, RAxML will return a consensus tree in a format that FigTree doesn't understand; you'll get some kind of "error parsing number" error message. To fix this, open the output file in Text Wrangler, and use regex to replace:
+
+```
+([:]\d+[.]\d+)[[](\d+)[]]
+```
+
+with
+
+```
+\2\1
+```
+
+- I'm not actually sure if the ML and the bootstrap consensus trees are the same tree! They shouldn't be, because, by definition of the word "maximum", there can only be one *maximum likelihood* tree.  The consensus tree is an aggregate of all the computed trees, which will have the strongest bootstrap support. 
