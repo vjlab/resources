@@ -1,7 +1,7 @@
 # About Our HPC
 
 ## Temporary Note from Admin
-*While I'm setting up everything, if you have a BEAST1 or RAxML run, do it twice: send it to the M3, and do it on our own HPC. This is because I've used M3 quite a bit for BEAST1 runs already, so I've already ironed out many the kinks with them about like getting beagle libraries to work, installing required peripheral software, etc. On the other hand, our server hasn't been field tested yet, so I expect many, many errors just to get an ordinary production run going.*
+*Our server is 90% nicely set up, but in the meantime, if you have a BEAST1 or RAxML run, do it twice: send it to the M3, and do it on our own HPC. This is because I've used M3 quite a bit for BEAST1 runs already, so I've already ironed out many the kinks with them about like getting beagle libraries to work, installing required peripheral software, etc. On the other hand, our server hasn't been field tested yet, so I expect many, many errors just to get an ordinary production run going.*
 
 *By doing runs on both M3 and our own server, I'll also get to compare which machine is faster. From my own tests (only 1 or 2 of them so far), our server's faster. :D*
 
@@ -34,7 +34,7 @@ Coming up:
 - BEAGLE library
 
 ### Sending a Job
-*If none of this works, you can still walk over to the server and just use the terminal. I don't expect full functionality yet anyway; I'm still in the process of setting up OS-level stuff like where the executables should live, user-interactivity with /home or /usr/local, paths etc so that you can do whatever you want in your partition without any risk of breaking anything.* 
+*If none of this works, you can still walk over to the server and just use the terminal.* 
 
 To remotely send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`. Syntax is:
 
@@ -57,7 +57,10 @@ And press `Enter` after that.
 To connect to our server outside of the campus wifi, use a VPN (I haven't actually tried this yet). Try the **Cisco AnyConnect Secure Mobility Client** that should be available on your work laptop. 
 
 ### Killing a Job
-WIP. Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-kill-a-nohup-process
+I disallowing this at the moment, because this is a security-risk where users who don't know what they're doing could kill a process other than their job. 
+
+For admins: use `ps -ef` to bring up a list of processes. Stop the selected process with `kill -9 <PID>`.
+Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-kill-a-nohup-process
 
 ## Retrieving Your Data
 Send your files *from* your machine *to* to HPC using `scp`:
