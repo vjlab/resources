@@ -57,13 +57,13 @@ And press `Enter` after that.
 To connect to our server outside of the campus wifi, use a VPN (I haven't actually tried this yet). Try the **Cisco AnyConnect Secure Mobility Client** that should be available on your work laptop. 
 
 ### Killing a Job
-I disallowing this at the moment, because this is a security-risk where users who don't know what they're doing could kill a process other than their job. 
+I'm disallowing this at the moment, because this is a security-risk where users could accidentally kill a process other than their job. 
 
 For admins: use `ps -ef` to bring up a list of processes. Stop the selected process with `kill -9 <PID>`.
 Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-kill-a-nohup-process
 
 ## Retrieving Your Data
-Send your files *from* your machine *to* to HPC using `scp`:
+Send your files *from* your machine *to* the HPC using `scp`:
 
 ```
 scp path/to/your/file your_username@130.194.248.38:destination_folder
