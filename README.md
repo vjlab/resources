@@ -6,9 +6,9 @@
 This first introductory page contains a bunch of essential readings to get the basics first. Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
 ## About This Repo
-This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, this isn't to say that each tutorial is entirely self-contained.  
+This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, there's no garauntee that each tutorial is entirely self-contained.  
 
-The tutorials in this repo will also tend to contain information which is difficult to find, or is only the result of strenous, unnecessary research from poor documentation. Otherwise, I tend to just recommend Wikipedia articles or youtube videos for the basics - not (entirely) out of laziness, but because such content are made by people who make a living out of it, so they'll definitely be much better at *teaching* stuff, and their teaching material will be more highly polished. 
+The tutorials in this repo will tend to contain information which is difficult to find, or is only the result of strenous research from poor documentation. Otherwise, I recommend Wikipedia articles or youtube videos for the basics - not (entirely) out of laziness, but because such content are made by people who make a living out of it, so they'll definitely be much better at *teaching* stuff, and their teaching material will be more highly polished. 
 
 These resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
 
@@ -17,6 +17,7 @@ These resources are loosely classified into themes, reflected in the title. For 
 
 ### Mathematical Concepts
 Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanacademy) for undergrad-level theory, and [mathematicalmonk](https://www.youtube.com/user/mathematicalmonk) for higher-level concepts.  An in-depth knowledge of these concepts is not essential, unless you're aiming to specialize in that area - you certainly don't need to know how to do the maths by hand. An undergraduate understanding of these is sufficient; even Wikipedia is a little overkill. 
+
  - Linear regression
  - Markov chains
  - Maximum likelihood
@@ -30,10 +31,10 @@ Recommended youtube channel: [khan academy](https://www.youtube.com/user/khanaca
  - [Hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering). Otherwise known as "[neighbour joining (NJ)](https://en.wikipedia.org/wiki/Neighbor_joining)" in phylogenetics literature. We don't use NJ trees very often, but it's a good conceptual starting point, and is easy enough to do by hand. 
 
 ### Programming
-Having a good grasp on how to read, if not write, code is helpful, but not essential (though this is expected to change in future). 
+Having a good grasp on how to read, if not write, code is helpful, but not essential.
 
  - Python, or R to start off. IMO, Python is superior to R in every way except for plotting. The Youtube channel [thenewboston](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_) is a good place to start.
- - Github. There are three ways to learn this: using the website interface that you're looking at right now, using a [Github desktop application](https://desktop.github.com/) (quite useless), and command line. It's best to just learn the command line, because it allows you to do the most things. Here's a [recommended video](https://www.youtube.com/watch?v=HVsySz-h9r4). 
+ - Github. Here's a [recommended video](https://www.youtube.com/watch?v=HVsySz-h9r4). 
  - Bash terminal, and Linux/Mac OS organization.
 
 ## Software We Use
@@ -46,7 +47,7 @@ The following is a list of frequently-used-software. In general, try not to inst
 brew install my_software
 ```
 
-To see if the `homebrew` has your software available:
+To see if `homebrew` has your software available:
 
 ```
 brew search my_software
