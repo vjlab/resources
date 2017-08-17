@@ -12,15 +12,7 @@ You can remotely log in to our lab HPC usind `ssh`. On your terminal:
 ssh your_username@130.194.248.38
 ```
 
-You'll be prompted for your password. 
-
-You should first see a `$` symbol. Start up a terminal remotely using:
-
-```
-bash
-```
-
-And you can continue from there. Currently, I've set up the HPC to be a purely production-level computation machine, so you can only (and need only) run large computational runs, such as for RAXML and BEAST, on it. As such, you should only need to interact with it via the command line. 
+You'll be prompted for your password, you can continue from there in the command line. Currently, I've set up the HPC to be a purely production-level computation machine, so you can only (and need only) run large computational runs, such as for RAXML and BEAST, on it. As such, you should only need to interact with it via the command line. 
 
 ## Software, and Using the Command Line
 
