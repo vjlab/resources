@@ -69,14 +69,14 @@ Further details on what all that means will be covered in another tutorial.
 
 Also check out [my other tutorial](https://github.com/vjlab/resources/blob/master/m3-slurm-script-examples.md) on SLURM script examples for BEAST (with BEAGLE), RAXML, and python.
 
-## 4. Logging into to M3
+## 4. Logging in and Job Submission
 Open your Terminal (assuming you're using a Mac), and in the command line, login using:
 
 ```
 $ ssh <your_username>@m3.massive.org.au
 ```
 
-You'll be prompted for your password, and then you're in. If you type `-ls` to see what you have, you should see your own folder, plus a bunch of files that're basic SLURM scripts, provided by the folks at M3. Your M3 directory is, for the moment, just one folder. 
+You'll be prompted for your password, and then you're in. If you type `-ls` to see what you have, you should see your own folder, plus a bunch of files that are basic SLURM scripts, provided by the folks at M3. Your M3 directory is, for the moment, just one folder. 
 
 Upload both `my_slurm_script` and `benchmark1.xml` to your account on M3, using Cyberduck.  Now submit your script to the queue by entering, in the command line:
 
