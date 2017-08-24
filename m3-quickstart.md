@@ -24,7 +24,7 @@ To log in to M3 through Cyberduck, click the `Open connection` button at the top
 
 ![cyberduck-screener](https://github.com/vjlab/tutorials/blob/master/assets/cyberduck-screener.png)
 
-(Of course, for the `username` and `password` fields, use your own username and password.
+(Of course, for the `username` and `password` fields, use your own username and password.)
 
 Uploading your files is then just a simple matter of drag-and-drop.
 
@@ -67,6 +67,8 @@ To break that down:
 
 Further details on what all that means will be covered in another tutorial. 
 
+Also check out [my other tutorial](https://github.com/vjlab/resources/blob/master/m3-slurm-script-examples.md) on SLURM script examples for BEAST (with BEAGLE), RAXML, and python.
+
 ## 4. Logging into to M3
 Open your Terminal (assuming you're using a Mac), and in the command line, login using:
 
@@ -90,7 +92,7 @@ Submitted job 1234
 
 It usually takes a second to submit your script to the queue.
 
-Note that if you don't see your script in the queue, two things could have happened: 1. your script still hasn't been submitted yet, or 2. your script terminated almost instantaneously with an error, and therefore appeared in and then disappeared from the queue within microseconds. To check the second scenario, check if there's a slurm output file in your directory. You can also tell SLURM to send you an email whenever the job ends, whether it ended successfully, or with an error.
+Note that if you don't see your script in the queue, two things could have happened: 1. your script still hasn't been submitted yet, or 2. your script terminated almost instantaneously with an error, and therefore appeared in and then disappeared from the queue within microseconds. To check the second scenario, check if there's a slurm output file in your directory. You can also tell SLURM to send you an email whenever the job ends, whether it ended successfully (where it will say "Exit code 1" in the title of the email), or with an error ("Exit code 0").
 
 ## 5. Reviewing your Output
 All jobs that were run on the HPC will automatically generate an output file `slurm-<job_id>.out`.  This is like a text file, but, somewhat annoyingly, can't be viewed with a text editor.  You can read the contents of this file using the `nano` command:
