@@ -10,9 +10,9 @@
 | `ls`                             | See what files there are in the folder that you're currently in |
 | `ls -G`                          | Same as `ls`, but with colour-coding by file type               |
 | `nano my_file`                   | To view or edit `my_file`                                       |
-| `rm file_to_delete               | Delete a file                                                   |
+| `rm file_to_delete`              | Delete a file                                                   |
 
-You can alias all these commands to prevent yourself from having to type long commands over and over again. Access and modify your `bash_profile` using:
+You can *alias* some of these commands to prevent yourself from having to type long commands over and over again. Access and modify your `bash_profile` using:
 
 `nano ~/.bash_profile`
 
