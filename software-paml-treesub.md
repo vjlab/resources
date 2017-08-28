@@ -12,7 +12,7 @@ This is actually quite easy. Get 2 versions:
 2. The executable file, which `treesub` requires. This isn't the download link at the top of the `PAML` site (that's the GUI), it's hidden somewhere in the middle.  Ctrl-F "For the MAC, we have compiled a version for MAC OSX". Fortunately, the Mac OS version has already been compiled, so it's ready to go after downloading (Linux or Windows users will have to continue with all that `Makefile` gibberish).
 
 ## Run
-(I've never run this before, so WIP).
+(I've never run PAML itself before, so WIP).
 
 ## [Treesub](https://github.com/tamuri/treesub)
 This is an extension which uses some `PAML` functions, stitched together with RAXML and FigTree. It's primarily useful for producing a tree which shows the amino acid substitutions along the branches. 
@@ -26,7 +26,7 @@ You'll need to get:
 2. PAML executable
 3. The latest Java SDK version, which is currently 8. Get it [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 4. FigTree (easy)
-5. The [Eclipse](https://www.eclipse.org/downloads/?) IDE, which is not actually used by `treesub`; you need it to get a `treesub.jar` application.
+5. The [Eclipse](https://www.eclipse.org/downloads/?) IDE, which is not actually used by `treesub`; you need it to get a `treesub.jar` application (the thing that you'll eventually double-click on to launch the program). 
 
 **Procedure**
 1. Download all the `treesub` files: download directly from Github, or `git clone https://github.com/tamuri/treesub`.
