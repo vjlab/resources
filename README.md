@@ -8,9 +8,24 @@ This first introductory page contains a bunch of essential readings to get the b
 ## About This Repo
 This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, there's no garauntee that each tutorial is entirely self-contained.  
 
-The tutorials in this repo will tend to contain information which is difficult to find, or is only the result of strenous research from poor documentation. Otherwise, I recommend Wikipedia articles or youtube videos for the basics - not (entirely) out of laziness, but because such content are made by people who make a living out of it, so they'll definitely be much better at *teaching* stuff, and their teaching material will be more highly polished. 
+Contents:
 
-These resources are loosely classified into themes, reflected in the title. For instance, we have a bunch of tutorials about the high-performance computing facility at Monash (M3), all prefixed with "m3", e.g. `m3-quickstart`, `m3-about-the-hpc`, and so on. 
+ - `about-our-hpc` - How to use the lab's internal server, located in room 217
+ - `alignment1-introduction` - How to do multiple sequence alignment, part 1
+ - `alignment2-mafft` - How to do multiple sequence alignment (using `mafft`), part 2
+ - `m3-about-the-hpc` - WIP. Some resources, glossary of terms. 
+ - `m3-quickstart` - A tutorial on how to send a job to M3.
+ - `m3-tips-and-tricks` - A dumping ground for how to use M3 slightly more efficiently
+ - `methods-tree-computation` - How to use various programs to compute a tree, and their pros and cons
+ - `misc-file-formats` - Tutorial on commonly used file formats like `fasta`, `phy`, etc. 
+ - `misc-learning-to-code` - tutorial on how to *learn* to code, not actually on how to code. Has links for the latter.
+ - `misc-writing` - How to write so that others can understand you.
+ - `software-beast` - A link to existing BEAST tutorials. 
+ - `software-paml-treesub` - How to install and use `PAML`, and an associated program, `treesub`. 
+ - `software-python-resources` - A bunch of python resources.
+ - `software-raxml` - How to install RAXML, and basic usage.
+ - `software-tips-and-tricks` - A dumping ground for miscellaneous bash or computational tips and tricks.
+ - `tech-github` - Tutorial for basic command line usage of Github.
 
 ## Things to Read up on
 -----
