@@ -59,7 +59,7 @@ You'll see something like:
 ```
 
 This process creates a .git file, which is actually a folder containing everything related to the repo.
-To delete that .git file:
+To delete that .git file, which you don't want to do now:
 ```
 rm -rf git
 ```
@@ -117,14 +117,15 @@ git reset
 ```
 
 ## Commit
-Commit all files in the staging area with -m "my_message" (m for message)
+Commit all files in the staging area with: 
 ```
 git commit -m "Initial commit"
 ```
 
-If you run
+Where the text "initial commit" is a message that you'll post whenever something is committed, describing what changes you made. If you now run:
 
-```git status
+```
+git status
 ```
 
 This should now show "nothing to commit".
