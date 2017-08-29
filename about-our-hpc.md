@@ -51,7 +51,7 @@ To connect to our server outside of the campus wifi, use a VPN (I haven't actual
 ### Killing a Job
 I'm disallowing this at the moment, because this is a security-risk where users could accidentally kill a process other than their job. 
 
-For admins: use `ps -ef` to bring up a list of processes. Stop the selected process with `kill -9 <PID>`.
+For admins: use `top` to bring up a list of processes. Stop the selected process with `kill -9 <PID>`.
 Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-kill-a-nohup-process
 
 ## Retrieving Your Data
