@@ -5,10 +5,8 @@
 
 This first introductory page contains a bunch of essential readings to get the basics first. Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube. 
 
-## About This Repo
-This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, there's no garauntee that each tutorial is entirely self-contained.  
-
-Contents:
+## Contents
+This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, there's no garauntee that each tutorial is entirely self-contained, but the idea is that you should be able to start anywhere. 
 
  - `about-our-hpc` - How to use the lab's internal server, located in room 217
  - `alignment1-introduction` - How to do multiple sequence alignment, part 1
@@ -81,7 +79,7 @@ Many of the computational programs are executables, so using `homebrew` will als
  - **PAML** - Multi-purpose analysis package with miscellaneous uses. 
  - **AliViewer** - Allows you to look at a `.fasta` file of sequence data. 
  
-Unfortunately, almost all the software we use is not very well-documented, or the documentation is written in a way that's only accessible to intermediate users. This creates an odd catch-22 situation where beginners are kind of stranded without even being able to [RTFM](https://en.wikipedia.org/wiki/RTFM). In which case, it may take a bit of clever experimentation to figure out the software behaviour; there will also be tutorials available in this repo to walk you through it. An exchange between my [old supervisor](https://github.com/jni) at VLSCI and I:
+Unfortunately, almost all the software we use is not very well-documented, or the documentation is written in a way that's only accessible to intermediate users. This creates an odd catch-22 situation where beginners are kind of stranded without even being able to [RTFM](https://en.wikipedia.org/wiki/RTFM). In which case, it may take a bit of experimentation to figure out the software behaviour; there will also be tutorials available in this repo to walk you through it. An exchange between my [old supervisor](https://github.com/jni) at VLSCI and I:
 
 ```
 me : Doesn't anyone teach you how to use Bash?
