@@ -15,11 +15,11 @@ The key points are:
 ### Consensus Tree vs. Best (Maximum Likelihood) Tree
 They both contain relevant information. 
 
-The **best tree** is the tree that best fits the input data, the equivalent of a point estimate. Mathematically, it's literally the *maximum* likelihood tree. In a sense, it's *overfitted*.
+The **best tree** (named as such because RAxML will prefix the phrase `besttree` to the output) is the tree that best fits the input data, the equivalent of a point estimate. Mathematically, it's literally the *maximum* likelihood tree. 
 
 The **consensus tree** gives information on which sub-structures in a tree are well-supported - that is, which groups consistently appear. This directly translates to the generalizability of the data.
 
-In practice, you can present a happy middle ground by projecting support values onto the best tree, or just present the consensus tree. 
+So which is the "true" tree? This presents a bit of a philosophical pickle because, by definition of the word "maximum", there can be only *one* maximum likelihood tree (other than the extremely unlikely event of a multi-modal likelihood landscape), so it's difficult to assess the correctness of this tree.  The consensus tree, which is an aggregation of all sampled trees, is almost surely not the same as the maximum likelihood tree, because, as mentioned, all save one of the sampled trees will be suboptimal. In practice, you can use a happy middle ground by projecting support values onto the maximum likelihood tree. 
 
 ### Variants of consensus trees
 
