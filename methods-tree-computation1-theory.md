@@ -1,4 +1,7 @@
 # Tree Computation Part 1 - Theory
+
+**Warning: Mathematically intensive**. I haven't figured out how to explain most of this in English yet. All this is actually much easier in maths, because many things get lost in translation when attempting to convert these concepts into English. Ultimately, it's all just calculus.
+
 ## Maximum Likelihood & Bayesian Paradigms for Tree Computation
 Note that these are not two opposing frameworks, nor are they the *only* frameworks for the interpretation of probability.  The (opposing) counterpart to Bayesian statistics is frequentist statistics, which is out of the scope of this tutorial.
 
@@ -7,8 +10,6 @@ The key points are:
 - **Bayesian** methods have an extra step of modeling the uncertainty we have about any previous relevant information as a probability distribution by itself. This is called the *prior*. 
 - ML trees can deal with sequence data that doesn't have dates (branch lengths indicate sequence similarity). Bayesian trees can compute time-stamped trees (branch lengths indicate passage of time)
 
-*Note: all this is actually much easier in maths, because many things get lost in translation when attempting to convert these concepts into English. Ultimately, it's all just calculus.*
-
 ## ML Trees
 
 ### Consensus Tree vs. Best (Maximum Likelihood) Tree
@@ -16,7 +17,7 @@ They both contain relevant information.
 
 The **best tree** is the tree that best fits the input data, the equivalent of a point estimate. Mathematically, it's literally the *maximum* likelihood tree. In a sense, it's *overfitted*.
 
-The **consensus tree** gives information on which sub-structures in a tree are well-supported - that is, which groups consistently appear. In the frequentist sense, these values tell you how probable that structure is. This directly translates to the generalizability of the data.
+The **consensus tree** gives information on which sub-structures in a tree are well-supported - that is, which groups consistently appear. This directly translates to the generalizability of the data.
 
 In practice, you can present a happy middle ground by projecting support values onto the best tree, or just present the consensus tree. 
 
@@ -30,9 +31,24 @@ In practice, you can present a happy middle ground by projecting support values 
  
 Personal note: I've never used any of these before, because it's simpler (i.e. more interpretable) to use a consensus tree with, say, substructures that have <70 bootstrap support collapsed. In RAxML, this is the option `-J T_70`.
 
-### Statistical Support
+### Statistical Support - Bootstrap
 
-ML trees use *bootstrap values* (an explanation of what that is will be forthcoming in future). 
+The following explanation is adapted from Wikipedia, and [Efron 1979](https://projecteuclid.org/euclid.aos/1176344552). Say we get a sample of size *n* of people from a population, and we calculate the sample mean height. How reliable is this sample mean, in the sense that if we had gotten a different sample of *n* people, how similar would the sample mean height of this second sample be to our current sample height? And how would it all compare to the true population average height?
+
+The *bootstrap* procedure is as follows:
+
+ 1. Select *n* samples *with replacement* from our current sample of size *n*, where each sample has a probability of *1/n* to be chosen. Compute the mean of this new sample. 
+ 2. Repeat step 1 an arbitrarily large number of times, say, 1000 times. 
+ 
+You would then get 1000 different (bootstrapped) values of the average height, which you can compute variance on. If the bootstrap has large variance (i.e. a large CI), then you can say that your dataset point estimates are not very representative of the true population parameters. 
+
+ML trees use *bootstrap values* in a similar manner to compute statistical support for each branch, except that this time, the *site* is value of interest, rather than height (or, well, the *transition probabilities* between sites, which is directly computed from the nucleotide values themselves). I haven't found an exact procedure for how bootstrap replicates are generated from a dataset yet, but I'm guessing that it's roughly as follows. Given a dataset of *n* sequences:
+
+1. Select *n* sequences *with replacement*, where each sequence has a probability of *1/n* to be chosen. 
+2. Compute the nucleotide substitution matrix from this new sample. Not sure if you compute a tree at this step. 
+3. Repeat steps 1 and 2 an arbitrarily large number of times. 
+
+(The nature of ML sampling is a bit confounding to the exact specification of the algorithms, because any ML search algorithm is almost definitely some kind of path-dependent search algorithm, e.g. gradient descent. It would be foolish to truly, randomly generate trees and test them all for loglikelihood, because there are an overwhelmingly large number of suboptimal trees, but only one maximum likelihood tree). 
 
 To figure out how many bootstrap iterations to use, that's actually a function of the number of sequences in your dataset. As the number of sequences increase, the number of possible trees increase extremely dramatically as well (I forget the actual Big O function, but there's a factorial in there somewhere). As such, for very large datasets, no ML-based searching algorithm can search a feasible size of all possible trees within a feasible period of time. In general, if the data has very long alignments, the chance of getting an optimal tree increases. If the data has shorter alignments, finding the global maxima will be harder. 
 
