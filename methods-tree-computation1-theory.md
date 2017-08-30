@@ -37,18 +37,20 @@ The following explanation is adapted from Wikipedia, and [Efron 1979](https://pr
 
 The *bootstrap* procedure is as follows:
 
- 1. Select *n* samples *with replacement* from our current sample of size *n*, where each sample has a probability of *1/n* to be chosen. Compute the mean of this new sample. 
- 2. Repeat step 1 an arbitrarily large number of times, say, 1000 times. 
+1. Select *n* samples *with replacement* from our current sample of size *n*, where each sample has a probability of *1/n* to be chosen. Compute the mean of this new sample. 
+2. Repeat step 1 an arbitrarily large number of times, say, 1000 times. 
  
 You would then get 1000 different (bootstrapped) values of the average height, which you can compute variance on. If the bootstrap has large variance (i.e. a large CI), then you can say that your dataset point estimates are not very representative of the true population parameters. 
 
-ML trees use *bootstrap values* in a similar manner to compute statistical support for each branch, except that this time, the *site* is value of interest, rather than height (or, well, the *transition probabilities* between sites, which is directly computed from the nucleotide values themselves). I haven't found an exact procedure for how bootstrap replicates are generated from a dataset yet, but I'm guessing that it's roughly as follows. Given a dataset of *n* sequences:
+ML trees use *bootstrap values* in a similar manner to compute statistical support for each branch, except that this time, the *site* is value of interest, rather than height (or, well, the *transition probabilities* between sites, which is directly computed from the nucleotide values themselves). From [Felsenstein 1985](http://biostat.jhsph.edu/~jleek/teaching/2011/754/reading/felsenstein.pdf), given a dataset of *n* sequences of length *m* sites (nucleotide or amino acid):
 
-1. Select *n* sequences *with replacement*, where each sequence has a probability of *1/n* to be chosen. 
+1. Select *m* sites *with replacement*, where each site has a probability of *1/m* to be chosen. 
 2. Compute the nucleotide substitution matrix from this new sample. Not sure if you compute a tree at this step. 
 3. Repeat steps 1 and 2 an arbitrarily large number of times. 
 
-(The nature of ML sampling is a bit confounding to the exact specification of the algorithms, because any ML search algorithm is almost definitely some kind of path-dependent search algorithm, e.g. gradient descent. It would be foolish to truly, randomly generate trees and test them all for loglikelihood, because there are an overwhelmingly large number of suboptimal trees, but only one maximum likelihood tree). 
+Felsenstein notes that this procedure effectively treats evolution at each site as independent between sites, which is almost certainly wrong. Treating positively(negatively) correlated sites as independent would result in confidence intervals which are larger(smaller) than they should be. But there's no way in advance to compute correlation between sites. 
+
+(Felsenstein chose to generate bootstrap replicates by randomly choosing *sites* with replacement because the dataset itself, with *n* sequences, all of length *m* nucleotide, would be a random sample from the set of *all possible nucleotide sequences* of length *m*. However, I see no reason why generating bootstrap replicates by randomly selecting *sequences* with replacement would be different - after all, in the earlier height experiment, we randomly select *people*, where *height* is the property that we're interested in. Similarly, we would randomly select *sequences*, where *nucleotide sequence* is the property that we're interested in.)
 
 ## How many Bootstraps?
 
