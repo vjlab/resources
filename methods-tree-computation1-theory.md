@@ -54,7 +54,15 @@ Felsenstein notes that this procedure effectively treats evolution at each site 
 
 ## How many Bootstraps?
 
-To figure out how many bootstrap iterations to use, that's actually a function of the number of sequences in your dataset. As the number of sequences increase, the number of possible trees increase extremely dramatically as well (I forget the actual Big O function, but there's a factorial in there somewhere). As such, for very large datasets, no ML-based searching algorithm can search a feasible size of all possible trees within a feasible period of time. In general, if the data has very long alignments, the chance of getting an optimal tree increases. If the data has shorter alignments, finding the global maxima will be harder. 
+To figure out how many bootstrap iterations to use, that's actually a function of the number of sequences in your dataset. As the number of sequences increase, the number of possible trees increase extremely dramatically as well, on the order of products of factorials:
+
+ - Different sequences will yield different shapes of trees
+ - Different tree shapes can have different permutations of nodes (internal and tip)
+ - Each different node permutation of a specific tree shapes can be rooted many different ways.
+
+For example, just 10 sequences will have 98 different tree shapes, and over 25 million possible rooted trees. 
+
+As such, for very large datasets, no ML-based searching algorithm can search a feasible size of all possible trees within a feasible period of time. In general, if the data has very long alignments, the chance of getting an optimal tree increases. If the data has shorter alignments, finding the global maxima will be harder. 
 
 A [best practice](https://groups.google.com/forum/#!topic/iqtree/0mwGhDokNns) recommendation is as follows:
 
