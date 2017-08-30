@@ -50,7 +50,22 @@ ML trees use *bootstrap values* in a similar manner to compute statistical suppo
 
 (The nature of ML sampling is a bit confounding to the exact specification of the algorithms, because any ML search algorithm is almost definitely some kind of path-dependent search algorithm, e.g. gradient descent. It would be foolish to truly, randomly generate trees and test them all for loglikelihood, because there are an overwhelmingly large number of suboptimal trees, but only one maximum likelihood tree). 
 
+## How many Bootstraps?
+
 To figure out how many bootstrap iterations to use, that's actually a function of the number of sequences in your dataset. As the number of sequences increase, the number of possible trees increase extremely dramatically as well (I forget the actual Big O function, but there's a factorial in there somewhere). As such, for very large datasets, no ML-based searching algorithm can search a feasible size of all possible trees within a feasible period of time. In general, if the data has very long alignments, the chance of getting an optimal tree increases. If the data has shorter alignments, finding the global maxima will be harder. 
+
+A [best practice](https://groups.google.com/forum/#!topic/iqtree/0mwGhDokNns) recommendation is as follows:
+
+
+>During the tree search, IQ-TREE samples a lot of locally optimal trees and produce a locally optimal tree in each iteration. The log-likelihood of the locally optimal trees are printed after every 10 iterations. If you want to see the log-likelihood of all locally optimal trees, turn on the flag -v (verbose). Toward the end of the search, if the log-likelihoods seem to converge (some iterations produce the same log-likelihood) then you might only need to repeat the search few more times. If they do not, you should repeat the search as many times as possible. 
+
+>...large log-likelihood variance among IQ-TREE runs often means that your data does not contain enough phylogenetic signal. In such case, you have do some statistical tests to access the branch support (UFBoot, aLRT, standard bootstrap). With little data, even if the optimal tree could be found, it might still look very different from the true tree. 
+
+
+My contentions with this best practice are:
+
+ - Multiple runs, say, 5 separate runs, to get different local optima, each with 1000 steps, may not produce a superior tree to a single run with 5000 steps - because the separate runs could be overlapping and searching the same space by coincidence. The probability of this happening decreases as tree space increases. It's more predictable to use a single run with 5000 steps, with an appropriately chosen step-size or perturbation to escape local optima (see the link for how to do this). 
+ - There may be no such thing as a true tree. In the language of machine learning, computing a tree is an unsupervised problem. 
 
 ## Bayesian Trees
 
