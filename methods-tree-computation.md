@@ -22,6 +22,16 @@ The **consensus tree** gives information on which sub-structures in a tree are w
 
 In practice, you can present a happy middle ground by projecting support values onto the best tree, or just present the consensus tree. 
 
+### Variants of consensus trees
+
+[Source](https://www.stat.wisc.edu/~larget/Genetics629/lec6-4.pdf)
+
+ - A **strict consensus tree** shows only the substructures (or "clades") which appear in every sampled tree. 
+ - A **majority rule consensus tree** shows only the substructures which appear in at least 50% of the sampled trees.
+ - A **priority consensus tree** adds substructures to the majority rule consensus tree in order of decreasing frequency in the sample provided that these new substructures do not conflict with a substructure with higher frequency.
+ 
+Personal note: I've never used any of these before, because it's simpler (i.e. more interpretable) to use a consensus tree with, say, substructures that have <70 bootstrap support collapsed. In RAxML, this is the option `-J T_70`.
+
 ### Statistical Support
 
 ML trees use *bootstrap values* (an explanation of what that is will be forthcoming in future). 
