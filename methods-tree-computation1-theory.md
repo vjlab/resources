@@ -66,7 +66,10 @@ A [best practice](https://groups.google.com/forum/#!topic/iqtree/0mwGhDokNns) re
 
 My contentions with this best practice are:
 
- - Multiple runs, say, 5 separate runs, to get different local optima, each with 1000 steps, may not produce a superior tree to a single run with 5000 steps - because the separate runs could be overlapping and searching the same space by coincidence. The probability of this happening decreases as tree space increases. It's more predictable to use a single run with 5000 steps, with an appropriately chosen step-size or perturbation to escape local optima (see the link for how to do this). 
+ - Multiple runs, say, 5 separate runs, to get different local optima, each with 1000 steps, may not produce a superior tree to a single run with 5000 steps - because the separate runs could be overlapping and searching the same space by coincidence. The probability of this happening decreases as tree space increases. It's more predictable to use a single run with 5000 steps, with an appropriately chosen step-size or perturbation to escape local optima (see the link for how to do this). This is a bit of an open problem, with the following analogy:
+ 
+> Say you've lost a coin in a very large house, with 3 levels. Which strategy is better: (A) get 3 people to search for the coin, for 1 hour concurrently, where each persons starts on a different level. Each person remembers where he last searched so that he won't go over the same ground again, but different people may accidentally search the same ground. (B) get 1 person to search for 3 hours.
+ 
  - There may be no such thing as a true tree. In the language of machine learning, computing a tree is an unsupervised problem. 
 
 ## Bayesian Trees
