@@ -1,4 +1,4 @@
-# Tree Computation
+# Tree Computation Part 1 - Theory
 ## Maximum Likelihood & Bayesian Paradigms for Tree Computation
 Note that these are not two opposing frameworks, nor are they the *only* frameworks for the interpretation of probability.  The (opposing) counterpart to Bayesian statistics is frequentist statistics, which is out of the scope of this tutorial, but quite nicely summed up as follows:
 
