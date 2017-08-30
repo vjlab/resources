@@ -1,10 +1,8 @@
 # Tree Computation Part 1 - Theory
 ## Maximum Likelihood & Bayesian Paradigms for Tree Computation
-Note that these are not two opposing frameworks, nor are they the *only* frameworks for the interpretation of probability.  The (opposing) counterpart to Bayesian statistics is frequentist statistics, which is out of the scope of this tutorial, but quite nicely summed up as follows:
+Note that these are not two opposing frameworks, nor are they the *only* frameworks for the interpretation of probability.  The (opposing) counterpart to Bayesian statistics is frequentist statistics, which is out of the scope of this tutorial.
 
-![xkcd1132](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
-
-The bottom line is:
+The key points are:
 - **Maximum likelihood** methods compute the most likely tree that evolved the observed sequence data. Answers the question: "*Out of all these models, which is the most likely one to have arisen out of the given data?*" Note that ML can only compare between models to pick the most appropriate one. It is unable to assess the correctness of a model, i.e. it could be picking the least terrible out of a bunch of terrible models.
 - **Bayesian** methods have an extra step of modeling the uncertainty we have about any previous relevant information as a probability distribution by itself. This is called the *prior*. 
 - ML trees can deal with sequence data that doesn't have dates (branch lengths indicate sequence similarity). Bayesian trees can compute time-stamped trees (branch lengths indicate passage of time)
