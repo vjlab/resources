@@ -20,6 +20,29 @@ sequence3: GGGGGG
  - ML-based.
  - Not terribly fast. It could be faster than RAxML; I've never really tested it in large runs.
  - From some small test runs, IQ-Tree and FastTree seem to produce the same results, but IQ-Tree is usually slower.
+ 
+Basic example cmd: 
+```
+iqtree -s <input_filename> -nt AUTO
+```
+
+Recommended naive usage
+```
+iqtree-omp -s <input_filename> -nt AUTO -m TEST -redo -pre my_prefix
+```
+
+You can also choose `-m MF`, for ModelFinder.
+- `-m <model>`: Use `-m TEST` to automatically determine the best-fit model.
+- `-redo`: override previous runs.
+- `-pre`: prefix of output files, because IQ-tree spits out a lot of them.
+- `s <input filename>` : input filename.
+- `nt <no. of threads>`: integer, specifying no. of threads. Use AUTO for, well, auto.
+
+Notes:
+ - I think the only special char supported by IQ-tree is '\_'. Any other special chars get converted to '\_' automatically.
+ - Deal with duplicate names first before running!
+ - Quickstart guide: http://www.iqtree.org/doc/Quickstart
+ - Unfortunately, I can't seem to find a way to get this to run in Jupyter.
 
 ### RAxML
 
