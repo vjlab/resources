@@ -28,11 +28,10 @@ iqtree -s <input_filename> -nt AUTO
 
 Recommended naive usage
 ```
-iqtree-omp -s <input_filename> -nt AUTO -m TEST -redo -pre my_prefix
+iqtree -s <input_filename> -nt AUTO -m TEST -redo -pre my_prefix
 ```
 
-You can also choose `-m MF`, for ModelFinder.
-- `-m <model>`: Use `-m TEST` to automatically determine the best-fit model.
+- `-m <model>`: Use `-m TEST` to automatically determine the best-fit model, or `-m MF`, for ModelFinder (not sure what that is...)
 - `-redo`: override previous runs.
 - `-pre`: prefix of output files, because IQ-tree spits out a lot of them.
 - `s <input filename>` : input filename.
