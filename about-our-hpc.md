@@ -20,13 +20,15 @@ Software available are:
 - BEAST (executable `beast-mcmc`)
 - RAXML (executable `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3`, in increasing order of speed; though the last two may vary)
 - PHYML
+- BEAGLE library
 
 Coming up:
 - BEAST2
-- BEAGLE library
 
 ### Sending a Job
 *If none of this works, you can still walk over to the server and just use the terminal.* 
+
+*If you're doing a computational job on the server, do not log off after you're done; instead let it return to the "switch user" screen by itself, or your process will be stopped. I think this is because Linux sends a kill signal which stops all non-background processes if a user manually logs out. That's the point of `nohup` - to deliberately designate your job as a background processes.*
 
 To remotely send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`. Syntax is:
 
