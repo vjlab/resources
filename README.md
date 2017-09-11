@@ -5,7 +5,7 @@
 
 This first introductory page contains a bunch of essential readings to get the basics first. Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube.
 
-## Contents [Under development]
+## Contents
 This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, there's no guarantee that each tutorial is entirely self-contained, but the idea is that you should be able to start anywhere.
 
 1. #### Phylogenetics
