@@ -75,4 +75,8 @@ Performance note: all these tests were done when I was the only one using the se
 
 ## Admin Notes
 
+### Software Available:
+ - R studio v0.99(ish), R v 3.4.1
+ - Python 3, with the Anaconda distribution installed. Conda environment set up: access using `source activate py36`. Access `Jupyter` using `Jupyter notebook`. 
  - NVIDIA has a python library for GPU-enhanced computation: https://developer.nvidia.com/how-to-cuda-python
+ 
