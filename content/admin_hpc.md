@@ -1,4 +1,4 @@
-# R on the HPC
+# R Setup
 A bunch of admin notes for HPC admin.
 
 ## Installing shared libraries
@@ -12,3 +12,9 @@ install.packages("my_package", lib="/usr/lib/R/site-libraries")
 
 Check out this University cluster webpage for how they did their setup: https://www.chpc.utah.edu/documentation/software/r-language.php.
 
+# Python Setup
+Containerization done using `conda`. See [this page](https://conda.io/docs/commands.html#conda-vs-pip-vs-virtualenv-commands) for conda vs. pip vs. virtualenv info. Some exploration commands:
+
+* `conda info --envs` - to see what environments have been set up
+* `conda list` - from an activated environment, to see what packages have been conda or pip-installed
+* `pip list` - to see what packages have been pip-installed. 
