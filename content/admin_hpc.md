@@ -18,3 +18,5 @@ Containerization done using `conda`. See [this page](https://conda.io/docs/comma
 * `conda info --envs` - to see what environments have been set up
 * `conda list` - from an activated environment, to see what packages have been conda or pip-installed
 * `pip list` - to see what packages have been pip-installed. 
+
+Shared Anaconda installation: see [this](https://stackoverflow.com/questions/27263620/how-to-install-anaconda-python-for-all-users) SO post.
