@@ -1,3 +1,4 @@
+
 # R Setup
 A bunch of admin notes for HPC admin.
 
@@ -10,7 +11,8 @@ Libraries should be installed in `/usr/lib/R/site-libraries`. [source](https://s
 install.packages("my_package", lib="/usr/lib/R/site-libraries")
 ``` 
 
-Check out this University cluster webpage for how they did their setup: https://www.chpc.utah.edu/documentation/software/r-language.php.
+Check out this University cluster webpage for how they did their setup: https://www.chpc.utah.ed
+u/documentation/software/r-language.php.
 
 # Python Setup
 
@@ -22,7 +24,7 @@ Containerization done using `conda`. See [this page](https://conda.io/docs/comma
 * `conda list` - from an activated environment, to see what packages have been conda or pip-installed
 * `pip list` - to see what packages have been pip-installed. 
 
-Shared Anaconda installation: see [this](https://stackoverflow.com/questions/27263620/how-to-install-anaconda-python-for-all-users) SO post.
+Shared Anaconda installation: installed in `/opt/anaconda3`. See [this](https://stackoverflow.com/questions/27263620/how-to-install-anaconda-python-for-all-users) SO post.
 
 References:
 
