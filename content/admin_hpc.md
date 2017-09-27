@@ -23,3 +23,7 @@ Containerization done using `conda`. See [this page](https://conda.io/docs/comma
 * `pip list` - to see what packages have been pip-installed. 
 
 Shared Anaconda installation: see [this](https://stackoverflow.com/questions/27263620/how-to-install-anaconda-python-for-all-users) SO post.
+
+References:
+
+* Read up about [conda: myths and misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
