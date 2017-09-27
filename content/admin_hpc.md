@@ -13,6 +13,9 @@ install.packages("my_package", lib="/usr/lib/R/site-libraries")
 Check out this University cluster webpage for how they did their setup: https://www.chpc.utah.edu/documentation/software/r-language.php.
 
 # Python Setup
+
+**IMPT: do NOT use `sudo pip install my_package`!** [Reason.](https://askubuntu.com/questions/802544/is-sudo-pip-install-still-a-broken-practice)
+
 Containerization done using `conda`. See [this page](https://conda.io/docs/commands.html#conda-vs-pip-vs-virtualenv-commands) for conda vs. pip vs. virtualenv info. Some exploration commands:
 
 * `conda info --envs` - to see what environments have been set up
