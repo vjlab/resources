@@ -1,0 +1,49 @@
+---
+title: "Tree Plotting Demo"
+output: html_notebook
+---
+
+Load a bunch of libraries
+```{r, echo=F}
+library("ape")
+library("Biostrings")
+library("ggplot2")
+library("ggtree")
+```
+
+
+Read in a sample tree, and plot it with node labels. It seems that ggtree automatically enumerates nodes, so that they can be retrieved by their number. Plot the tree first using `ggtree()...`, with the nodes labelled, to get the node number of the node you wish to collapse. Leave out `+ geomtiplab()` if you don't need the tip labels.
+
+```{r}
+nwk <- system.file("extdata", "sample.nwk", package="treeio")
+tree <- read.tree(nwk)
+ggtree(tree) + geom_text2(aes(subset=!isTip, label=node), hjust=-.3) + geom_tiplab()
+```
+
+Let's do several things:
+ - Highlight tips K, I and G, using `focus()`
+ - Collapse nodes 20 and 21
+ 
+ First, group the nodes to highlight into a group, by applying the `groupOTU` function to the tree. 
+
+```{r}
+tips_to_highlight <- c("K", "I", "E")
+tree <- groupOTU(tree, focus=tips_to_highlight)
+```
+
+Now call `ggtree()` to plot.
+
+```{r}
+node_to_collapse1 <- 21
+node_to_collapse2 <- 20
+
+# Call ggtree()
+ggtree(tree, aes(color=group), ladderize=TRUE) %>% collapse(node=node_to_collapse1) %>% collapse(node=node_to_collapse2) + 
+  geom_point2(aes(subset=(node == node_to_collapse1)), size=2, shape=25, fill="steelblue") + 
+  geom_point2(aes(subset=(node == node_to_collapse2)), size=2, shape=25, fill="steelblue") +
+  geom_treescale() + 
+  geom_text2(aes(subset=!isTip, label=node), hjust=-.3, size=3) +
+  geom_tiplab(align=TRUE, linesize=0.25, size=3) + 
+  scale_color_manual(values=c("black", "red"))
+```
+
