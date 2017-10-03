@@ -22,6 +22,8 @@ Note that `adephylo` refuses to be installed, for some strange reason.
 
 Frankly, I didn't initially track whether libraries should be globally installed (because I didn't think to do so), so much of what's on there now is quite messy; lost track of what site-packages are on the PATH. Users are recommended to `conda install` whatever they need to their local conda `env`. There's a global install of Anaconda in `/opt/anaconda`, but this can't be conda-updated easily, so the current workaround is just containerise *everything*, with no global libraries, for each user.
 
+**Try this**: Install a multi-user env in a global location. https://conda.io/docs/user-guide/configuration/admin-multi-user-install.html
+
 Containerization done using `conda`. See [this page](https://conda.io/docs/commands.html#conda-vs-pip-vs-virtualenv-commands) for conda vs. pip vs. virtualenv info. Some exploration commands:
 
 * `conda info --envs` - to see what environments have been set up
