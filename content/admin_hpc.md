@@ -20,7 +20,7 @@ Note that `adephylo` refuses to be installed, for some strange reason.
 
 **IMPT: do NOT use `sudo pip install my_package`!** [Reason.](https://askubuntu.com/questions/802544/is-sudo-pip-install-still-a-broken-practice)
 
-Frankly, I didn't initially track whether libraries should be globally installed, so much of what's on there now is a mess; lost track of what site-packages are on the PATH, and I think that Anaconda is in `/opt/anaconda`, but can't be sure. Users are recommended to `conda install` whatever they need to their local conda `env`. 
+Frankly, I didn't initially track whether libraries should be globally installed (because I didn't think to do so), so much of what's on there now is quite messy; lost track of what site-packages are on the PATH. Users are recommended to `conda install` whatever they need to their local conda `env`. There's a global install of Anaconda in `/opt/anaconda`, but this can't be conda-updated easily, so the current workaround is just containerise *everything*, with no global libraries, for each user.
 
 Containerization done using `conda`. See [this page](https://conda.io/docs/commands.html#conda-vs-pip-vs-virtualenv-commands) for conda vs. pip vs. virtualenv info. Some exploration commands:
 
