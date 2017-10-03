@@ -18,6 +18,8 @@ u/documentation/software/r-language.php.
 
 **IMPT: do NOT use `sudo pip install my_package`!** [Reason.](https://askubuntu.com/questions/802544/is-sudo-pip-install-still-a-broken-practice)
 
+Frankly, I didn't initially track whether libraries should be globally installed, so much of what's on there now is a mess; lost track of what site-packages are on the PATH, and I think that Anaconda is in `/opt/anaconda`, but can't be sure. Users are recommended to `conda install` whatever they need to their local conda `env`. 
+
 Containerization done using `conda`. See [this page](https://conda.io/docs/commands.html#conda-vs-pip-vs-virtualenv-commands) for conda vs. pip vs. virtualenv info. Some exploration commands:
 
 * `conda info --envs` - to see what environments have been set up
