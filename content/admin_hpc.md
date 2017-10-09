@@ -4,7 +4,8 @@ A bunch of admin notes for HPC admin.
 
 ## Admin tools
 
-* `quota` and `quotatools`: Obtained via `apt-get`. Not set up yet, only downloaded. 
+* `quota` and `quotatools`: Obtained via `apt-get`. Not set up yet, only downloaded. **Danger**: involves editing some important root files which may render the system un-bootable! **PROCEED WITH EXTREME CAUTION.**
+* Nice askubuntu [post](https://askubuntu.com/questions/503216/how-can-i-set-a-single-bashrc-file-for-several-users/503222) about copying global bashrc's for everyone.
 
 ## Phylogenetics Software
 
