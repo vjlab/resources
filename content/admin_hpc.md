@@ -2,6 +2,10 @@
 # R Setup
 A bunch of admin notes for HPC admin.
 
+## Admin tools
+
+* `quota` and `quotatools`: Obtained via `apt-get`. Not set up yet, only downloaded. 
+
 ## Phylogenetics Software
 
 * BEAST: installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
