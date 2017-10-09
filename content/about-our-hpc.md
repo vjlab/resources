@@ -36,7 +36,7 @@ To remotely send a job to the HPC and then disengage your local terminal (so tha
 nohup some_command &> my_filename.out&
 ```
 
-If you don't specify the name of an output file (in the example above, `my_filename.out`, any screen output will be written to a file, `nohup.out`, by default. Note that in the event of simultaneous runs where you didn't specify a file name, output from different runs would be written to the *same* `nohup.out` file, which would just make an incredible mess of things. However, in my own tests, BEAST and RAXML runs write out their own log files anyway, so that's not that big an issue. Your own python jobs, however, will write any `print` or `sys.out` output to the `nohup` output file. 
+If you don't specify the name of an output file (in the example above, `my_filename.out`, any screen output will be written to a file, `nohup.out`, by default. Note that in the event of simultaneous runs where you didn't specify a file name, output from different runs would be written to the *same* `nohup.out` file, which would just make an incredible mess of things. BEAST and RAXML runs write out their own log files, so that's not that big an issue, but their screen output (that we admittedly don't use for downstream analyses) would be printed out to the same `nohup.out` file. Your own python jobs, however, will write any `print` or `sys.out` output to the `nohup` output file. 
 
 For instance, I have a python script called `epi_search.py`, which takes in two file names as input: `input1` and `input2`. I'd run:
 
