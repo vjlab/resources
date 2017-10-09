@@ -4,9 +4,11 @@ A bunch of admin notes for HPC admin.
 
 ## Phylogenetics Software
 
-BEAST: installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
-BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
-
+* BEAST: installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
+* BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
+* RAXML: ???
+* Figtree: Installed via `apt-get`
+* fasttree: Installed via `apt-get`
 
 ## R: Installing shared libraries
 Not sure if how to organize it such that users can install their own insulated packages if required (or maybe I'll just install packages on request to prevent compatibility debt from building up). Anyway, from within the R environment, use `.libPaths()` to see which paths are accessible to the R executable.
