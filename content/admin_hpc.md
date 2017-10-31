@@ -1,5 +1,3 @@
-"/>
-
 # R Setup
 A bunch of admin notes for HPC admin.
 
@@ -11,11 +9,15 @@ A bunch of admin notes for HPC admin.
 ## Phylogenetics Software
 
 * BEAST: installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
-* BEAST2: local install in ~/dten0001/Downloads/beast2/, with a PATH added. Will think about global installation later.
+* BEAST2: local install in `~/dten0001/Downloads/beast2/`, with a PATH added. Will think about global installation later.
 * BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
 * RAXML: ???
 * Figtree: Installed via `apt-get`
 * fasttree: Installed via `apt-get`
+
+## Other
+* dspp: Installed via `apt-get`
+* ncbi-blast+: Installed via `apt-get`
 
 ## R: Installing shared libraries
 Not sure if how to organize it such that users can install their own insulated packages if required (or maybe I'll just install packages on request to prevent compatibility debt from building up). Anyway, from within the R environment, use `.libPaths()` to see which paths are accessible to the R executable.
@@ -36,7 +38,7 @@ Note that `adephylo` refuses to be installed, for some strange reason.
 
 **IMPT: do NOT use `sudo pip install my_package`!** [Reason.](https://askubuntu.com/questions/802544/is-sudo-pip-install-still-a-broken-practice)
 
-Frankly, I didn't initially track whether libraries should be globally installed (because I didn't think to do so), so much of what's on there now is quite messy; lost track of what site-packages are on the PATH. Users are recommended to `conda install` whatever they need to their local conda `env`. There's a global install of Anaconda in `/opt/anaconda`, but this can't be conda-updated easily, so the current workaround is just containerise *everything*, with no global libraries, for each user.
+Frankly, I didn't initially track whether libraries should be globally installed (because I didn't think to do so), so much of what's on there now is quite messy; lost track of what site-packages are on the PATH. Users are recommended to `conda install` whatever they need to their local conda `env`. There's a global install of Anaconda in `/opt/anaconda`, but this can't be conda-updated easily, so the current workaround is just containerise *everything*, with no global libraries, for each user. I have my own local installation in `~/anaconda3`, which `sys.path` knows about, so I'll likely remove the `/opt/anaconda` global install if it's not being used.
 
 **Try this**: Install a multi-user env in a global location. https://conda.io/docs/user-guide/configuration/admin-multi-user-install.html
 
