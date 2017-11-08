@@ -17,13 +17,11 @@ You'll be prompted for your password, you can continue from there in the command
 ## Software, and Using the Command Line
 
 Software available are:
-- BEAST (executable `beast-mcmc`)
+- BEAST v1.8.3 (executable `beast-mcmc`), installed via `sudo apt-get`. There's a global version of BEAST 1.8.4 sitting in `/usr/local`, not sure how to access that yet. Use your local version for the moment.
 - RAXML (executable `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3`, in increasing order of speed; though the last two may vary)
 - PHYML
 - BEAGLE library
-
-Coming up:
-- BEAST2
+- BEAST2: local version installed for admin only. How to make it global?
 
 ### Sending a Job
 *If none of this works, you can still walk over to the server and just use the terminal.* 
