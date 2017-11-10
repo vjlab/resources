@@ -3,10 +3,7 @@
 [Source](http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/)
 1. Install Xcode
 
-2. Install `homebrew`: 
-```
- $ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-```
+2. Install `homebrew`: go to their webpage, and follow the instructions.
 
 3. Install Python 3. I don't normally bother with Python 2.
 ```
