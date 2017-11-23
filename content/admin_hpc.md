@@ -9,8 +9,8 @@ A bunch of admin notes for HPC admin.
 
 ## Phylogenetics Software
 
-* BEAST: installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
-* BEAST2: local install in `~/dten0001/Downloads/beast2/`, with a PATH added. Will think about global installation later.
+* BEAST: executable `beast-mcmc`. installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
+* BEAST2: local install in `~/dten0001/Downloads/beast2/`, with a PATH added, executable `beast`. Will think about global installation later.
 * BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
 * RAXML: ???
 * Figtree: Installed via `apt-get`
@@ -19,6 +19,9 @@ A bunch of admin notes for HPC admin.
 ## Other
 * dspp: Installed via `apt-get`
 * ncbi-blast+: Installed via `apt-get`
+* bowtie, bowtie2: Installed via `apt-get`
+* samtools: Installed via SF download and `make install`. It's automatically placed in `/user/local/bin`, I think.
+* SPAde: Local install, no path. So far, only used for `Unicycler`; use `--spade_path path/toi/spade` to specify path.
 
 ## R: Installing shared libraries
 Not sure if how to organize it such that users can install their own insulated packages if required (or maybe I'll just install packages on request to prevent compatibility debt from building up). Anyway, from within the R environment, use `.libPaths()` to see which paths are accessible to the R executable.
