@@ -33,3 +33,11 @@ This repo contains several tutorial files, with varying levels of difficulty.  R
  - [`misc-writing`](./content/misc-writing.md) - How to write so that others can understand you.
  - [`things-to-read-up-on`](./content/things.md) - Don's things to read up on.
  - [`London BEAST workshop notes`](./beast/readme.md) - Don's notes from London.
+
+4. ### Bioinformatics Projects
+ - A principled way to subsample across location and time. Downsampling & representative sampling (these are different situations!). Do BEAST and ML runs to check that tree topologies are preserved in terms of major clade structures (more accurate way to do this with Robinson-Faulds?). My first guess: CD-hit by country/year.
+ - Clade membership, the computational way.  Can either use a list of references (vaccines), or unsupervised (K-means). Requires pairwise optimization.
+ - The epistasis problem (where's that blog post again?)
+ - Reassortment! A principled way to measure it, detect it...
+ - Cleaned, aligned databases of all kinds of viruses? Start with all flu viruses. Needs to have a proper way to either automatically update, or easily manual update every week or so. 
+ - Dating an ML tree. This is a methodological nightmare, though.
