@@ -18,13 +18,13 @@ The hassle of cleaning names is probably the most tedious, but necessary, chore.
  - Duplicate name + Ids - could have resulted from multiple submissions of the same sequence to the same data source, maybe by different labs.
  - Duplicate names - the same sample could have been given to different labs, then sequenced separately.
  - special characters (for RAxML) and white spaces (for FigTree). Look out especially for semicolons and brackets, because these will mess up the newick format of trees.
- - nucleotide characters other than 'a', 'c', 'g', 't' (CDHit)
- - Duplicate sequences (MAFFT)
+ - nucleotide characters other than 'a', 'c', 'g', 't' (CDHit will complain)
+ - Duplicate sequences
 
 ### Program Quirks To Pre-empt
  - `CD-Hit` will refuse to cooperate if you give it duplicate sequences, or sequences with dashes '-' in them.
  - `FigTree` will cut off record names if there's white spaces in the name. For instance, `B/Arizona/02/2016|ID123|North America|2016-12-31` will become `B/Arizona/02/2016|ID123|North`, because of the space in `North America`.
- - `RAxML` will convert all (or almost all) special characters to underscores. This can be a problem if you want to open the output of `RAxML` in, say, `TempEst`, because `TempEst` needs to guess the dates from the record names by being told the name formats. E.g. We usually have to tell it that the date in the record name `B/Arizona/02/2016|ID123|North America|2016-12-31` is the last section, where the record name is split into sections (or "delimited") by "|". If all special characters get converted to underscores, this messes things up considerably.
+ - `IQTree` will convert all (or almost all) special characters to underscores. This can be a problem if you want to open the output of `IQTree` in, say, `TempEst`, because `TempEst` needs to guess the dates from the record names by being told the name formats. E.g. We usually have to tell it that the date in the record name `B/Arizona/02/2016|ID123|North America|2016-12-31` is the last section, where the record name is split into sections (or "delimited") by "|". If all special characters get converted to underscores, this messes things up considerably.
 
 ## Frequently-used File Formats
 ### Sequence Data
@@ -58,7 +58,7 @@ Gorilla   AAACCCTTGC CGGTACGCTT AAACCATTGC CGGTACGCTT AA
 - The numbers "5" and "42" are the number of sequences and the lengths of the sequences themselves, respectively.
 - All sequences must be of the same length.
 - The sequence names must have the same length, padded by white spaces as necessary. Longer sequence names will be truncated, which is supremely annoying.
-- `.phy` is probably the most annoying file format to deal with. Fortunately, I've never had to use it before because any program which accepts `.phy` can also accept `.fasta` formats, so I'm hoping that this will die a natural death.
+- `.phy` is probably the most annoying file format to deal with. Fortunately, I've never had to use it before because any program which accepts `.phy` can also accept `.fasta` formats, so I'm hoping that this will die a natural death over time.
 
 ### Tree file extensions - `.tre`, `.nex`, `.nwk`
 ### BEAST input - `.xml`
