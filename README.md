@@ -12,7 +12,8 @@ This repo contains several tutorial files, with varying levels of difficulty.  R
  - [`Commonly used file formats`](./content/misc-file-formats.md) - Tutorial on commonly used file formats like `fasta`, `phy`, etc.
  - [`Multiple sequence alignment - introduction`](./content/alignment1-introduction.md) - How to do multiple sequence alignment, part 1
  - [`Multiple sequence alignment using MAFFT`](./content/alignment2-mafft.md) - How to do multiple sequence alignment (using `mafft`), part 2
- - [`Software for tree reconstruction`](./content/methods-tree-computation.md) - How to use various programs to compute a tree, and their pros and cons
+ - [`Tree computation part 1: theory`](./content/methods-tree-computation1-theory.md) - A not-so-brief introduction to ML trees and BEAST trees. 
+ - [`Tree computation part 2: software`](./content/methods-tree-computation2-software.md) - How to use various programs to compute a tree, and their pros and cons
  - [`BEAST tutorial links`](./content/software-beast.md) - A link to existing BEAST tutorials.
  - [`PAML-TREESUB`](./content/software-paml-treesub.md) - How to install and use `PAML`, and an associated program, `treesub`.
  - [`RAxML`](./content/software-raxml.md) - How to install RAXML, and basic usage.
