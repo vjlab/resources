@@ -20,6 +20,7 @@ sequence3: GGGGGG
  - ML-based.
  - Not terribly fast. It could be faster than RAxML; I've never really tested it in large runs.
  - From some small test runs, IQ-Tree and FastTree seem to produce the same results, but IQ-Tree is usually slower.
+ - I personally prefer RAxML, because IQTree converts *all* special characters into underscores; i.e. names like `A/virus_name/2015-12-30` becomes `A_virus_name_2015_12_30`. This plays merry hell with any kind of computational downstream analysis. 
  
 Basic example cmd: 
 ```
@@ -41,7 +42,6 @@ Notes:
  - I think the only special char supported by IQ-tree is '\_'. Any other special chars get converted to '\_' automatically.
  - Deal with duplicate names first before running!
  - Quickstart guide: http://www.iqtree.org/doc/Quickstart
- - Unfortunately, I can't seem to find a way to get this to run in Jupyter.
 
 ### RAxML
 
