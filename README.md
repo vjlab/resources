@@ -24,8 +24,8 @@ This repo contains several tutorial files, with varying levels of difficulty.  R
  - [`m3-quickstart`](./content/m3-quickstart.md) - A tutorial on how to send a job to M3.
  - [`m3-tips-and-tricks`](./content/m3-tips-and-tricks.md) - A dumping ground for how to use M3 slightly more efficiently.
 
-3. #### Other miscellaneous
- - [`data-wrangling`] - *Upcoming*. Some recommended practices for virus name configurations, what kind of files to prepare, and how to pass data to your RA.
+3. #### Tech Tips
+ - [`Data wrangling with python`](./content/Tutorial%20-%20Pandas.ipynb) - Data wrangling with python, using the `pandas` library.
  - [`R-ggtree-demo`](./content/R-ggtree_demo.pdf) - How to plot some basic trees with `ggtree`, in R. This PDF document should be viewable in your browser, but doesn't always; you can download it to view it if required.
  - [`misc-learning-to-code`](./content/misc-learning-to-code.md) - tutorial on how to *learn* to code, not actually on how to code. Has links for the latter.
  - [`software-python-resources`](./content/software-python-resources.md) - A bunch of python resources.
