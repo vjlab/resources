@@ -22,6 +22,8 @@ Software available are:
 - PHYML
 - BEAGLE library
 - BEAST2: local version installed for admin only. How to make it global?
+- hyphy-common, hyphy-mpi, python3-hyphy: installed via `sudo apt-get`.
+- paml: installed via `sudo-apt get`. The actual `tar.gz` has an examples folder, though, so it's worth downloading `paml` just for that.
 
 ### Sending a Job
 *If none of this works, you can still walk over to the server and just use the terminal.* 
