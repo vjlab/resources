@@ -1,6 +1,8 @@
 # Selection Analysis with `HyPhy`
 
-This tutorial covers using my Python3 `wrapomatic` wrapper for these two methods (more incoming when I find the time!). `wrapomatic` was built around HYPHY 2.3.720180108beta(MP). IF you already have it installed, use `$ HYPHYMP -v` to check which version you've got. New 2.3.x versions seem to come out at least once a month with single bug fixes, so this wrapper *should* (fingers-crossed) work with any 2.3.x version. 
+This tutorial covers using my Python3 `wrapomatic` wrapper library for two commonly-used methods: SLAC and RELAX. 
+
+`wrapomatic` was built and tested on a MacOS X (High Sierra), HYPHY 2.3.720180108beta(MP). If you already have it installed, use `$ HYPHYMP -v` to check which version you've got. New 2.3.x versions seem to come out at least once a month with single bug fixes, so this wrapper *should* (fingers-crossed) work with any 2.3.x version. 
 
 ## Installation
 
