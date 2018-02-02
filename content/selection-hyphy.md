@@ -13,3 +13,8 @@ Follow the [installation instructions](https://veg.github.io/hyphy-site/installa
 ## RELAX
 
 > RELAX is a hypothesis testing framework that asks whether the strength of natural selection has been relaxed or intensified along a specified set of test branches. RELAX is therefore not a suitable method for explicitly testing for positive selection. Instead, RELAX is most useful for identifying trends and/or shifts in the stringency of natural selection on a given gene. RELAX requires a specified set of "test" branches to compare with a second set of "reference" branches (note that all branches do not have to be assigned, but one branch is required the test and reference set each). RELAX begins by fitting a codon model with three ω classes to the entire phylogeny (null model). RELAX then tests for relaxed/intensified selection by introducing the parameter k (where k≥0), serving as the selection intensity parameter, as an exponent for the inferred ω values: ω<sup>k</sup>...RELAX then conducts a Likelihood Ratio Test to compare the alternative and null models. 
+
+Output:
+ * `<input_file>.RELAX.json` - if run completes successfully.
+ * `messages.log` - log file full of log file things. Never found a use for it.
+ * `errors.log` - if the run terminates unsuccessfully. 
