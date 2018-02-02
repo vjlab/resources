@@ -1,5 +1,11 @@
 # Selection Analysis with `HyPhy`
 
+## Introduction
+
+_Episodic selection_ encompasses any sudden environmental disturbance likely to lead to a significant alteration in a species' population structure. Such disturbances include geographical transposition, a change in substrate availability, exposure to a new host or a new vector, climate change, and pollution stress.[1]
+
+
+
 This tutorial covers using my Python3 `wrapomatic` wrapper library for two commonly-used methods: SLAC and RELAX. 
 
 `wrapomatic` was built and tested on a MacOS X (High Sierra), HYPHY 2.3.720180108beta(MP). If you already have it installed, use `$ HYPHYMP -v` to check which version you've got. New 2.3.x versions seem to come out at least once a month with single bug fixes, so this wrapper *should* (fingers-crossed) work with any 2.3.x version. 
@@ -63,3 +69,8 @@ STDOUT output file: input_file.fas_results.out
 Done in 289.18s
 ```
 It's that simple. 
+
+
+### References
+
+[1] Episodic selection as a force in fungal microevolution, with special reference to clonal speciation and hybrid introgression, C. M. Brasier (2003), Canadian Journal of Botany, 1995, 73(S1): 1213-1221, https://doi.org/10.1139/b95-381
