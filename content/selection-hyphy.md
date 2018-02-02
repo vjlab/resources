@@ -14,7 +14,46 @@ Follow the [installation instructions](https://veg.github.io/hyphy-site/installa
 
 > RELAX is a hypothesis testing framework that asks whether the strength of natural selection has been relaxed or intensified along a specified set of test branches. RELAX is therefore not a suitable method for explicitly testing for positive selection. Instead, RELAX is most useful for identifying trends and/or shifts in the stringency of natural selection on a given gene. RELAX requires a specified set of "test" branches to compare with a second set of "reference" branches (note that all branches do not have to be assigned, but one branch is required the test and reference set each). RELAX begins by fitting a codon model with three ω classes to the entire phylogeny (null model). RELAX then tests for relaxed/intensified selection by introducing the parameter k (where k≥0), serving as the selection intensity parameter, as an exponent for the inferred ω values: ω<sup>k</sup>...RELAX then conducts a Likelihood Ratio Test to compare the alternative and null models. 
 
+> cite: Wertheim, JO et al. "RELAX: detecting relaxed selection in a phylogenetic framework." Mol. Biol. Evol. 32, 820–832 (2015).
+
 Output:
  * `<input_file>.RELAX.json` - if run completes successfully.
  * `messages.log` - log file full of log file things. Never found a use for it.
  * `errors.log` - if the run terminates unsuccessfully. 
+
+### 1. Label Your Tree Branches
+
+RELAX compares a set of labelled branches against the rest of the unlabelled branches to see if the labeled and unlabelled branches experience significantly different selection pressures.  This means *all* branches, both internal and terminal branches (typically, a whole clade). 
+
+ * Go to this [phylotree.JS](http://phylotree.hyphy.org/) widget to mark your branches. You can click on all the branches that you want labelled. 
+ * Pro-tip: to make life easier, click on the important ancestral nodes of the branches that you want select, and select "All descendant branches" to select a whole bunch at a shot. You may still have to manually select a few stragglers; the widget doesn't work perfectly for multifurcating trees (but still does 90% of the job). 
+ * To save the labelled tree, click "Newick>Export". The labelled branches will be marked with `{foreground}`. Save the tree string in a new text file. 
+ * Open your new labelled tree in TextWrangler or something, and replace `{Foreground}` with `{test}` (You're supposed to be able to do this within the JS widget, but I could never get it to work). 
+
+### 2. Prepare A Single Input File
+
+This is just a fasta file of your sequences, and the labelled tree string in Newick format at the bottom. 
+
+### 3. Use `Wrapomatic`
+
+Within the Python3 environment of your choice:
+
+```
+import wrapomatic as wrp
+# Init HyphyRelax object
+hx = wrp.HyphyRelax()
+# Fill in input file name from step 2
+hx.data_file="path/to/file.fas"
+hx.run()
+```
+Expected output:
+```
+Running HYPHYMP:RELAX
+Genetic code = universal code
+Input file = input_file.fas
+Branches used as _test_ set: Branches labelled 'test'
+RELAX analysis type: Run only the RELAX test (2 models)
+STDOUT output file: input_file.fas_results.out
+Done in 289.18s
+```
+It's that simple. 
