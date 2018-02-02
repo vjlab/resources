@@ -8,7 +8,7 @@ This tutorial covers using my Python3 `wrapomatic` wrapper library for two commo
 
 Follow the [installation instructions](https://veg.github.io/hyphy-site/installation/) on their website. Somewhat long, but should be straightforward. 
 
-## SLAC
+## SLAC (WIP)
 
 > SLAC (Single-Likelihood Ancestor Counting) uses a combination of maximum-likelihood (ML) and counting approaches to infer nonsynonymous (dN) and synonymous (dS) substitution rates on a per-site basis for a given coding alignment and corresponding phylogeny. Like FEL, this method assumes that the selection pressure for each site is constant along the entire phylogeny. ...SLAC may not be accurate for data sets with high divergence levels.
 
@@ -18,14 +18,18 @@ Follow the [installation instructions](https://veg.github.io/hyphy-site/installa
 
 > cite: Wertheim, JO et al. "RELAX: detecting relaxed selection in a phylogenetic framework." Mol. Biol. Evol. 32, 820–832 (2015).
 
-Output:
+RELAX compares a set of labelled branches against the rest of the unlabelled branches to see if the labeled and unlabelled branches experience significantly different selection pressures.  This means *all* branches, both internal and terminal branches (typically, a whole clade). Hypothesis setup: ω = dNdS of the reference branches, ω<sup>k</sup> = dNdS of the test branches. 
+
+ * M0: k = 1
+ * M1: K != 1
+ 
+Output files:
+
  * `<input_file>.RELAX.json` - if run completes successfully.
  * `messages.log` - log file full of log file things. Never found a use for it.
  * `errors.log` - if the run terminates unsuccessfully. 
 
 ### 1. Label Your Tree Branches
-
-RELAX compares a set of labelled branches against the rest of the unlabelled branches to see if the labeled and unlabelled branches experience significantly different selection pressures.  This means *all* branches, both internal and terminal branches (typically, a whole clade). 
 
  * Go to this [phylotree.JS](http://phylotree.hyphy.org/) widget to mark your branches. You can click on all the branches that you want labelled. 
  * Pro-tip: to make life easier, click on the important ancestral nodes of the branches that you want select, and select "All descendant branches" to select a whole bunch at a shot. You may still have to manually select a few stragglers; the widget doesn't work perfectly for multifurcating trees (but still does 90% of the job). 
