@@ -23,6 +23,24 @@ A bunch of admin notes for HPC admin.
 * samtools: Installed via SF download and `make install`. It's automatically placed in `/user/local/bin`, I think.
 * SPAde: Local install, no path. So far, only used for `Unicycler`; use `--spade_path path/to/spade` to specify path.
 
+## Installing Docker
+
+[src](https://gist.github.com/Simplesmente/a84343b1f71a46bbeedbb6c9b20fa9c1)
+
+```
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates -y
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+sudo echo 'deb https://ubuntu.cozycloud.cc/debian trusty main' | sudo tee /etc/apt/sources.list.d/cozy.list > /dev/null
+sudo apt-get update
+sudo apt-get purge lxc-docker
+sudo apt-get install linux-image-extra-$(uname -r) -y
+sudo apt-get install docker-engine cgroup-lite apparmor -y
+sudo usermod -a -G docker $USER
+sudo service docker start
+```
+
+
 ## R: Installing shared libraries
 Not sure if how to organize it such that users can install their own insulated packages if required (or maybe I'll just install packages on request to prevent compatibility debt from building up). Anyway, from within the R environment, use `.libPaths()` to see which paths are accessible to the R executable.
 "/>
