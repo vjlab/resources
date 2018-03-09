@@ -5,20 +5,7 @@ The following is a list of frequently-used-software. In general, try not to inst
 ### Generic Software
 
  - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. Get these first and foremost, because many of the computational programs require these to install properly.
- - **`homebrew`** - A Mac OS package manager. Get it [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. Homebrew installs many kinds of software, including scientific software, into the directories of your Mac automatically so you don't have to organize all your software. For instance, to install software, use:
-
-```
-brew install my_software
-```
-
-To see if `homebrew` has your software available:
-
-```
-brew search my_software
-```
-
-Many of the computational programs are executables, so using `homebrew` will also save you having to mess with your `$PATH` and all that (if you don't know what that is, all the more reason to use `homebrew`!)
-
+ - **`homebrew`** - A Mac OS package manager. Get it [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. 
  - Python3
  - R (from R Studio)
  - `blastn`, `blastx` (CLI preferred)
