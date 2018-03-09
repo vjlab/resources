@@ -21,15 +21,15 @@ The following is a list of frequently-used-software. In general, try not to inst
  - **TempEst** - another nice program for tree drawing. 
  - **CDhit** - For clustering DNA sequences by similarity. 
  - **PAML** - Multi-purpose analysis package with miscellaneous uses.
- - **Treesub** - For plotting amino acid changes along a tree. Java-compiled. Get it [here](https://github.com/tamuri/treesub)
+ - **Treesub** - For plotting amino acid changes along a tree, built around `PAML` and `RAxML`. Java-compiled. Get it [here](https://github.com/tamuri/treesub)
  - **HyPhy CLI/GUI** - for selection analysis
  - **Datamonkey** - Web app, so no installation required. _Hidden constraint that they don't announce beforehand: Can only accept a max of 500 sequences._
  - **Antigenic cartography** - Web app.
  - **AliViewer** - Allows you to look at a `.fasta` file of sequence data.
 
-## For Python/R programmers:
+### For Python/R programmers:
  - conda for automatic package management. [Conda environments](https://conda.io/docs/using/envs.html) are also great for controlling your packages, and version control between Py36 and Py27.
- - Useful packages: `anaconda`, `pandas`, `numpy`, `Biopython`, `xlrd`, `scipy`, `scikit-bio`
+ - Useful packages: `snakemake`, `anaconda`, `pandas`, `numpy`, `Biopython`, `xlrd`, `scipy`, `scikit-bio`
  - `pip`
  - [Jupyter](http://jupyter.org/) recommended as an IDE.
  - atom
