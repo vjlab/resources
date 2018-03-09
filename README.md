@@ -26,6 +26,7 @@ This repo contains several tutorial files, with varying levels of difficulty.  R
  - [`m3-tips-and-tricks`](./content/m3-tips-and-tricks.md) - A dumping ground for how to use M3 slightly more efficiently.
 
 3. #### Tech Tips
+ - [`Software installation and prep work`](./content/things.md) - Software we used, and some basics to read up on.
  - [`Data wrangling with python`](./content/Tutorial%20-%20Pandas.ipynb) - Data wrangling with python, using the `pandas` library.
  - [`R-ggtree-demo`](./content/R-ggtree_demo.pdf) - How to plot some basic trees with `ggtree`, in R. This PDF document should be viewable in your browser, but doesn't always; you can download it to view it if required.
  - [`misc-learning-to-code`](./content/misc-learning-to-code.md) - tutorial on how to *learn* to code, not actually on how to code. Has links for the latter.
@@ -33,5 +34,4 @@ This repo contains several tutorial files, with varying levels of difficulty.  R
  - [`software-tips-and-tricks`](./content/software-tips-and-tricks.md) - A dumping ground for miscellaneous bash or computational tips and tricks.
  - [`tech-github`](./content/tech-github.md) - Tutorial for basic command line usage of Github.
  - [`misc-writing`](./content/misc-writing.md) - How to write so that others can understand you.
- - [`things-to-read-up-on`](./content/things.md) - Don's things to read up on.
  - [`London BEAST workshop notes`](./beast/readme.md) - Don's notes from London.
