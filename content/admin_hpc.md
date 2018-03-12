@@ -7,18 +7,28 @@ A bunch of admin notes for HPC admin.
 * `sysinfo`. Access using `$ sysinfo`.
 * Nice askubuntu [post](https://askubuntu.com/questions/503216/how-can-i-set-a-single-bashrc-file-for-several-users/503222) about copying global bashrc's for everyone.
 
+## Usual admin commands
+
+ - After adding a new user, add him to the `Allowed Users` in `/etc/ssh/sshd_config`. Restart the ssh service with `service sshd restart`
+
+## User `bashrc` management
+(not working)
+[src](https://askubuntu.com/questions/503216/how-can-i-set-a-single-bashrc-file-for-several-users/503222)
+
+ - Create a backup: `sudo cp /etc/bash.bashrc /etc/bash.bashrc-backup`
+
 ## Phylogenetics Software
 
-* BEAST: executable `beast-mcmc`. installed in `/usr/local/BEASTv1.8.4`, as recommended by Tim Vaughan. 
-* BEAST2: local install in `~/dten0001/Downloads/beast2/`, with a PATH added, executable `beast`. Will think about global installation later.
+_IMPT note: apps are slowly being migrated to a single shared folder, `/home/dten0001/apps`. I'm choosing a single custom `apps` folder for complete control over installation and updating, though these need not live in my personal home folder. I might move this elsewhere furthur up the FHS when I find a more suitable location._
+
+Simply `ls` the shared `apps` folder to see what's in there!
+
 * BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
-* RAXML: ???
 * Figtree: Installed via `apt-get`
 * fasttree: Installed via `apt-get`
 
 ## Other
 * dspp: Installed via `apt-get`
-* ncbi-blast+: Installed via `apt-get`
 * bowtie, bowtie2: Installed via `apt-get`
 * samtools: Installed via SF download and `make install`. It's automatically placed in `/user/local/bin`, I think.
 * SPAde: Local install, no path. So far, only used for `Unicycler`; use `--spade_path path/to/spade` to specify path.
