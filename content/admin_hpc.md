@@ -19,9 +19,9 @@ A bunch of admin notes for HPC admin.
 
 ## Phylogenetics Software
 
-_IMPT note: apps are slowly being migrated to a single shared folder, `/home/dten0001/apps`. I'm choosing a single custom `apps` folder for complete control over installation and updating, though these need not live in my personal home folder. I might move this elsewhere furthur up the FHS when I find a more suitable location._
+_IMPT note: apps are slowly being migrated to a single shared folder, `/usr/local/bin/my_apps`. I'm choosing a single custom `apps` folder for complete control over installation and updating.
 
-Simply `ls` the shared `apps` folder to see what's in there!
+Simply `ls` the shared `my_apps` folder to see what's in there!
 
 * BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
 * Figtree: Installed via `apt-get`
