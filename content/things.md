@@ -12,15 +12,15 @@ The following is a list of frequently-used-software. In general, try not to inst
 
 ### Phylogenetics Software
 
- - **MAFFT** - For multiple sequence alignment. An executable. Get it via `homebrew`.
+ - **MAFFT** - For multiple sequence alignment. An executable. 
  - **RAxML** - For computing trees using maximum likelihood. This is available on M3, so installing this is optional. [Here's](https://github.com/vjlab/resources/blob/master/software-raxml.md) my RAxML installation and quickstart tutorial.
- - **IQ-Tree** - For tree computation using maximum likelihood. An executable. Get it via `homebrew/science`.
- - **FastTree** - Fast tree computation. An executable. Get it via `homebrew/science`.
+ - **IQ-Tree** - For tree computation using maximum likelihood. An executable. 
+ - **FastTree** - Fast tree computation. An executable. `FastTree.c` needs to be downloaded and compiled. 
  - **BEAST v1.8.4, v2.x** - For tree computation using Bayesian statistics. Has a few other programs for post-processing BEAST output.
- - **FigTree** - a nice, lightweight program for tree drawing. 
- - **TempEst** - another nice program for tree drawing. 
- - **CDhit** - For clustering DNA sequences by similarity. 
- - **PAML** - Multi-purpose analysis package with miscellaneous uses.
+ - **FigTree** - a nice, lightweight program for tree drawing. Simple `.dmg` download and install. 
+ - **TempEst** - another nice program for tree drawing. Simple `.dmg` download and install. 
+ - **CDhit** - For clustering DNA sequences by similarity. Needs to be downloaded and compiled.
+ - **PAML** - Multi-purpose analysis package with miscellaneous uses. 
  - **Treesub** - For plotting amino acid changes along a tree, built around `PAML` and `RAxML`. Java-compiled. Get it [here](https://github.com/tamuri/treesub)
  - **HyPhy CLI/GUI** - for selection analysis
  - **Datamonkey** - Web app, so no installation required. _Hidden constraint that they don't announce beforehand: Can only accept a max of 500 sequences._
