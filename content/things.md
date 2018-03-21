@@ -4,7 +4,7 @@ The following is a list of frequently-used-software. In general, try not to inst
 
 ### Generic Software
 
- - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. Get these first and foremost, because many of the computational programs require these to install properly. You can get XCode directly from the App store. Getting XCode CLT is trickier as getting it to download and install properly is (known to be quite temperamental)[https://github.com/Homebrew/brew/issues/1779]. 
+ - **XCode and XCode Command Line Tools (for Macs)** - sets up your Mac for development work. Get these first and foremost, because many of the computational programs require these to install properly. You can get XCode directly from the App store. Getting XCode CLT is trickier as getting it to download and install properly is [known to be quite temperamental](https://github.com/Homebrew/brew/issues/1779). 
  - **`homebrew`** - A Mac OS package manager. Get it [here](https://brew.sh/). You'll need XCode first, and maybe XCode CLT as well. If you're lucky, `homebrew` will help to download and install XCode CLT for you (but don't count on it)
  - Python3
  - R (from R Studio)
