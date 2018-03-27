@@ -1,13 +1,10 @@
 # RAxML
-*Don Teng, 6 June 2017*
-
-Requirements: `m3-quickstart` tutorial, because you're likely to send RAxML jobs to M3. 
 
 ## Introduction
 `RAxML` takes a `.fasta` file of aligned sequences as input, and computes maximum likelihood trees. As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from the sequence names. 
 
 ## Installation
-Installing raxml on your personal computer is optional, because it's available on M3, and raxml is usually extremely slow. There are two installation options:
+Installing raxml on your personal computer is optional, because it's available on M3 and our server, and raxml is usually extremely slow. There are two installation options:
 1. Via `homebrew`
 2. Go straight [here](http://www.sfu.ca/biology2/staff/dc/raxml/), and follow their steps accordingly. That website gives you the `raxml` executable to download, simply named `raxml`, which you can run for (very) small datasets. Unfortunately, this website is *not* the top hit in Google, nor is it very easy to find from the main RAxML webpage! You'll also have to add this executable to your `PATH`, or have to run it from whichever folder you're keeping it in.
 
