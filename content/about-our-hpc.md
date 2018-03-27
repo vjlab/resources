@@ -9,17 +9,6 @@ ssh your_username@130.194.248.38
 
 You'll be prompted for your password, you can continue from there in the command line. 
 
-## Software, and Using the Command Line
-
-Software available are:
-- BEAST v1.8.3 (executable `beast-mcmc`), installed via `sudo apt-get`. There's a global version of BEAST 1.8.4 sitting in `/usr/local`, not sure how to access that yet. Use your local version for the moment.
-- RAXML (executable `raxmlHPC`, `raxmlHPC-PTHREADS` and `raxmlHPC-PTHREADS-SSE3`, in increasing order of speed; though the last two may vary)
-- PHYML
-- BEAGLE library
-- BEAST2: local version installed for admin only. How to make it global?
-- hyphy-common, hyphy-mpi, python3-hyphy: installed via `sudo apt-get`.
-- paml: installed via `sudo-apt get`. The actual `tar.gz` has an examples folder, though, so it's worth downloading `paml` just for that.
-
 ### Sending a Job
 *If none of this works, you can still walk over to the server and just use the terminal.* 
 
@@ -55,14 +44,6 @@ In a local terminal, send your files *from* your machine *to* the HPC using `scp
 ```
 scp path/to/your/file your_username@130.194.248.38:destination_folder
 ```
-
-## Performance
-
-Performance note: all these tests were done when I was the only one using the server, so there's no additional load from someone else's job! It's possible that if two people submit their jobs simultaneously, both their jobs will be slowed down. 
-
-- **Python3** - about 5-10% faster than M3 or my own Macbook Pro, on a single-CPU, single-thread run. 
-- **RAxML** - untested
-- **BEAST & BEAGLE** - untested
 
 ## Admin Notes
 
