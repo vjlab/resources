@@ -4,7 +4,7 @@
 Requirements: `m3-quickstart` tutorial, because you're likely to send RAxML jobs to M3. 
 
 ## Introduction
-`RAxML` takes a `.fasta` or `.txt` file of aligned sequences as input, and computes maximum likelihood trees. 
+`RAxML` takes a `.fasta` file of aligned sequences as input, and computes maximum likelihood trees. As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from the sequence names. 
 
 ## Installation
 Installing raxml on your personal computer is optional, because it's available on M3, and raxml is usually extremely slow. There are two installation options:
@@ -60,22 +60,6 @@ Conducted some speed tests on M3 using 50 randomly selected Flu B Yam HA sequenc
 | 1 process, 16 CPU | 0:48:43 | 0:48:48 | 0:59:52 |
 
 Looks like the best bet is to go with 1-process, 8-CPU with PTHREADS-SSE. As noted in the RAxML documentation, performance does not necessarily decrease as the number of CPUs increases, as communication overhead between CPUs would increase as well. This will differ from dataset to dataset, but hopefully not by much.
-
-## Bits and Bobs
-- As with any file that will be fed into a tree-computing program, remove all brackets, colons and semi-colons from your file. 
-- RAxML will automatically change many (or all?) special characters like "/", "-", and so on to underscores. This can play merry hell with your pipeline since the last portion of record names are usually collection dates, which means that a name which was initially nicely formatted and delimited by "|", like:
-
-```
-B/Arizona/06/2016|ID12345|NorthAmerica|2016-11-01
-```
-
-gets converted by `RAxML` into:
-
-```
-B_Arizona_06_2016_ID12345_NorthAmerica_2016_11_01
-```
-
-Which will become difficult to deal with if the next program that you're going to use is `TempEst`, because `TempEst` needs to guess dates by reading the format of the name. There appears to be no easy way around this at the moment. 
 
 ### Bootstrapping
 - When performing bootstrap computations, RAxML will return a consensus tree in a format that FigTree doesn't understand; you'll get some kind of "error parsing number" error message. To fix this, open the output file in Text Wrangler, and use regex to replace:
