@@ -23,9 +23,15 @@ _IMPT note: apps are slowly being migrated to a single shared folder, `/usr/loca
 
 Simply `ls` the shared `my_apps` folder to see what's in there!
 
-* BEAGLE: I frankly have no idea. It's not in `/user/local/`. 
-* Figtree: Installed via `apt-get`
-* fasttree: Installed via `apt-get`
+* BEAGLE: Installed in `/user/local/lib`. Install instructions for posterity (slightly modified from the [original instructions](https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions) to install in `/user/local`):
+
+```
+git clone --depth=1 https://github.com/beagle-dev/beagle-lib.git
+cd beagle-lib
+./autogen.sh
+./configure --prefix=/usr/local
+sudo make install
+```
 
 ## Other
 * dspp: Installed via `apt-get`
