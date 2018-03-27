@@ -24,7 +24,7 @@ scp your_username@130.194.248.38:source_folder local/path/to/file
 
 ## What Software is Available?
 
-Use `module_avail` to check see what apps are available.
+Use `module_avail` to see what apps are available.
 
 ## Sending a Job with `nohup`
 
