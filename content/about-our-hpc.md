@@ -22,6 +22,10 @@ To send files *from* the HPC *to* the local machine, run the following command i
 scp your_username@130.194.248.38:source_folder local/path/to/file
 ```
 
+## What Software is Available?
+
+Use `module_avail` to check see what apps are available.
+
 ## Sending a Job with `nohup`
 
 To remotely send a job to the HPC and then disengage your local terminal (so that you can shut off your laptop while your submitted job runs on the HPC), use `nohup`. Syntax is:
