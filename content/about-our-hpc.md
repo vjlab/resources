@@ -42,13 +42,12 @@ Ref:https://stackoverflow.com/questions/17385794/how-to-get-the-process-id-to-ki
 In a local terminal, send your files *from* your machine *to* the HPC using `scp`:
 
 ```
-scp path/to/your/file your_username@130.194.248.38:destination_folder
+scp local/path/to/your/file your_username@130.194.248.38:destination_folder
 ```
 
-## Admin Notes
+To send files *from* the HPC *to* the local machine:
 
-### Software Available:
- - R studio v0.99(ish), R v 3.4.1
- - Python 3, with the Anaconda distribution installed. Conda environment set up: access using `source activate py36`. Access `Jupyter` using `Jupyter notebook`. 
- - NVIDIA has a python library for GPU-enhanced computation: https://developer.nvidia.com/how-to-cuda-python
+```
+scp your_username@130.194.248.38:source_folder local/path/to/file
+```
  
