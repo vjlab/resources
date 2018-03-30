@@ -3,16 +3,14 @@
 
 *Don Teng*
 
-This first introductory page contains a bunch of essential readings to get the basics first. Useful sources: Wikipedia, Reddit Explain Like I'm 5 (ELI5), Khan Academy (for undergraduate-level academic concepts), Stackoverflow (a Q&A site for programming), Youtube.
-
 ## Contents
-This repo contains several tutorial files, with varying levels of difficulty.  Recommended prerequisites will be listed near the top of that tutorial. However, try as I might to make them so, there's no guarantee that each tutorial is entirely self-contained, but the idea is that you should be able to start anywhere.
+This is a collection of _get started_ pages and introductory tutorials for computational methods routinely used within the group, followed by details on access to high-performance computing access within Monash, and links to bioinformatics beginners tutorials.  Recommended prerequisites are listed at the top of that page. However, try as I might to make them so, there's no guarantee that each tutorial is entirely self-contained, but the idea is that you should be able to start anywhere.
 
 1. #### Theory and Software
  - [`Commonly used file formats`](./content/misc-file-formats.md) - Tutorial on commonly used file formats like `fasta`, `phy`, etc.
  - [`Multiple sequence alignment - introduction`](./content/alignment1-introduction.md) - How to do multiple sequence alignment, part 1
  - [`Multiple sequence alignment using MAFFT`](./content/alignment2-mafft.md) - How to do multiple sequence alignment (using `mafft`), part 2
- - [`Tree computation part 1: theory`](./content/methods-tree-computation1-theory.md) - A not-so-brief introduction to ML trees and BEAST trees. 
+ - [`Tree computation part 1: theory`](./content/methods-tree-computation1-theory.md) - A not-so-brief introduction to ML trees and BEAST trees.
  - [`Tree computation part 2: software`](./content/methods-tree-computation2-software.md) - How to use various programs to compute a tree, and their pros and cons
  - [`BEAST tutorial links`](./content/software-beast.md) - A link to existing BEAST tutorials.
  - [`PAML-TREESUB`](./content/software-paml-treesub.md) - How to install and use `PAML`, and an associated program, `treesub`.
