@@ -2,25 +2,25 @@
 
 We have two major HPC resources:
 
-1. A linux box in room 217. 
+### 1. A linux box in room 217. 
 
 * Linux Mint 18.2, xcfe
 * 32x CPU (Intel Xeon E5-2667 v4, 16 physical + 16 logical threads)
 * 2x GeForce 1080Ti GPU
 * 64Gb RAM
-* 1Tb disk space: 500 Gb /scratch + 500 Gb of /data. 
+* 1Tb disk space: 500 Gb `/scratch` + 500 Gb of `/data`. 
 
-2. M3
+### 2. M3
 
 * [Read the docs!](http://docs.massive.org.au/)
 * In general, M3 has many (many, many) more CPUs available (n=1584), and so are ideal for extensively multi-threaded jobs (we only have 2 CPUs, with 16 threads each, and no `openMPI` advantage, because optimal thread usage for phylogenetics software tends to top out at 8 threads.)
-* The M3 GPUs: K80, K1 and P100 are all optimized for single-precision performance, but any one user will only have access to 4 M3 GPU nodes. Our 1080 Ti's aren't too shabby, good for double-precision, and can sometimes run faster, because M3 GPUs are still slowed down by multiple user loads.
+* The M3 GPUs: K80, K1 and P100 are all optimized for single-precision performance, but any one user will only have access to 4 M3 GPU nodes. Our 1080 Ti's aren't too shabby, good for double-precision, and can sometimes run faster, because M3 GPUs are still slowed down by multiple user loads. Also, M3 has a maximum run time of 7 days; our server has indefinite run time. 
 * Full list of M3 cluster specs [here](http://docs.massive.org.au/M3/m3users.html)
 
 We have 3 major data-serving resources:
 
 1. The /data partition on our room 217 server, with a total of 500 Gb. 
-2. Any `/<project>` and `/<project_scratch>` shared folders on M3. Check that you have access to these; otherwise, contact the M3 help desk. See [here](http://docs.massive.org.au/M3/file-systems-on-M3.html) for how M3 advises their folder systems to be used. 
+2. Any `/<project>` and `/<project_scratch>` shared folders on M3 - the former is backed up weekly, the latter is not. Check that you have access to these (you should see a symlink on your home directory); otherwise, contact the M3 help desk. See [here](http://docs.massive.org.au/M3/file-systems-on-M3.html) for how M3 advises their folder systems to be used. 
 3. The Monash shared drive, or S:drive. See how to access it [here](https://www.monash.edu/esolutions/data-storage/how-to-map-s-drive). This could be used for archival storage, but ultimately, it has the major I/O problem of not being easily command-line accessible. 
 
 ## Usage Guidelines
