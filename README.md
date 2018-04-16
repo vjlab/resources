@@ -18,8 +18,9 @@ This is a collection of _get started_ pages and introductory tutorials for compu
  - [Selection analysis with `HyPhy`](./content/selection-hyphy.md) - quickstart tutorial.
 
 2. #### Using high-performance computers
+
+ - [`hpc-resources`](./content/hpc-resources.md) - A quick overview of the HPC and data-serving resources available, and basic usage policies.
  - [`about-our-hpc`](./content/about-our-hpc.md) - How to use the lab's internal server, located in room 217
- - [`m3-about-the-hpc`](./content/m3-about-the-hpc.md) - WIP. Some resources, glossary of terms.
  - [`m3-quickstart`](./content/m3-quickstart.md) - A tutorial on how to send a job to M3.
  - [`m3-tips-and-tricks`](./content/m3-tips-and-tricks.md) - A dumping ground for how to use M3 slightly more efficiently.
 
