@@ -10,7 +10,7 @@ We have two major HPC resources:
 * 64Gb RAM
 * 1Tb disk space: 500 Gb `/scratch` + 500 Gb of `/data`. 
 
-I've installed a bunch of phylogenetics apps on the server in `/usr/local/bin/my_apps`; use `module_avail` to see what what's available. 
+I've installed a bunch of phylogenetics apps on the server in a globally-accessibly location (`/usr/local/bin/my_apps`); use `module_avail` to see what what's available. 
 
 ### 2. M3
 
