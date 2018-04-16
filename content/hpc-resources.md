@@ -10,6 +10,8 @@ We have two major HPC resources:
 * 64Gb RAM
 * 1Tb disk space: 500 Gb `/scratch` + 500 Gb of `/data`. 
 
+I've installed a bunch of phylogenetics apps on the server in `/usr/local/bin/my_apps`; use `module_avail` to see what what's available. 
+
 ### 2. M3
 
 * [Read the docs!](http://docs.massive.org.au/)
@@ -28,7 +30,6 @@ We have 3 major data-serving resources:
 * Use our server for phylogenetics software, and M3 for multithread-heavy software (typically NGS).
 * Data is backed up on M3, because they have a dedicated sysadmins, backup schedules and data-serving services. Keep a copy of your data there, in our `/<project>` folder (e.g. `/bm14`). 
 * If you need to park a copy of your data in our server, put it in the `/data` if you want to allow global access; otherwise keep it in your home folder (feel free to `chmod` to other users as you please). There is no backup scheduler in place, though, because there's already one on M3. 
-
 
 ## Glossary of Terms
 
