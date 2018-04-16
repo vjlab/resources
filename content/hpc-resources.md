@@ -23,7 +23,7 @@ We have 3 major data-serving resources:
 
 1. The /data partition on our room 217 server, with a total of 500 Gb. 
 2. Any `/<project>` and `/<project_scratch>` shared folders on M3 - the former is backed up weekly, the latter is not. Check that you have access to these (you should see a symlink on your home directory); otherwise, contact the M3 help desk. See [here](http://docs.massive.org.au/M3/file-systems-on-M3.html) for how M3 advises their folder systems to be used. 
-3. The Monash shared drive, or S:drive. See how to access it [here](https://www.monash.edu/esolutions/data-storage/how-to-map-s-drive). This could be used for archival storage, but ultimately, it has the major I/O problem of not being easily command-line accessible. 
+3. The Monash shared drive, or S:drive. See how to access it [here](https://www.monash.edu/esolutions/data-storage/how-to-map-s-drive). This could be used for archival storage, but ultimately, it has the major I/O problem of not being easily command-line accessible. Feel free to keep a copy of your data there if you want, but their backup policy isn't as clear as M3's. Can't hurt to have multiple backups anyway.
 
 ## Usage Guidelines
 
