@@ -1,4 +1,4 @@
-# About Our HPC
+# About Our HPC - Part 1: Common Usage
 
 ## Logging In
 You can remotely log in to our lab HPC usind `ssh`. On your terminal:
