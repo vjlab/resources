@@ -3,7 +3,6 @@ A bunch of admin notes for HPC admin.
 
 ## Admin tools
 
-* `quota` and `quotatools`: Obtained via `apt-get`. Not set up yet, only downloaded. **Danger**: may involve editing `/etc/fstab` which is easily damaged, and may render the system un-bootable! **PROCEED WITH EXTREME CAUTION.** See a rough walkthrough [here](http://computingtech.blogspot.com.au/2008/09/ubuntu-linux-disk-quotas.html)
 * `sysinfo`. Access using `$ sysinfo`.
 * Nice askubuntu [post](https://askubuntu.com/questions/503216/how-can-i-set-a-single-bashrc-file-for-several-users/503222) about copying global bashrc's for everyone.
 
