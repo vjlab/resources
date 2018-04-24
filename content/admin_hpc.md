@@ -18,9 +18,9 @@ A bunch of admin notes for HPC admin.
 
 ## Phylogenetics Software
 
-_IMPT note: apps are slowly being migrated to a single shared folder, `/usr/local/bin/my_apps`. I'm choosing a single custom `apps` folder for complete control over installation and updating.
+Apps live in `/usr/local/bin/my_apps`. 
 
-Simply `ls` the shared `my_apps` folder to see what's in there!
+I'm choosing a single custom `apps` folder for complete control over installation and updating.
 
 * BEAGLE: Installed in `/user/local/lib`. Install instructions for posterity (slightly modified from the [original instructions](https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions) to install in `/user/local`):
 
@@ -31,6 +31,8 @@ cd beagle-lib
 ./configure --prefix=/usr/local
 sudo make install
 ```
+
+I put a `module_avail` alias...somewhere (somewhere where I'm not really supposed to, actually), for all ssh users to be able to access. This is an alias for `cat test_file_with_list_of_software.txt`.
 
 ## Other
 * dspp: Installed via `apt-get`
