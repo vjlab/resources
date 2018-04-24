@@ -6,6 +6,10 @@
 ## Contents
 This is a collection of _get started_ pages and introductory tutorials for computational methods routinely used within the group, followed by details on access to high-performance computing access within Monash, and links to bioinformatics beginners tutorials.  Recommended prerequisites are listed at the top of that page. However, try as I might to make them so, there's no guarantee that each tutorial is entirely self-contained, but the idea is that you should be able to start anywhere.
 
+0. ### Lab Admin
+
+ - [data storage policy](./content/data_policy.png) - Data storage and archiving policy, in one nice infographic.
+
 1. #### Theory and Software
  - [`Commonly used file formats`](./content/misc-file-formats.md) - Tutorial on commonly used file formats like `fasta`, `phy`, etc.
  - [`Multiple sequence alignment - introduction`](./content/alignment1-introduction.md) - How to do multiple sequence alignment, part 1
