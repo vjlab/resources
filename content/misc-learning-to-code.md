@@ -22,13 +22,13 @@ Go nuts.
 ## The Learning Process
 As you may have picked up from some other tutorials in this repo, I'm a fierce proponent of independent learning, for many practical reasons. In general, the steps you should be attempting are:
 
-* Have you googled for the answer, or answers to similar problems? (If it turns out that the answer to your question is just the top hit on a simple Google search, I might just send you a snarky [let me Google that for you](https://lmgtfy.com/) link. Yes, it's easier to just ask someone, simply out of convenience. But all parents know that if a child asks a question, the best way to teach them isn't to just give them the answer, but to look it up *with* them. 
+* Have you googled for the answer, or answers to similar problems? (If it turns out that the answer to your question is just the top hit on a simple Google search, I might just send you a snarky [let me Google that for you](https://lmgtfy.com/) link. 
 * Have you read the manual? Again, programming culture has a [somewhat mean admonishment](https://en.wikipedia.org/wiki/RTFM) to this. In spite of how people generally ignore manuals for their cars, toasters or fridges, this doesn't apply in programming. An exception can (and frequently does) occur where the documentation is poor, but this isn't likely the case for well-established open source projects like Python or R. 
-* Have you tried something? What have you tried? The problems that aren't easily Googled are usually more complex, and require some trial and error to home in on a solution, if only out of a process of elimination to cross off all the potential solutions that *don't* work. 
+* Have you tried something? What have you tried? The problems that aren't easily Googled are usually more complex, and require some trial and error to home in on a solution, if only out of a process of elimination to cross off all the potential solutions that *don't* work. I frequently get asked questions like: "should I do X or Y?" My answer is always: try both.
 
-Whatever the case, it's generally frowned upon to just ask for the answer. Ultimately, this depends on how far you want to develop your own programming skills. 
+Whatever the case, it's generally frowned upon to just ask for the answer. This is not unique to programming; this is just the process of learning how to do anything at all!
 
-At a broader level, you don't actually *learn to code* per se. The best analogy I can think of is: nobody actually learns to play the piano. They learn to play music, using the piano. This is why project-based learning, or learning-by-doing, works best (again, Rosalind highly recommended). A real project gives you a starting point, practical considerations about what you need to know or don't yet need to know, and a frame of reference of what's useful versus what isn't. 
+At a broader level, you don't actually *learn to code* per se. The best analogy I can think of is: nobody actually learns to play the piano. They learn to play music, using the piano. 
 
 ## About Learning How To Code
 
