@@ -20,5 +20,7 @@
 * Cumbersome to access via command line (needs to be mounted first[2])
 * All in all, not terribly useful.
 
+### Footnotes 
+
 * [1] Because it's not really worth backing up data on the _same_ machine (the point is to back up data on a _different_ machine)
 * [2] Linux users: mount with `smb` or `cifs`. S: path is: `//ad.monash.edu/shared`. Desktop users: [Link](https://www.monash.edu/esolutions/data-storage/how-to-map-s-drive) on how to mount the S: drive.
