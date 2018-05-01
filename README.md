@@ -8,7 +8,7 @@ This is a collection of _get started_ pages and introductory tutorials for compu
 
 0. ### Lab Admin
 
- - [data storage policy](./content/data-storage-policy.md) - Data storage and archiving facilities available.
+ - [data storage facilities](./content/data-storage-policy.md) - Data storage and archiving facilities available.
 
 1. #### Theory and Software
  - [`Commonly used file formats`](./content/misc-file-formats.md) - Tutorial on commonly used file formats like `fasta`, `phy`, etc.
