@@ -2,9 +2,9 @@
 
 ## 1. M3
 
-* Use this as the primary storage facility to store raw data files!
-* 500 Gb soft limit (can ask for more)
-* Backed up weekly by the M3 folks (as are theuser `/home` directories)
+* Two shared folder spaces: `/bm14` (500Gb soft limit, backed up weekly/daily) and `/bm14_scratch` (not backed up, use for temp data only). 
+* Use `/projects/bm14/data` on M3 as the primary storage facility to store raw data files. Make sure to read Miguel's `README` files!
+* M3 documentation on the user file system [here](http://docs.massive.org.au/M3/file-systems-on-M3.html)
 
 ## 2. Server in room 217
 
@@ -16,9 +16,9 @@
 
 * Data recoverable up to 30 days
 * Best used to backup active project folders (scripts, manuscripts, etc), but not really large data files
-* Technically no storage limit, but this is probably because they didn't foresee power users consuming terabytes of data
+* Technically no storage limit, but this is they probably didn't foresee users asking to store hundreds of terabytes of data
 * Cumbersome to access via command line (needs to be mounted first[2])
-* All in all, not terribly useful.
+* All in all, not terribly useful. 
 
 ### Footnotes 
 
