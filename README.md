@@ -6,11 +6,11 @@
 ## Contents
 This is a collection of _get started_ pages and introductory tutorials for computational methods routinely used within the group, followed by details on access to high-performance computing access within Monash, and links to bioinformatics beginners tutorials.  Recommended prerequisites are listed at the top of that page. However, try as I might to make them so, there's no guarantee that each tutorial is entirely self-contained, but the idea is that you should be able to start anywhere.
 
-0. ### Lab Admin
+1. #### Lab Admin
 
  - [data storage facilities](./content/data-storage-policy.md) - Data storage and archiving facilities available.
 
-1. #### Theory and Software
+2. #### Theory and Software
  - [`Commonly used file formats`](./content/misc-file-formats.md) - Tutorial on commonly used file formats like `fasta`, `phy`, etc.
  - [`Multiple sequence alignment - introduction`](./content/alignment1-introduction.md) - How to do multiple sequence alignment, part 1
  - [`Multiple sequence alignment using MAFFT`](./content/alignment2-mafft.md) - How to do multiple sequence alignment (using `mafft`), part 2
@@ -21,14 +21,14 @@ This is a collection of _get started_ pages and introductory tutorials for compu
  - [`RAxML`](./content/software-raxml.md) - How to install RAXML, and basic usage.
  - [Selection analysis with `HyPhy`](./content/selection-hyphy.md) - quickstart tutorial.
 
-2. #### Using high-performance computers
+3. #### Using high-performance computers
 
  - [`hpc-resources`](./content/hpc-resources.md) - A quick overview of the HPC and data-serving resources available, and basic usage policies.
  - [`about-our-hpc`](./content/about-our-hpc.md) - How to use the lab's internal server, located in room 217
  - [`m3-quickstart`](./content/m3-quickstart.md) - A tutorial on how to send a job to M3.
  - [`m3-tips-and-tricks`](./content/m3-tips-and-tricks.md) - A dumping ground for how to use M3 slightly more efficiently.
 
-3. #### Tech Tips
+4. #### Tech Tips
  - [`Software installation and prep work`](./content/things.md) - Software we used, and some basics to read up on.
  - [`Data wrangling with python`](./content/Tutorial%20-%20Pandas.ipynb) - Data wrangling with python, using the `pandas` library.
  - [`R-ggtree-demo`](./content/R-ggtree_demo.pdf) - How to plot some basic trees with `ggtree`, in R. This PDF document should be viewable in your browser, but doesn't always; you can download it to view it if required.
