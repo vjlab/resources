@@ -18,9 +18,11 @@ A bunch of admin notes for HPC admin.
 
 ## Phylogenetics Software
 
-Apps live in `/usr/local/bin/my_apps`. 
+Apps live in `/usr/local/bin/my_apps`. Users can checkl out what's in there with the `module_avail` command, which is actually an alias: `cat /usr/local/bin/my_apps/module_avail.txt`, stored in `/etc/profile`. Generally not advisable to mess with `/etc/profile`, though, so find another way if possible and delete that alias afterward.
 
 I'm choosing a single custom `apps` folder for complete control over installation and updating.
+
+* `FastTree`: not in there! sudo apt-get installed. 
 
 * BEAGLE: Installed in `/user/local/lib`. Install instructions for posterity (slightly modified from the [original instructions](https://github.com/beagle-dev/beagle-lib/wiki/LinuxInstallInstructions) to install in `/user/local`):
 
