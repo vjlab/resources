@@ -45,7 +45,7 @@ end;
 
 The additional `set autoclose=yes` line prevents the program from prompting during the run. In interactive mode, `mrbayes` will ask to confirm whether or not to continue with the run very 20,000 generations; the `autoclose` flag switches off that behaviour. 
 
-Run the batch mode file with nohup, using:
+Run the batch mode file with `nohup`:
 
 ```
 nohup mb run.txt &> log.out&
@@ -102,7 +102,7 @@ The default setting for `mrbayes` is to have 2 runs, each with 4 chains (3 hot, 
 * **Number of chains*** - It's difficult to ascertain the optimal number of chains - 4 chains does not garauntee 4x better MCMC mixing. Mixing, after all, is ultimately dependant on the dataset. So for now, 2 chains is the best strategy that minimally utilizes the chain-swapping feature. 
 * **Number of runs** - On our server, increasing the number of runs will just slow down total compute time by a multiple of however many runs were started. So might as well initialize reruns as necessary, instead of asking for 3 runs at once. 
 
-## Useful Links
+### Useful Links
 
 * [1] [Wikipedia article](https://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny) on MCMCMC
 * Tim Vaughan's Bayesian MCMC [lecture slides](https://tgvaughan.github.io/BayesianMCMCLectures/)
