@@ -18,6 +18,7 @@ This is a collection of _get started_ pages and introductory tutorials for compu
  - [`PAML-TREESUB`](./content/software-paml-treesub.md) - How to install and use `PAML`, and an associated program, `treesub`.
  - [`RAxML`](./content/software-raxml.md) - How to install RAXML, and basic usage.
  - [Selection analysis with `HyPhy`](./content/selection-hyphy.md) - quickstart tutorial.
+ - [`MrBayes Quickstart`] - Getting started with MrBayes, for Bayesian MCMC tree computation. 
 
 3. ### Using high-performance computers
  - [`hpc-resources`](./content/hpc-resources.md) - A quick overview of the HPC and data-serving resources available, and basic usage policies.
