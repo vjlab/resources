@@ -4,14 +4,14 @@ _(Mostly a condensed verion of the quickstart already in the official manual, or
 
 ### Overview
 
-* Uses a variant of MCMC (with "hot" and "cold" chains - see the **MCMC Chains** section below) to produce a file with multiple trees <extension `.t`). Does not produce time-resolved trees.
+* Uses a variant of MCMC (with "hot" and "cold" chains - see the **MCMC Chains** section below, under "**Other Useful Stuff**") to produce a file with multiple trees (extension `.t`), and a log file (extension `.p`). Does not produce time-resolved trees.
 * Pretty fast for an MCMC-based tree algorithm (faster than BEAST, anyway).
 * Can do other kinds of analysis like dNdS, with HPD intervals.
 * Doesn't like special characters - will convert them all to underscores. This is highly annoying.
 
 ## 1. Quickstart
 
-There are two modes of operation: interactive mode and batch mode. The interactive mode is initialized just by typing `mb` into the command line, after which you'll enter parameter inputs line by line, and in batch mode, you'll prepare a text file containing all the necessary parameters, and simply run that text file with `mb my_run_file.txt`. This tutorial assumes that you already have a suitable input `.nexus` file containing your aligned sequences. 
+There are two modes of operation: interactive mode and batch mode. The interactive mode is initialized by typing `mb` into the command line, after which you'll enter parameter inputs line by line. In batch mode, you'll prepare a text file named, say, `my_run_file.txt` containing all the necessary parameters, then run that text file using `mb my_run_file.txt`. This tutorial assumes that you already have a suitable input `.nexus` file containing your aligned sequences. 
 
 ### Interactive mode
 
@@ -28,6 +28,7 @@ To break that down:
 * `set usebeagle=yes beagledevice=gpu beagleprecision=single;` - Use the BEAGLE GPU library. Use single-precision for less accurate, but marginally faster runs. There's a BEAGLE SSE option as well, which doesn't help with single-precision runs, but could help speed up double-precision runs (not tested yet)
 * `execute input_file.nexus;` - Loads the input file, in nexus format.
 * `lset nst=6 rates=gamma;`- Use the GTR model, with gamma priors. Use `help lset` in interactive mode to see more options. 
+* `mcmc...` - mcmc parameters: 1 run, 2 chains, 10M chain length, sampling every 10,000 states (to get 1,000 trees). The "cold" and "hot" chains may swap positions every 100,000 states; specified by the `diagnfreq` parameter.
 
 ### Batch mode
 
@@ -105,4 +106,4 @@ The default setting for `mrbayes` is to have 2 runs, each with 4 chains (3 hot, 
 ### Useful Links
 
 * [1] [Wikipedia article](https://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny) on MCMCMC
-* Tim Vaughan's Bayesian MCMC [lecture slides](https://tgvaughan.github.io/BayesianMCMCLectures/)
+* [2] Tim Vaughan's Bayesian MCMC [lecture slides](https://tgvaughan.github.io/BayesianMCMCLectures/)
