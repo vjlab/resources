@@ -100,7 +100,7 @@ MrBayes runs a _Metropolis-coupled Markov Chain Monte Carlo_ algorithm, or MCMCM
 The default setting for `mrbayes` is to have 2 runs, each with 4 chains (3 hot, 1 cold). I recommend using 1 run with 2 chains, because:
 
 * Total runtime is presently still a multiple of the number of runs and number of chains. If 1 run with 1 chain takes 1 hour, then 1 run with 2 chains takes 2 hours, and 2 runs, each with 4 chains, would take 8 hours. 
-* **Number of chains*** - It's difficult to ascertain the optimal number of chains - 4 chains does not garauntee 4x better MCMC mixing. Mixing, after all, is ultimately dependant on the dataset. So for now, 2 chains is the best strategy that minimally utilizes the chain-swapping feature. 
+* **Number of chains** - It's difficult to ascertain the optimal number of chains - 4 chains does not garauntee 4x better MCMC mixing. Mixing, after all, is ultimately dependant on the dataset. So for now, 2 chains is the best strategy that minimally utilizes the chain-swapping feature. 
 * **Number of runs** - On our server, increasing the number of runs will just slow down total compute time by a multiple of however many runs were started. So might as well initialize reruns as necessary, instead of asking for 3 runs at once. 
 
 ### Running on a Server/Cluster
