@@ -103,6 +103,10 @@ The default setting for `mrbayes` is to have 2 runs, each with 4 chains (3 hot, 
 * **Number of chains*** - It's difficult to ascertain the optimal number of chains - 4 chains does not garauntee 4x better MCMC mixing. Mixing, after all, is ultimately dependant on the dataset. So for now, 2 chains is the best strategy that minimally utilizes the chain-swapping feature. 
 * **Number of runs** - On our server, increasing the number of runs will just slow down total compute time by a multiple of however many runs were started. So might as well initialize reruns as necessary, instead of asking for 3 runs at once. 
 
+### Running on a Server/Cluster
+
+`mrbayes` behaves like `BEAST` in that its estimates of remaining runtime will be very erratic at the start of the MCMC chain during the burn-in; it's quite normal for `mrbayes` to estimate, say 40h left of required runtime, and then drop to 30h, only after an hour. Unfortunately, this makes estimating the required walltime quite difficult for submission to M3. For single runs, best to just run on our server - though, of course, the more you try to run at once, the slower each run will be. If you _really_ have to submit to M3, do a 1-to-2h pilot run first, just to get an estimate of burn-in and total runtime required. 
+
 ### Useful Links
 
 * [1] [Wikipedia article](https://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny) on MCMCMC
