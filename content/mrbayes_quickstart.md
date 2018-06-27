@@ -15,7 +15,7 @@ There are two modes of operation: interactive mode and batch mode. The interacti
 
 ### Interactive mode
 
-Initialize with `mb`, then enter the following lines:
+Initialize with `mb`, then enter the following lines one at a time. Press 'Enter' at each new line:
 
 ```
 set usebeagle=yes beagledevice=gpu beagleprecision=single;
