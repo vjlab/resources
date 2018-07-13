@@ -40,7 +40,7 @@ I put a `module_avail` alias...somewhere (somewhere where I'm not really suppose
 * dspp: Installed via `apt-get`
 * bowtie, bowtie2: Installed via `apt-get`
 * samtools: Installed via SF download and `make install`. It's automatically placed in `/user/local/bin`, I think.
-* SPAde: Local install, no path. So far, only used for `Unicycler`; use `--spade_path path/to/spade` to specify path.
+* SPAdes-3.12.0 installed in `/usr/local/`, executables in `/usr/local/SPAdes-3.12.0-Linux.tar.gz/bin`. 
 
 ## Installing Docker
 
