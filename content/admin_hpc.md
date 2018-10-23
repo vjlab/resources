@@ -1,5 +1,24 @@
-# R Setup
 A bunch of admin notes for HPC admin.
+
+# Matt Belousoff's Notes
+
+_Because the server was originally setup by Matt_
+
+* 2 spinning disks, named `/home` and `/data`
+* `sdb`: 500 Tb intel disk: "`\scratch`"
+* All user directories in `/home`
+* See `start` > `disk` to see how Matt partitioned the disks.
+* OS: Linux Minth 4.8 (Sonja). Don't do any kernel updates, otherwise you'll have to reinstall everything!
+* NVIDIA driver: Linux x86_64 Ubuntu 10.04
+
+Adding users to sshd:
+
+```
+sudo vi/etc/ssh/ssh_config
+```
+
+Add new username at `#AllowUsers`
+To "save": `sudo system ctl restart ssh`
 
 ## Admin tools
 
